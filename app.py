@@ -146,8 +146,8 @@ def llenar_db():
     
     
 with app.app_context():
+    db.create_all()
     if Seleccion.query.all() is None:
-        db.create_all()
         llenar_db()
     
 def contar(persona):
