@@ -14,7 +14,7 @@ orden = ['GK', 'LB', 'CB', 'RB','DM','CM','AM','LW','ST','RW']
 prioridades = {valor: indice for indice, valor in enumerate(orden)}
 
 app = Flask(__name__)
-url=os.enviroment.get('DATABASE_URL')
+url=os.environ.get('DATABASE_URL')
 if url is None:
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user:pass@host:5432/mundial_ivdg'
 else:
