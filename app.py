@@ -16,7 +16,7 @@ prioridades = {valor: indice for indice, valor in enumerate(orden)}
 app = Flask(__name__)
 url=os.environ.get('DATABASE_URL')
 if url is None:
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user:pass@host:5432/mundial_ivdg'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://usuario:password@dpg-d8ng70ugvqtc7398ng40-a.oregon-postgres.render.com:5432/mundial_ivdg'
 else:
     app.config['SQLALCHEMY_DATABASE_URI'] = url
 
