@@ -145,9 +145,10 @@ def llenar_db():
         
         db.session.add(partido)
         db.session.commit()
-    anton=Persona(nombre="Anton",puntuacion=9)
-    yo=Persona(nombre="Nico",puntuacion=5)
+    anton=Persona(nombre="Anton",puntuacion=0)
+    yo=Persona(nombre="Nico",puntuacion=0)
     db.session.add(anton)
+    db.session.commit()
     db.session.add(yo)
     db.session.commit()
     
