@@ -1,0 +1,249 @@
+import os
+from flask import Flask, render_template, request, redirect, url_for
+from flask_sqlalchemy import SQLAlchemy
+import pandas
+
+df_jugadores = pandas.read_csv("datos\\world_cup_2026_squads.csv")
+df_partidos =pandas.read_csv("datos\\partidos.csv")
+orden = ['GK', 'LB', 'CB', 'RB','DM','CM','AM','LW','ST','RW']
+prioridades = {valor: indice for indice, valor in enumerate(orden)}
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+db = SQLAlchemy(app)
+
+class Persona(db.Model):
+    id= db.Column(db.Integer, primary_key=True)
+    nombre=db.Column(db.String(20), nullable=False)
+    puntuacion=db.Column(db.Integer,nullable=False)
+    
+    def __str__(self):
+        return f'{self.nombre} {self.puntuacion}'
+    
+    def cambiar_puntuacion(self,puntos):
+        self.puntuacion=puntos
+        db.session.commit()
+        
+class Seleccion(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nombre = db.Column(db.String(100), nullable=False)
+    
+    def __str__(self):
+        return self.nombre
+
+class Jugador(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nombre = db.Column(db.String(100), nullable=False)
+    posicion= db.Column(db.String (10),nullable=False)
+    numero =db.Column(db.Integer, nullable=False)
+    seleccion_id = db.Column(db.Integer, db.ForeignKey('seleccion.id'), nullable=False)
+    
+    seleccion = db.relationship('Seleccion', backref=db.backref('jugadores', lazy=True))
+    
+    def __str__(self):
+        return self.nombre + " " + self.seleccion
+
+class Goleadores(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    partido_id=db.Column(db.Integer, db.ForeignKey('partido.id'),nullable=False)
+    goleador_id=db.Column(db.Integer,db.ForeignKey('jugador.id'),nullable=False)
+    cantidad=db.Column(db.Integer,nullable=False)
+    
+    partido=db.relationship('Partido', foreign_keys=[partido_id],lazy="joined")
+    goleador=db.relationship('Jugador', foreign_keys=[goleador_id],lazy="joined")
+    
+    def __str__(self):
+        return f'{self.partido.local} - {self.partido.visitante} {self.goleador.nombre} {self.cantidad}'
+    
+class Partido(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    local_id=db.Column(db.Integer, db.ForeignKey('seleccion.id'), nullable=False)
+    visitante_id=db.Column(db.Integer, db.ForeignKey('seleccion.id'), nullable=False)
+    goles_local=db.Column(db.Integer)
+    goles_visitante=db.Column(db.Integer)
+    
+    local=db.relationship('Seleccion', foreign_keys=[local_id])
+    visitante=db.relationship('Seleccion', foreign_keys=[visitante_id])
+    
+    def __str__(self):
+        return f'{self.local} {self.goles_local} - {self.goles_visitante} {self.visitante}'
+    
+    def goles (self,goles_local,goles_visitante):
+        self.goles_local=goles_local
+        self.goles_visitante=goles_visitante
+    
+class Prediccion(db.Model):
+    id=db.Column(db.Integer, primary_key=True)
+    partido_id = db.Column(db.Integer, db.ForeignKey('partido.id'), nullable=False)
+    goleador_local_id = db.Column(db.Integer, db.ForeignKey('jugador.id'), nullable=False)
+    goleador_visitante_id = db.Column(db.Integer, db.ForeignKey('jugador.id'), nullable=False)
+    persona_id = db.Column(db.Integer, db.ForeignKey('persona.id'), nullable=False)
+    
+    goles_local = db.Column(db.Integer, nullable=False)
+    goles_visitante = db.Column(db.Integer, nullable=False)
+
+    # Relaciones (El motor de la magia)
+    partido = db.relationship('Partido', foreign_keys=[partido_id])
+    goleador_local = db.relationship('Jugador', foreign_keys=[goleador_local_id])
+    goleador_visitante = db.relationship('Jugador', foreign_keys=[goleador_visitante_id])
+    persona = db.relationship('Persona', backref='predicciones')
+    
+    def __str__(self):
+        partido=Partido.query.get(self.partido)
+        local=Seleccion.query.get(partido.local)
+        visitante=Seleccion.query.get(partido.visitante)
+        return f'{local} {self.goles_local} {self.goleador_local} - {self.goles_visitante} {self.goleador_visitante} {visitante}'
+    
+    
+
+def llenar_db():
+    aux = []
+    for index, row in df_jugadores.iterrows():
+        seleccion =Seleccion(nombre=row["country"])
+        
+        if seleccion.nombre not in aux:
+            aux.append(seleccion.nombre)
+            db.session.add(seleccion)
+            db.session.commit()
+            id=seleccion.id
+            
+        jugador = Jugador(nombre =row ["name"],
+                          posicion=row["position"],
+                          numero=row["jerseyNumber"],
+                          seleccion_id=id)
+        
+        db.session.add(jugador)
+        db.session.commit()
+        
+    for index, row in df_partidos.iterrows():
+        local_obj = Seleccion.query.filter_by(nombre=row["local"]).first()
+        visitante_obj = Seleccion.query.filter_by(nombre=row["visitante"]).first()
+        
+        partido = Partido(
+            local=local_obj, 
+            visitante=visitante_obj, 
+            goles_local=row["goles_local"], 
+            goles_visitante=row["goles_visitante"]
+        )
+        
+        db.session.add(partido)
+        db.session.commit()
+    anton=Persona(nombre="Anton",puntuacion=9)
+    yo=Persona(nombre="Nico",puntuacion=5)
+    db.session.add(anton)
+    db.session.add(yo)
+    db.session.commit()
+    
+    
+with app.app_context():
+    if Seleccion.query.all() is None:
+        db.drop_all()
+        db.create_all()
+        llenar_db()
+    
+def contar(persona):
+    count=0
+    
+    for p in persona.predicciones:
+        par=p.partido
+        if par.goles_local is not None:
+            
+            if p.goles_local==par.goles_local and p.goles_visitante==par.goles_visitante:
+                count+=4
+            
+            elif (p.goles_local-p.goles_visitante)==(par.goles_local-par.goles_visitante):
+                count+=1
+            
+            local=Goleadores.query.filter_by(partido=par, goleador=p.goleador_local).first()
+            visitante=Goleadores.query.filter_by(partido=par, goleador=p.goleador_visitante).first()
+            
+            if local is not None:
+                count+=2*local.cantidad
+            if visitante is not None:
+                count+=2*visitante.cantidad
+            
+    persona.cambiar_puntuacion(count)
+        
+@app.route('/')
+def index():
+    selecciones=Seleccion.query.all()
+    partidos=Partido.query.all()
+    predicciones=Prediccion.query.all()
+    personas=Persona.query.all()
+    return render_template('index.html',selecciones=selecciones,partidos=partidos,personas=personas)
+
+@app.route('/persona/<int:id>')
+def persona(id):
+    persona = Persona.query.get_or_404(id)
+    partidos = Partido.query.all()
+    jugadores = Jugador.query.all()
+    
+    return render_template('persona.html', 
+                           persona=persona, 
+                           partidos=partidos, 
+                           jugadores=jugadores)
+    
+@app.route('/predicciones/<int:id>',methods=['POST'])
+def predicciones(id):
+    partido_id=request.form["partido"]
+    goles_local=request.form["goles_local"]
+    goles_visitante=request.form["goles_visitante"]
+    goleador_local_id=request.form["goleador_local"]
+    goleador_visitante_id=request.form["goleador_visitante"]
+    
+    partido=Partido.query.get(partido_id)
+    goleador_local=Jugador.query.get(goleador_local_id)
+    goleador_visitante=Jugador.query.get(goleador_visitante_id)
+    persona=Persona.query.get(id)
+
+    db.session.add(Prediccion(partido=partido,
+                              goles_local=goles_local,
+                              goles_visitante=goles_visitante,
+                              goleador_local=goleador_local,
+                              goleador_visitante=goleador_visitante,
+                              persona=persona))
+    db.session.commit()
+    contar(Persona.query.get(id))
+    return redirect(url_for('persona', id=id))
+    
+@app.route('/partidos',methods=['GET','POST'])
+def partido():
+    if request.method=="POST":
+        print(request.form)
+        local_id=request.form["local"]
+        visitante_id=request.form["visitante"]
+        
+        partido=Partido(local_id=local_id,visitante_id=visitante_id)
+        db.session.add(partido)
+        db.session.commit()
+        return redirect(url_for('partido'))
+    else:
+        partidos=Partido.query.all()
+        selecciones=Seleccion.query.all()
+        jugadores=Jugador.query.all()
+        goleadores=Goleadores.query.all()
+        return render_template('partidos.html',selecciones=selecciones,partidos=partidos,jugadores=jugadores,goleadores=goleadores)
+    
+@app.route('/partidos/modificar',methods=['POST'])
+def partido_goles():
+    id=request.form["partido_id"]
+    goles_local=request.form["goles_local"]
+    goles_visitante=request.form["goles_visitante"]
+    
+    partido=Partido.query.get(id)
+    partido.goles(goles_local,goles_visitante)
+    db.session.commit()
+    return redirect(url_for('partido'))
+@app.route('/goleadores',methods=['POST'])
+def goleadores():
+    partido_id=request.form["partido_id"]
+    goleador=request.form["goleador"]
+    cantidad=request.form["cantidad"]
+    
+    goleadores=Goleadores(partido_id=partido_id,goleador_id=goleador,cantidad=cantidad)
+    db.session.add(goleadores)
+    db.session.commit()
+    return redirect(url_for('partido'))
+
+if __name__=='__main__':
+    app.run(debug=True)

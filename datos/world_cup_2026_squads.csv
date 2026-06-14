@@ -1,0 +1,1249 @@
+id,name,age,country,position,club,clubLeague,inTop5League,internationalCaps,internationalGoals,internationalAssists,clubGoalsThisSeason,clubAssistsThisSeason,clubAppsThisSeason,isStarter,jerseyNumber,formLast5_mean
+CAN_1_20,Dayne St. Clair,29,Canada,GK,,Other,False,20,0,1,0,4,16,False,1,1.0
+CAN_16_418,Maxime Crépeau,32,Canada,GK,,Other,False,32,0,2,6,2,25,True,16,1.2
+CAN_18_2,Owen Goodman,23,Canada,GK,,Other,False,10,0,0,6,1,8,False,23,0.8
+CAN_15_835,Moïse Bombito,26,Canada,CB,,Other,False,20,0,1,4,0,16,True,13,0.8
+CAN_13_617,Derek Cornelius,29,Canada,CB,,Other,False,44,1,3,1,2,35,True,5,1.2
+CAN_19_783,Alphonso Davies,26,Canada,LB,,Other,False,58,15,4,15,2,46,True,19,1.0
+CAN_4_330,Luc de Fougerolles,21,Canada,CB,,Other,False,13,0,1,6,2,10,False,3,0.8
+CAN_2_797,Alistair Johnston,28,Canada,RB,,Other,False,58,1,4,1,3,46,True,2,0.8
+CAN_1_629,Alfie Jones,27,Canada,CB,,Other,False,20,0,1,7,2,16,False,4,1.0
+CAN_22_610,Richie Laryea,31,Canada,LB,,Other,False,76,1,6,1,1,60,False,15,1.0
+CAN_23_740,Niko Sigur,23,Canada,RB,,Other,False,19,2,1,2,4,15,False,25,1.6
+CAN_5_798,Joel Waterman,30,Canada,CB,,Other,False,17,0,1,5,4,13,False,22,1.2
+CAN_20_493,Ali Ahmed,26,Canada,RM,,Other,False,24,1,1,1,3,19,False,20,1.6
+CAN_17_749,Tajon Buchanan,27,Canada,RW,,Other,False,60,8,4,8,1,48,True,17,0.8
+CAN_6_905,Mathieu Choinière,27,Canada,CM,,Other,False,24,0,1,5,4,19,False,6,1.0
+CAN_7_489,Stephen Eustáquio,30,Canada,CM,,Other,False,56,4,4,4,4,44,True,7,1.0
+CAN_26_203,Jayden Nelson,23,Canada,AM,AM/Winger,Other,False,2,0,0,3,3,1,False,26,0.8
+CAN_8_47,Ismaël Koné,24,Canada,CM,,Other,False,40,4,3,4,0,32,True,8,1.4
+CAN_11_596,Liam Millar,27,Canada,AM,,Other,False,41,1,3,1,4,32,False,11,1.0
+CAN_21_105,Jonathan Osorio,34,Canada,CM,,Other,False,91,10,7,10,3,72,False,21,1.2
+CAN_25_477,Nathan Saliba,22,Canada,CM,,Other,False,15,2,1,2,4,12,False,24,1.6
+CAN_14_27,Jacob Shaffelburg,27,Canada,LW,,Other,False,31,6,2,6,1,24,True,14,1.0
+CAN_10_654,Jonathan David,26,Canada,ST,,Other,False,77,39,6,39,0,61,True,10,0.8
+CAN_24_87,Promise David,25,Canada,ST,,Other,False,10,3,0,3,2,8,False,18,1.2
+CAN_9_282,Cyle Larin,31,Canada,ST,,Other,False,90,30,7,30,3,72,True,9,0.6
+CAN_12_999,Tani Oluwaseyi,26,Canada,ST,,Other,False,24,2,1,2,1,19,False,12,1.6
+MEX_12_788,Carlos Acevedo,30,Mexico,GK,,Other,False,7,0,0,4,0,5,False,12,1.2
+MEX_13_273,Guillermo Ochoa,41,Mexico,GK,,Other,False,153,0,12,1,1,122,False,13,1.2
+MEX_1_983,Raúl Rangel,26,Mexico,GK,,Other,False,14,0,1,4,0,11,True,1,0.4
+MEX_23_408,Jesús Gallardo,32,Mexico,LB,,Other,False,122,3,9,3,2,97,True,23,1.6
+MEX_15_576,Israel Reyes,26,Mexico,CB,,Other,False,34,2,2,2,2,27,False,15,1.6
+MEX_3_317,César Montes,29,Mexico,CB,,Other,False,68,4,5,4,0,54,True,3,1.0
+MEX_2_4,Jorge Sánchez,29,Mexico,RB,,Other,False,59,3,4,3,0,47,True,2,1.2
+MEX_5_751,Johan Vásquez,28,Mexico,CB,,Other,False,46,3,3,3,2,36,True,5,1.2
+MEX_20_577,Mateo Chávez,22,Mexico,LB,,Other,False,10,0,0,1,2,8,False,20,0.8
+MEX_19_873,Gilberto Mora,18,Mexico,LB,,Other,False,8,0,0,2,4,6,False,19,0.4
+MEX_4_34,Edson Álvarez,29,Mexico,DM,,Other,False,99,7,7,7,4,79,True,4,0.6
+MEX_17_702,Orbelín Pineda,30,Mexico,RB,,Other,False,92,12,7,12,4,73,False,17,0.8
+MEX_7_953,Luis Romo,31,Mexico,CM,,Other,False,62,4,4,4,3,49,False,7,0.8
+MEX_26_633,Brian Gutiérrez,23,Mexico,AM,,Other,False,7,2,0,2,0,5,False,26,0.6
+MEX_18_86,Obed Vargas,21,Mexico,CM,,Other,False,6,0,0,2,0,4,False,18,1.0
+MEX_21_237,César Huerta,26,Mexico,RW,,Other,False,26,3,2,3,3,20,False,21,1.6
+MEX_24_714,Luis Chávez,30,Mexico,CM,,Other,False,45,5,3,5,1,36,False,24,0.8
+MEX_6_986,Érik Lira,26,Mexico,CM,,Other,False,25,0,2,5,1,20,True,6,1.6
+MEX_8_135,Álvaro Fidalgo,29,Mexico,CM,,Other,False,4,0,0,2,0,3,True,8,0.8
+MEX_25_638,Roberto Alvarado,28,Mexico,RW,,Other,False,68,6,5,6,1,54,True,25,0.6
+MEX_14_260,Armando González,23,Mexico,RM,,Other,False,7,1,0,1,2,5,False,14,1.4
+MEX_9_27,Raúl Jiménez,35,Mexico,ST,,Other,False,126,45,10,45,0,100,True,9,1.4
+MEX_16_72,Julián Quiñones,29,Mexico,LW,,Other,False,22,2,1,2,1,17,True,16,1.0
+MEX_11_128,Santiago Gimenez,25,Mexico,ST,,Other,False,47,6,3,6,4,37,False,11,0.6
+MEX_22_965,Guillermo Martínez,31,Mexico,AM,,Other,False,12,3,0,3,4,9,False,22,1.6
+MEX_10_209,Alexis Vega,29,Mexico,LW,,Other,False,52,7,4,7,3,41,False,10,0.4
+UNI_25_677,Chris Brady,22,Estados Unidos,GK,Chicago Fire FC,Other,False,1,0,0,0,3,27,False,25,1.0
+UNI_24_927,Matt Freese,28,Estados Unidos,GK,New York City FC,Other,False,15,0,1,2,1,12,False,24,0.8
+UNI_1_646,Matt Turner,32,Estados Unidos,GK,New Inglaterra Revolution,Other,False,54,0,4,2,2,43,True,1,1.4
+UNI_18_139,Max Arfsten,25,Estados Unidos,LB,Columbus Crew,Other,False,20,1,1,1,3,16,False,18,1.8
+UNI_2_178,Sergiño Dest,26,Estados Unidos,RB,PSV Eindhoven,Other,False,39,3,3,3,0,31,True,2,0.4
+UNI_16_238,Alex Freeman,22,Estados Unidos,RB,Villarreal CF,La Liga,True,17,2,1,2,0,13,False,16,1.0
+UNI_22_265,Mark McKenzie,27,Estados Unidos,CB,Toulouse FC,Ligue 1,True,29,0,2,4,1,23,False,22,1.6
+UNI_13_871,Tim Ream,39,Estados Unidos,CB,Charlotte FC,Other,False,81,1,6,1,1,64,True,13,1.2
+UNI_3_832,Chris Richards,26,Estados Unidos,CB,Crystal Palace F.C.,Premier League,True,36,3,2,3,2,28,True,3,0.8
+UNI_5_36,Antonee Robinson,29,Estados Unidos,LB,Fulham F.C.,Premier League,True,54,5,4,5,3,43,True,5,0.6
+UNI_12_154,Miles Robinson,29,Estados Unidos,CB,FC Cincinnati,Other,False,40,3,3,3,1,32,False,12,1.2
+UNI_23_755,Joe Scally,24,Estados Unidos,RB,Borussia Mönchengladbach,Other,False,26,0,2,3,2,20,False,23,1.8
+UNI_6_666,Auston Trusty,28,Estados Unidos,CB,Celtic F.C.,Other,False,8,0,0,7,1,6,False,6,1.4
+UNI_4_933,Tyler Adams,27,Estados Unidos,DM,AFC Bournemouth,Premier League,True,54,2,4,2,0,43,True,4,1.0
+UNI_14_41,Sebastian Berhalter,25,Estados Unidos,CM,Vancouver Whitecaps FC,Other,False,13,1,1,1,3,10,False,14,0.8
+UNI_8_26,Weston McKennie,28,Estados Unidos,CM,Juventus FC,Serie A,True,66,12,5,12,3,52,True,8,0.8
+UNI_15_913,Cristian Roldan,31,Estados Unidos,CM,Seattle Sounders FC,Other,False,47,0,3,0,1,37,False,15,0.6
+UNI_11_577,Brenden Aaronson,26,Estados Unidos,AM,Leeds United F.C.,Other,False,58,9,4,9,3,46,False,11,1.0
+UNI_17_700,Malik Tillman,24,Estados Unidos,CM,Bayer 04 Leverkusen,Bundesliga,True,30,3,2,3,2,24,False,17,1.0
+UNI_1_702,Timothy Weah,29,Estados Unidos,RW,Olympique de Marseille,Ligue 1,True,11,0,0,2,3,8,True,21,0.8
+UNI_2_990,Alejandro Zendejas,29,Estados Unidos,AM,Club América,Other,False,23,0,1,7,0,18,False,26,1.4
+UNI_10_194,Christian Pulisic,28,Estados Unidos,LW,AC Milan,Serie A,True,86,33,6,33,3,68,True,10,1.2
+UNI_3_828,Gio Reyna,25,Estados Unidos,AM,Borussia Mönchengladbach,Other,False,20,0,1,7,4,16,True,7,0.6
+UNI_20_230,Folarin Balogun,25,Estados Unidos,ST,AS Monaco,Ligue 1,True,27,9,2,9,4,21,True,20,1.4
+UNI_9_650,Ricardo Pepi,23,Estados Unidos,ST,PSV Eindhoven,Other,False,37,13,2,13,1,29,False,9,1.4
+UNI_19_828,Haji Wright,28,Estados Unidos,LW,Coventry City F.C.,Other,False,20,7,1,7,3,16,False,19,0.8
+AUS_1_125,Alexander Schlager,30,Austria,GK,FC Red Bull Salzburg,Other,False,26,0,2,0,1,20,True,1,1.2
+AUS_12_289,Florian Wiegele,25,Austria,GK,FC Viktoria Plzeň,Other,False,1,0,0,0,1,20,False,12,1.8
+AUS_13_298,Patrick Pentz,29,Austria,GK,Bröndby IF,Other,False,18,0,1,5,1,14,False,13,0.6
+AUS_2_438,David Affengruber,25,Austria,CB,Elche CF,Other,False,1,0,0,7,1,24,False,2,0.2
+AUS_3_990,Kevin Danso,28,Austria,CB,Tottenham Hotspur F.C.,Premier League,True,32,0,2,1,1,25,True,3,1.2
+AUS_5_311,Stefan Posch,29,Austria,RB,1. FSV Mainz 05,Bundesliga,True,52,5,4,5,1,41,True,5,1.0
+AUS_8_63,David Alaba,34,Austria,CB,Real Madrid,La Liga,True,113,15,9,15,3,90,True,8,1.2
+AUS_15_128,Philipp Lienhart,30,Austria,CB,SC Freiburg,Bundesliga,True,41,3,3,3,3,32,False,15,1.0
+AUS_1_18,Phillipp Mwene,23,Austria,LB,1. FSV Mainz 05,Bundesliga,True,6,0,0,5,0,4,True,16,1.8
+AUS_22_129,Alexander Prass,25,Austria,LB,TSG 1899 Hoffenheim,Bundesliga,True,19,0,1,2,1,15,False,22,1.2
+AUS_23_359,Marco Friedl,28,Austria,CB,SV Werder Bremen,Bundesliga,True,11,0,0,4,1,8,False,2,1.0
+AUS_25_576,Michael Svoboda,28,Austria,CB,Venezia FC,Other,False,4,0,0,0,0,3,False,25,1.4
+AUS_4_372,Xaver Schlager,29,Austria,DM,RB Leipzig,Bundesliga,True,51,4,4,4,3,40,True,4,0.6
+AUS_6_962,Nicolas Seiwald,25,Austria,DM,RB Leipzig,Bundesliga,True,47,1,3,1,0,37,True,6,0.6
+AUS_9_915,Marcel Sabitzer,32,Austria,LW,Borussia Dortmund,Bundesliga,True,98,26,7,26,3,78,True,9,1.2
+AUS_10_425,Florian Grillitsch,31,Austria,CM,S.C. Braga,Other,False,59,1,4,1,1,47,False,10,1.4
+AUS_17_795,Carney Chukwuemeka,23,Austria,CM,Borussia Dortmund,Bundesliga,True,3,1,0,1,3,2,False,17,0.8
+AUS_18_475,Romano Schmid,26,Austria,AM,SV Werder Bremen,Bundesliga,True,34,3,2,3,1,27,False,18,0.4
+AUS_2_499,Dejan Ljubicic,28,Austria,ST,FC Schalke 04,Other,False,14,0,1,3,2,11,False,19,1.4
+AUS_20_653,Konrad Laimer,29,Austria,RW,FC Bayern Munich,Bundesliga,True,57,7,4,7,3,45,True,20,1.6
+AUS_21_255,Patrick Wimmer,25,Austria,AM,VfL Wolfsburg,Bundesliga,True,30,1,2,1,0,24,True,21,1.0
+AUS_24_972,Paul Wanner,21,Austria,AM,PSV Eindhoven,Other,False,3,0,0,1,0,2,False,24,1.6
+AUS_3_575,Alessandro Schöpf,29,Austria,CM,Wolfsberger AC,Other,False,24,0,1,4,4,19,False,23,1.4
+AUS_7_981,Marko Arnautović,37,Austria,ST,FK Crvena zvezda,Other,False,133,47,10,47,1,106,False,7,0.4
+AUS_11_957,Michael Gregoritsch,32,Austria,ST,FC Augsburg,Bundesliga,True,75,24,6,24,0,60,True,11,1.0
+AUS_14_230,Saša Kalajdžić,29,Austria,ST,,Other,False,22,4,1,4,0,17,False,14,1.2
+BEL_1_490,Thibaut Courtois,34,Belgica,GK,Real Madrid,La Liga,True,109,0,8,2,3,87,True,1,1.2
+BEL_12_715,Senne Lammens,24,Belgica,GK,Manchester United,Premier League,True,2,0,0,2,2,1,False,12,0.4
+BEL_13_568,Mike Penders,21,Belgica,GK,RC Strasbourg,Ligue 1,True,11,0,0,3,2,8,False,13,0.4
+BEL_21_605,Timothy Castagne,31,Belgica,RB,Fulham,Premier League,True,63,2,5,2,4,50,True,21,0.8
+BEL_2_877,Zeno Debast,23,Belgica,CB,Sporting CP,Other,False,26,1,2,1,3,20,True,2,1.2
+BEL_5_311,Maxim De Cuyper,26,Belgica,LB,Brighton & Hove Albion,Premier League,True,19,4,1,4,1,15,True,5,1.0
+BEL_16_684,Koni De Winter,24,Belgica,CM,AC Milan,Serie A,True,8,0,0,0,0,6,False,16,1.0
+BEL_4_761,Brandon Mechele,33,Belgica,CM,Club Brugge,Other,False,9,1,0,1,2,7,False,4,1.0
+BEL_15_400,Thomas Meunier,35,Belgica,CM,LOSC Lille,Ligue 1,True,80,10,6,10,3,64,False,15,1.2
+BEL_25_901,Nathan Ngoy,23,Belgica,CM,LOSC Lille,Ligue 1,True,4,0,0,4,1,3,False,25,0.8
+BEL_18_260,Joaquin Seys,21,Belgica,CM,Club Brugge,Other,False,5,0,0,5,2,4,False,18,1.2
+BEL_3_73,Arthur Theate,26,Belgica,CB,Eintracht Frankfurt,Bundesliga,True,33,1,2,1,1,26,True,3,0.8
+BEL_7_902,Kevin De Bruyne,35,Belgica,CM,SSC Napoli,Serie A,True,119,37,9,37,2,95,True,7,0.2
+BEL_24_425,Amadou Onana,25,Belgica,CM,Aston Villa,Premier League,True,29,1,2,1,4,23,True,24,1.8
+BEL_23_555,Nicolas Raskin,25,Belgica,CM,Rangers,Other,False,13,2,1,2,4,10,False,23,1.4
+BEL_8_642,Youri Tielemans,29,Belgica,CM,Aston Villa,Premier League,True,85,13,6,13,0,68,True,8,0.8
+BEL_20_443,Hans Vanaken,34,Belgica,CM,Club Brugge,Other,False,34,7,2,7,2,27,False,20,1.2
+BEL_6_825,Axel Witsel,37,Belgica,DM,Girona,La Liga,True,138,12,11,12,0,110,False,6,1.8
+BEL_17_939,Charles De Ketelaere,25,Belgica,AM,Atalanta,Serie A,True,30,6,2,6,2,24,False,17,1.4
+BEL_11_669,Jérémy Doku,24,Belgica,LW,Manchester City,Premier League,True,43,7,3,7,1,34,True,11,0.8
+BEL_26_952,Matias Fernandez-Pardo,21,Belgica,RW,LOSC Lille,Ligue 1,True,2,0,0,5,2,1,False,26,0.8
+BEL_9_478,Romelu Lukaku,33,Belgica,ST,SSC Napoli,Serie A,True,126,90,10,90,2,100,True,9,1.4
+BEL_14_963,Dodi Lukébakio,29,Belgica,RW,S.L. Benfica,Other,False,30,6,2,6,2,24,True,14,1.2
+BEL_19_138,Diego Moreira,22,Belgica,AM,RC Strasbourg,Ligue 1,True,3,0,0,3,3,2,False,19,0.8
+BEL_22_418,Alexis Saelemaekers,27,Belgica,RW,AC Milan,Serie A,True,24,2,1,2,3,19,False,22,1.6
+BEL_10_625,Leandro Trossard,32,Belgica,LW,Arsenal,Premier League,True,51,12,4,12,2,40,False,10,1.2
+BOS_1_274,Nikola Vasilj,31,Bosnia y Herzegovina,GK,St. Pauli,Other,False,26,0,2,3,1,20,True,1,1.0
+BOS_22_384,Martin Zlomislić,28,Bosnia y Herzegovina,GK,Rijeka,Other,False,3,0,0,1,4,2,False,22,1.0
+BOS_1_698,Mladen Jurkas,25,Bosnia y Herzegovina,GK,Transfermarkt profile,Other,False,7,0,0,7,3,5,False,12,0.4
+BOS_5_812,Sead Kolašinac,33,Bosnia y Herzegovina,LB,Atalanta,Serie A,True,65,0,5,2,2,52,True,5,0.4
+BOS_7_96,Amar Dedić,24,Bosnia y Herzegovina,RB,Benfica,Other,False,28,1,2,1,4,22,True,7,1.4
+BOS_2_880,Nihad Mujakić,28,Bosnia y Herzegovina,CB,Gaziantep,Other,False,12,1,0,1,1,9,False,2,1.2
+BOS_18_487,Nikola Katić,30,Bosnia y Herzegovina,CB,Schalke 04,Other,False,17,2,1,2,0,13,True,18,1.2
+BOS_4_244,Tarik Muharemović,23,Bosnia y Herzegovina,CB,Sassuolo,Other,False,14,1,1,1,4,11,True,4,1.2
+BOS_21_427,Stjepan Radeljić,29,Bosnia y Herzegovina,CB,Rijeka,Other,False,5,0,0,1,2,4,False,21,0.8
+BOS_3_89,Dennis Hadžikadunić,28,Bosnia y Herzegovina,CB,Sampdoria,Other,False,32,0,2,4,0,25,False,3,1.0
+BOS_24_397,Nidal Čelik,20,Bosnia y Herzegovina,CB,,Other,False,2,0,0,6,2,1,False,24,1.4
+BOS_16_380,Amir Hadžiahmetović,29,Bosnia y Herzegovina,DM,Hull City,Other,False,36,0,2,6,3,28,True,16,1.0
+BOS_14_315,Ivan Šunjić,30,Bosnia y Herzegovina,DM,Pafos,Other,False,11,0,0,5,4,8,False,14,0.6
+BOS_13_871,Ivan Bašić,24,Bosnia y Herzegovina,CM,Astana,Other,False,17,0,1,5,2,13,False,13,0.6
+BOS_17_641,Dženis Burnić,28,Bosnia y Herzegovina,DM,Karlsruher SC,Other,False,20,0,1,1,2,16,False,17,0.8
+BOS_26_512,Ermin Mahmić,21,Bosnia y Herzegovina,AM,Slovan Liberec,Other,False,2,0,0,4,1,1,False,26,1.2
+BOS_6_47,Benjamin Tahirović,23,Bosnia y Herzegovina,CM,Bröndby,Other,False,28,2,2,2,0,22,True,6,1.4
+BOS_15_350,Amar Memić,25,Bosnia y Herzegovina,AM,Viktoria Plzen,Other,False,13,1,1,1,3,10,False,15,1.0
+BOS_8_570,Armin Gigović,24,Bosnia y Herzegovina,LW,Young Boys,Other,False,20,1,1,1,2,16,True,8,0.2
+BOS_19_254,Kerim Alajbegović,19,Bosnia y Herzegovina,RB,RB Salzburg,Other,False,10,1,0,1,4,8,False,19,1.4
+BOS_20_536,Esmir Bajraktarević,21,Bosnia y Herzegovina,RW,PSV Eindhoven,Other,False,16,1,1,1,1,12,True,20,0.6
+BOS_10_30,Ermedin Demirović,28,Bosnia y Herzegovina,ST,VfB Stuttgart,Bundesliga,True,40,4,3,4,2,32,True,10,0.6
+BOS_25_437,Jovo Lukić,28,Bosnia y Herzegovina,ST,Universitatea Cluj,Other,False,3,0,0,1,0,2,False,25,1.2
+BOS_9_618,Samed Baždar,22,Bosnia y Herzegovina,AM,Jagiellonia Bialystok,Other,False,13,1,1,1,0,10,False,9,0.8
+BOS_23_847,Haris Tabaković,32,Bosnia y Herzegovina,ST,Borussia Mönchengladbach,Other,False,10,4,0,4,3,8,False,23,2.0
+BOS_11_680,Edin Džeko,40,Bosnia y Herzegovina,ST,Schalke 04,Other,False,148,73,11,73,4,118,True,11,0.2
+CRO_1_567,Dominik Livaković,31,Croacia,GK,,Other,False,75,0,6,2,3,60,True,1,0.6
+CRO_23_349,Dominik Kotarski,26,Croacia,GK,,Other,False,4,0,0,1,4,3,False,12,1.0
+CRO_12_357,Ivor Pandur,26,Croacia,GK,,Other,False,5,0,0,0,1,4,False,23,1.2
+CRO_4_677,Joško Gvardiol,24,Croacia,LB,,Other,False,48,4,3,4,2,38,True,4,1.0
+CRO_5_926,Duje Ćaleta-Car,30,Croacia,CB,,Other,False,38,1,3,1,2,30,True,5,0.6
+CRO_6_478,Josip Šutalo,26,Croacia,CB,,Other,False,33,0,2,3,3,26,True,6,1.0
+CRO_2_149,Josip Stanišić,26,Croacia,RB,,Other,False,31,0,2,2,4,24,True,2,0.8
+CRO_3_779,Marin Pongračić,29,Croacia,CB,,Other,False,20,0,1,0,2,16,False,3,0.4
+CRO_25_348,Martin Erlić,28,Croacia,CB,,Other,False,13,1,1,1,0,10,False,25,1.2
+CRO_22_833,Luka Vušković,19,Croacia,CB,,Other,False,5,1,0,1,4,4,False,22,0.6
+CRO_10_969,Luka Modrić,41,Croacia,AM,,Other,False,198,29,15,29,4,158,True,10,1.6
+CRO_8_976,Mateo Kovačić,32,Croacia,CM,,Other,False,113,5,9,5,4,90,True,8,1.2
+CRO_15_126,Mario Pašalić,31,Croacia,CM,,Other,False,85,12,6,12,4,68,True,15,0.4
+CRO_13_965,Nikola Vlašić,29,Croacia,AM,,Other,False,63,10,5,10,2,50,False,13,0.8
+CRO_21_137,Luka Sučić,24,Croacia,CM,,Other,False,21,1,1,1,3,16,False,21,1.2
+CRO_16_504,Martin Baturina,23,Croacia,AM,,Other,False,19,1,1,1,0,15,False,16,1.0
+CRO_18_679,Kristijan Jakić,29,Croacia,RB,,Other,False,17,2,1,2,0,13,False,18,1.0
+CRO_17_665,Petar Sučić,23,Croacia,CM,,Other,False,17,1,1,1,4,13,False,17,1.4
+CRO_7_935,Nikola Moro,28,Croacia,DM,,Other,False,10,0,0,3,3,8,False,7,1.4
+CRO_19_705,Toni Fruk,25,Croacia,AM,,Other,False,7,1,0,1,4,5,False,19,0.4
+CRO_14_582,Ivan Perišić,37,Croacia,LW,,Other,False,154,38,12,38,2,123,True,14,0.4
+CRO_9_219,Andrej Kramarić,35,Croacia,ST,,Other,False,116,36,9,36,4,92,True,9,1.0
+CRO_11_173,Ante Budimir,35,Croacia,ST,,Other,False,38,6,3,6,4,30,False,11,0.8
+CRO_24_187,Marco Pašalić,26,Croacia,RW,,Other,False,15,1,1,1,2,12,True,24,0.6
+CRO_26_581,Petar Musa,28,Croacia,ST,,Other,False,11,1,0,1,3,8,False,26,0.6
+CRO_20_915,Igor Matanović,23,Croacia,ST,,Other,False,9,2,0,2,4,7,False,20,1.2
+CZE_23_689,Matěj Kovář,24,Republica Checa,GK,,Other,False,1,0,0,2,4,26,False,16,1.6
+CZE_1_407,Vítězslav Jaroš,25,Republica Checa,GK,,Other,False,9,0,0,7,4,7,False,23,0.6
+CZE_16_260,Jindřich Staněk,30,Republica Checa,GK,,Other,False,14,0,1,6,3,11,True,1,1.2
+CZE_5_238,Vladimír Coufal,34,Republica Checa,RB,,Other,False,62,2,4,2,0,49,False,5,1.2
+CZE_21_123,David Douděra,28,Republica Checa,RWB,,Other,False,17,2,1,2,0,13,True,12,0.6
+CZE_3_969,Tomáš Holeš,33,Republica Checa,CB,,Other,False,41,2,3,2,2,32,True,3,1.4
+CZE_4_122,Robin Hranáč,26,Republica Checa,CB,,Other,False,14,1,1,1,0,11,True,4,1.0
+CZE_6_79,Martin Vitík,23,Republica Checa,CB,,Other,False,5,0,0,2,4,4,False,18,0.6
+CZE_14_782,David Jurásek,26,Republica Checa,LWB,,Other,False,18,1,1,1,4,14,True,15,0.4
+CZE_7_612,Ladislav Krejčí,27,Republica Checa,CB,,Other,False,27,5,2,5,0,21,True,6,0.4
+CZE_20_692,Antonín Barák,34,Republica Checa,AM,,Other,False,23,0,1,5,3,18,False,7,2.0
+CZE_2_977,David Zima,26,Republica Checa,CB,,Other,False,25,1,2,1,2,20,False,2,1.4
+CZE_12_949,Lukáš Červ,25,Republica Checa,CM,,Other,False,17,2,1,2,3,13,True,21,0.8
+CZE_8_870,Pavel Šulc,36,Republica Checa,AM,,Other,False,79,8,6,8,0,63,True,14,1.0
+CZE_17_638,Lukáš Provod,30,Republica Checa,CM,,Other,False,38,3,3,3,0,30,False,4,1.0
+CZE_18_876,Václav Černý,27,Republica Checa,AM,,Other,False,35,1,2,1,0,28,False,17,1.4
+CZE_25_825,Ondřej Lingr,18,Republica Checa,AM,,Other,False,1,0,0,2,3,25,False,8,1.0
+CZE_24_84,Matěj Jurásek,23,Republica Checa,LW,,Other,False,2,0,0,3,4,1,False,13,1.4
+CZE_22_719,Tomáš Souček,31,Republica Checa,CM,,Other,False,90,17,7,17,0,72,True,22,0.8
+CZE_9_216,Adam Hložek,24,Republica Checa,ST,,Other,False,43,5,3,5,2,34,True,9,1.6
+CZE_19_636,Tomáš Chorý,31,Republica Checa,ST,,Other,False,22,7,1,7,0,17,False,19,1.2
+CZE_13_762,Mojmír Chytil,27,Republica Checa,ST,,Other,False,22,6,1,6,2,17,False,20,1.0
+CZE_11_821,Jan Kuchta,29,Republica Checa,ST,,Other,False,31,3,2,3,3,24,False,11,1.8
+CZE_10_715,Patrik Schick,30,Republica Checa,ST,,Other,False,53,26,4,26,4,42,True,10,1.4
+CZE_2_20,Matej Vydra,27,Republica Checa,ST,Viktoria Plzen,Other,False,20,0,1,4,4,16,False,2,1.2
+CZE_26_513,Denis Višinský,23,Republica Checa,ST,Viktoria Plzen,Other,False,2,1,0,1,1,1,False,26,0.4
+ENG_1_354,Jordania Pickford,32,Inglaterra,GK,Everton FC,Premier League,True,84,0,6,0,3,67,True,1,0.8
+ENG_13_750,Dean Henderson,29,Inglaterra,GK,,Other,False,4,0,0,2,2,3,False,13,0.2
+ENG_23_753,James Trafford,24,Inglaterra,GK,,Other,False,2,0,0,3,2,1,False,22,0.2
+ENG_24_491,Reece James,27,Inglaterra,RB,Chelsea FC,Premier League,True,24,1,1,1,3,19,True,24,0.6
+ENG_2_315,Ezri Konsa,29,Inglaterra,CB,Aston Villa,Premier League,True,20,1,1,1,2,16,False,2,0.8
+ENG_26_760,Jarell Quansah,23,Inglaterra,CB,Bayer Leverkusen,Bundesliga,True,3,0,0,5,0,2,False,26,1.0
+ENG_5_684,John Stones,32,Inglaterra,CB,Manchester City,Premier League,True,89,3,7,3,4,71,True,5,1.2
+ENG_6_60,Marc Guéhi,26,Inglaterra,CB,Manchester City,Premier League,True,29,1,2,1,3,23,True,6,0.8
+ENG_15_766,Dan Burn,34,Inglaterra,CB,Newcastle United,Premier League,True,8,0,0,5,4,6,False,15,1.2
+ENG_3_540,Nico O'Reilly,21,Inglaterra,LB,Manchester City,Premier League,True,5,0,0,5,4,4,True,3,0.6
+ENG_25_506,Djed Spence,26,Inglaterra,LB,Tottenham Hotspur,Premier League,True,6,0,0,3,2,4,False,25,0.6
+ENG_12_324,Tino Livramento,24,Inglaterra,RB,Newcastle United,Premier League,True,6,0,0,1,3,4,False,12,0.8
+ENG_4_665,Declan Rice,27,Inglaterra,CM,Arsenal FC,Premier League,True,73,7,5,7,0,58,True,4,0.6
+ENG_8_932,Elliot Anderson,24,Inglaterra,CM,Nottingham Forest,Premier League,True,9,0,0,3,1,7,True,8,1.2
+ENG_16_932,Kobbie Mainoo,21,Inglaterra,CM,Manchester United,Premier League,True,14,0,1,3,4,11,False,16,0.4
+ENG_14_521,Jordania Henderson,36,Inglaterra,CM,,Other,False,91,3,7,3,1,72,False,14,1.0
+ENG_17_825,Morgan Rogers,24,Inglaterra,AM,,Other,False,15,1,1,1,4,12,False,17,0.8
+ENG_10_125,Jude Bellingham,23,Inglaterra,AM,Real Madrid,La Liga,True,48,6,3,6,0,38,True,10,0.6
+ENG_21_764,Eberechi Eze,28,Inglaterra,AM,Arsenal FC,Premier League,True,17,3,1,3,4,13,False,19,0.6
+ENG_9_1,Harry Kane,33,Inglaterra,ST,Bayern Munich,Bundesliga,True,114,79,9,79,1,91,True,9,1.2
+ENG_22_691,Ivan Toney,30,Inglaterra,ST,,Other,False,8,1,0,1,4,6,False,22,1.4
+ENG_19_881,Ollie Watkins,31,Inglaterra,ST,,Other,False,22,7,1,7,1,17,False,19,1.0
+ENG_7_554,Bukayo Saka,25,Inglaterra,RW,Arsenal FC,Premier League,True,49,14,3,14,4,39,True,7,1.4
+ENG_11_394,Marcus Rashford,29,Inglaterra,LW,Barcelona,La Liga,True,72,18,5,18,3,57,True,11,1.0
+ENG_18_56,Anthony Gordon,25,Inglaterra,LW,,Other,False,19,3,1,3,0,15,False,18,1.4
+ENG_20_500,Noni Madueke,24,Inglaterra,RW,Arsenal FC,Premier League,True,11,1,0,1,2,8,False,20,1.4
+FRA_16_670,Mike Maignan,31,Francia,GK,,Other,False,40,0,3,4,0,32,True,16,0.8
+FRA_23_231,Robin Risser,22,Francia,GK,Lens,Other,False,12,0,0,7,2,9,False,23,1.0
+FRA_1_128,Brice Samba,32,Francia,GK,Rennes,Ligue 1,True,4,0,0,4,3,3,False,1,1.4
+FRA_3_220,Lucas Digne,33,Francia,LB,Aston Villa,Premier League,True,58,0,4,1,3,46,False,3,0.8
+FRA_2_605,Malo Gusto,23,Francia,RB,Chelsea,Premier League,True,11,0,0,1,1,8,False,2,1.0
+FRA_21_119,Lucas Hernandez,30,Francia,CB,PSG,Ligue 1,True,42,0,3,2,0,33,False,21,1.2
+FRA_19_930,Theo Hernandez,29,Francia,LB,Al-Hilal,Other,False,44,2,3,2,2,35,True,19,0.8
+FRA_15_293,Ibrahima Konaté,27,Francia,CB,Liverpool,Premier League,True,28,0,2,6,3,22,True,15,0.8
+FRA_5_233,Jules Koundé,28,Francia,RB,Barcelona,La Liga,True,48,0,3,2,4,38,True,5,1.0
+FRA_26_645,Maxence Lacroix,26,Francia,CB,Crystal Palace,Premier League,True,4,0,0,6,3,3,False,26,0.8
+FRA_17_864,William Saliba,25,Francia,CB,Arsenal,Premier League,True,32,0,2,1,3,25,True,17,0.8
+FRA_4_494,Dayot Upamecano,28,Francia,CB,Bayern Munich,Bundesliga,True,38,2,3,2,0,30,False,4,1.4
+FRA_13_719,N'Golo Kanté,35,Francia,CM,Fenerbahce,Other,False,69,2,5,2,2,55,True,13,1.4
+FRA_6_921,Manu Koné,25,Francia,CM,Roma,Serie A,True,14,0,1,6,3,11,False,6,0.8
+FRA_14_276,Adrien Rabiot,31,Francia,CM,AC Milan,Serie A,True,59,7,4,7,4,47,False,14,1.2
+FRA_8_809,Aurélien Tchouaméni,26,Francia,CM,Real Madrid,La Liga,True,46,3,3,3,4,36,True,8,1.0
+FRA_18_882,Warren Zaïre-Emery,20,Francia,CM,PSG,Ligue 1,True,11,1,0,1,2,8,False,18,1.8
+FRA_25_904,Maghnes Akliouche,24,Francia,AM,Monaco,Ligue 1,True,9,1,0,1,2,7,False,12,1.6
+FRA_12_248,Bradley Barcola,24,Francia,LW,,Other,False,20,3,1,3,0,16,False,12,1.0
+FRA_24_16,Rayan Cherki,23,Francia,AM,Manchester City,Premier League,True,7,2,0,2,3,5,False,24,1.2
+FRA_7_684,Ousmane Dembélé,29,Francia,RW,PSG,Ligue 1,True,59,7,4,7,1,47,True,7,1.0
+FRA_20_888,Désiré Doué,21,Francia,AM,PSG,Ligue 1,True,7,2,0,2,2,5,False,20,1.2
+FRA_22_507,Jean-Philippe Mateta,29,Francia,ST,Crystal Palace,Premier League,True,4,2,0,2,4,3,False,19,1.0
+FRA_10_810,Kylian Mbappé,28,Francia,LW,Real Madrid,La Liga,True,98,56,7,56,4,78,True,10,1.0
+FRA_11_471,Michael Olise,25,Francia,AM,Bayern Munich,Bundesliga,True,17,7,1,7,2,13,True,11,0.6
+FRA_9_626,Marcus Thuram,29,Francia,ST,Inter Milan,Serie A,True,34,3,2,3,4,27,True,9,1.2
+GER_12_47,Oliver Baumann,36,Alemania,GK,,Other,False,13,0,1,6,3,10,False,1,1.0
+GER_1_374,Manuel Neuer,40,Alemania,GK,,Other,False,124,0,9,0,0,99,True,1,1.4
+GER_1_41,Alexander Nübel,29,Alemania,GK,,Other,False,20,0,1,1,2,16,False,12,1.4
+GER_3_686,Waldemar Anton,30,Alemania,CB,,Other,False,13,0,1,1,0,10,False,3,1.4
+GER_18_257,Nathaniel Brown,23,Alemania,LB,,Other,False,5,0,0,6,0,4,False,18,1.6
+GER_22_184,David Raum,28,Alemania,LB,,Other,False,37,1,2,1,3,29,True,22,1.4
+GER_2_15,Antonio Rüdiger,26,Alemania,CB,,Other,False,13,0,1,1,0,10,True,2,0.6
+GER_15_778,Nico Schlotterbeck,27,Alemania,CB,,Other,False,27,0,2,4,4,21,False,15,0.8
+GER_4_275,Jonathan Tah,30,Alemania,CB,,Other,False,47,1,3,1,2,37,True,4,1.0
+GER_24_755,Malick Thiaw,25,Alemania,CB,,Other,False,5,0,0,1,1,4,False,2,1.0
+GER_13_807,Pascal Groß,35,Alemania,RB,,Other,False,18,1,1,1,0,14,False,13,1.2
+GER_6_914,Joshua Kimmich,31,Alemania,RB,,Other,False,110,10,8,10,3,88,True,6,1.6
+GER_23_171,Felix Nmecha,26,Alemania,CM,,Other,False,8,1,0,1,3,6,False,13,0.8
+GER_5_799,Aleksandar Pavlović,22,Alemania,CM,,Other,False,11,1,0,1,4,8,True,5,0.8
+GER_16_644,Angelo Stiller,25,Alemania,CM,,Other,False,8,0,0,1,3,6,False,16,0.4
+GER_8_704,Leon Goretzka,31,Alemania,CM,,Other,False,70,15,5,15,0,56,True,8,1.4
+GER_17_900,Florian Wirtz,23,Alemania,AM,,Other,False,41,11,3,11,2,32,True,17,1.6
+GER_9_671,Jamie Leweling,25,Alemania,AM,,Other,False,5,1,0,1,0,4,False,7,1.0
+GER_14_267,Maximilian Beier,24,Alemania,ST,,Other,False,9,0,0,2,3,7,False,14,1.0
+GER_7_234,Kai Havertz,27,Alemania,ST,,Other,False,58,22,4,22,2,46,True,7,1.6
+GER_3_301,Nadiem Amiri,26,Alemania,AM,,Other,False,14,0,1,1,3,11,False,10,1.2
+GER_10_806,Jamal Musiala,23,Alemania,LW,,Other,False,42,9,3,9,4,33,True,10,1.2
+GER_19_349,Leroy Sané,30,Alemania,RW,,Other,False,76,17,6,17,0,60,True,19,0.8
+GER_26_847,Deniz Undav,30,Alemania,ST,,Other,False,9,6,0,6,2,7,False,26,0.6
+GER_11_999,Nick Woltemade,24,Alemania,ST,,Other,False,11,4,0,4,1,8,False,11,1.4
+GER_25_125,Assan Ouédraogo,25,Alemania,RB,,Other,False,10,0,0,0,0,0,False,25,1.0
+NET_23_25,Mark Flekken,33,Holanda,GK,Bayer 04 Leverkusen,Bundesliga,True,12,0,0,0,0,9,False,23,1.4
+NET_13_626,Robin Roefs,23,Holanda,GK,Sunderland AFC,Other,False,1,0,0,2,1,25,False,13,1.0
+NET_1_140,Bart Verbruggen,24,Holanda,GK,,Other,False,29,0,2,0,0,23,True,1,1.0
+NET_5_981,Nathan Aké,31,Holanda,CB,Manchester City F.C.,Premier League,True,59,5,4,5,1,47,False,5,1.6
+NET_22_299,Denzel Dumfries,30,Holanda,RB,Inter Milan,Serie A,True,72,11,5,11,3,57,True,22,1.2
+NET_25_210,Jorrel Hato,20,Holanda,CB,Chelsea F.C.,Premier League,True,8,0,0,1,0,6,False,25,0.8
+NET_1_383,Lutsharel Geertruida,23,Holanda,CB,RB Leipzig,Bundesliga,True,6,0,0,0,2,4,False,2,0.8
+NET_6_240,Jan Paul van Hecke,26,Holanda,CB,Brighton & Hove Albion,Premier League,True,12,0,0,6,1,9,True,12,1.4
+NET_15_27,Micky van de Ven,25,Holanda,LB,Tottenham Hotspur F.C.,Premier League,True,21,1,1,1,3,16,True,15,1.0
+NET_4_755,Virgil van Dijk,35,Holanda,CB,Liverpool F.C.,Premier League,True,92,12,7,12,0,73,True,4,1.0
+NET_21_856,Frenkie de Jong,29,Holanda,CM,FC Barcelona,La Liga,True,66,2,5,2,1,52,True,21,1.4
+NET_3_754,Marten de Roon,35,Holanda,DM,Atalanta BC,Serie A,True,43,1,3,1,0,34,False,3,1.2
+NET_8_626,Ryan Gravenberch,24,Holanda,CM,Liverpool F.C.,Premier League,True,27,1,2,1,3,21,True,8,1.0
+NET_20_587,Teun Koopmeiners,28,Holanda,CM,Juventus FC,Serie A,True,28,3,2,3,3,22,False,20,1.4
+NET_14_164,Tijjani Reijnders,28,Holanda,AM,Manchester City F.C.,Premier League,True,32,7,2,7,2,25,True,14,0.8
+NET_16_13,Guus Til,29,Holanda,AM,PSV Eindhoven,Other,False,7,1,0,1,4,5,False,16,0.8
+NET_26_123,Quinten Timber,25,Holanda,CM,,Other,False,11,1,0,1,4,8,False,12,0.2
+NET_12_85,Mats Wieffer,27,Holanda,CB,Brighton & Hove Albion,Premier League,True,15,1,1,1,3,12,False,12,0.6
+NET_19_118,Brian Brobbey,24,Holanda,ST,,Other,False,12,1,0,1,0,9,False,19,1.8
+NET_10_56,Memphis Depay,32,Holanda,ST,Sport Club Corinthians Paulista,Other,False,109,55,8,55,4,87,True,10,0.6
+NET_11_62,Cody Gakpo,27,Holanda,LW,Liverpool F.C.,Premier League,True,50,21,4,21,4,40,True,11,1.2
+NET_7_173,Justin Kluivert,27,Holanda,LW,,Other,False,12,0,0,3,1,9,False,19,1.2
+NET_17_536,Noa Lang,27,Holanda,LW,,Other,False,15,3,1,3,0,12,False,17,1.2
+NET_18_567,Donyell Malen,27,Holanda,RW,,Other,False,53,13,4,13,2,42,True,18,0.6
+NET_24_498,Crysencio Summerville,25,Holanda,AM,West Ham United F.C.,Premier League,True,2,0,0,0,3,1,False,24,0.4
+NET_9_295,Wout Weghorst,34,Holanda,ST,AFC Ajax,Other,False,52,14,4,14,2,41,False,9,0.8
+NOR_1_847,Ørjan Nyland,25,Noruega,GK,,Other,False,15,0,1,3,0,12,True,1,1.0
+NOR_13_908,Egil Selvik,29,Noruega,GK,,Other,False,7,0,0,3,2,5,False,13,1.2
+NOR_12_276,Sander Tangvik,24,Noruega,GK,,Other,False,5,0,0,6,1,4,False,12,0.8
+NOR_26_237,Julian Ryerson,29,Noruega,RW,,Other,False,43,1,3,1,4,34,True,26,0.8
+NOR_3_121,Kristiffer Ajer,28,Noruega,CB,,Other,False,52,2,4,2,1,41,True,3,0.4
+NOR_2_414,Leo Østigård,28,Noruega,CB,,Other,False,5,0,0,2,1,4,True,4,1.4
+NOR_3_861,David Møller Wolfe,26,Noruega,LB,,Other,False,22,0,1,6,0,17,True,5,1.2
+NOR_4_997,Marcus Holmgren Pedersen,28,Noruega,RB,,Other,False,12,0,0,3,1,9,True,16,1.8
+NOR_5_200,Torbjørn Heggem,26,Noruega,CB,,Other,False,6,0,0,2,1,4,False,17,0.6
+NOR_6_783,Fredrik André Bjørkan,29,Noruega,LB,,Other,False,17,0,1,6,4,13,False,15,1.4
+NOR_25_980,Henrik Falchener,23,Noruega,CB,,Other,False,1,0,0,6,2,31,False,25,1.2
+NOR_24_991,Sondre Langås,25,Noruega,CB,,Other,False,3,0,0,0,2,2,False,24,0.6
+NOR_7_690,Martin Ødegaard,28,Noruega,AM,,Other,False,12,0,0,5,3,9,True,10,1.2
+NOR_8_606,Sander Berge,28,Noruega,CM,,Other,False,66,1,5,1,3,52,True,8,0.8
+NOR_6_279,Patrick Berg,29,Noruega,DM,,Other,False,43,0,3,7,4,34,True,6,1.0
+NOR_18_265,Kristian Thorstvedt,27,Noruega,CM,,Other,False,37,4,2,4,0,29,False,18,1.2
+NOR_2_411,Morten Thorsby,30,Noruega,CM,,Other,False,31,0,2,1,1,24,False,2,1.4
+NOR_19_60,Thelo Aasgaard,24,Noruega,AM,,Other,False,8,5,0,5,2,6,False,19,0.8
+NOR_21_203,Andreas Schjelderup,22,Noruega,AM,,Other,False,12,1,0,1,4,9,False,21,0.6
+NOR_23_434,Jens Petter Hauge,27,Noruega,AM,,Other,False,15,1,1,1,0,12,False,23,1.0
+NOR_14_750,Fredrik Aursnes,31,Noruega,CM,,Other,False,22,1,1,1,1,17,False,14,0.8
+NOR_22_266,Oscar Bobb,23,Noruega,AM,,Other,False,20,2,1,2,3,16,False,22,1.0
+NOR_20_788,Antonio Nusa,21,Noruega,RB,,Other,False,24,8,1,8,2,19,False,20,1.0
+NOR_9_697,Erling Haaland,26,Noruega,ST,,Other,False,50,55,4,55,0,40,True,9,1.4
+NOR_8_693,Alexander Sørloth,28,Noruega,ST,,Other,False,12,0,0,3,1,9,True,7,1.4
+NOR_9_196,Jørgen Strand Larsen,24,Noruega,ST,,Other,False,14,0,1,3,1,11,False,11,1.4
+POR_1_560,Diogo Costa,27,Portugal,GK,FC Porto,Other,False,43,0,3,6,3,34,True,1,1.0
+POR_12_665,José Sá,33,Portugal,GK,Wolverhampton Wanderers F.C.,Other,False,5,0,0,5,4,4,False,12,0.8
+POR_22_463,Rui Silva,32,Portugal,GK,Sporting CP,Other,False,3,0,0,5,4,2,False,22,0.8
+POR_3_888,Rúben Dias,29,Portugal,CB,Manchester City F.C.,Premier League,True,76,3,6,3,0,60,True,3,1.2
+POR_20_933,João Cancelo,32,Portugal,LB,Al Hilal Saudi Club,Other,False,68,12,5,12,2,54,False,20,0.6
+POR_5_39,Diogo Dalot,27,Portugal,RB,Manchester United F.C.,Premier League,True,35,3,2,3,3,28,True,5,1.4
+POR_25_46,Nuno Mendes,24,Portugal,LB,Paris Saint-Germain F.C.,Ligue 1,True,44,1,3,1,4,35,True,25,1.0
+POR_2_854,Nélson Semedo,33,Portugal,RB,Fenerbahçe SK,Other,False,50,0,4,6,1,40,False,2,0.8
+POR_6_8,Matheus Nunes,28,Portugal,CM,Manchester City F.C.,Premier League,True,20,2,1,2,0,16,False,18,1.2
+POR_14_588,Gonçalo Inácio,25,Portugal,CB,Sporting CP,Other,False,22,2,1,2,4,17,True,14,0.6
+POR_13_753,Renato Veiga,23,Portugal,CB,Villarreal CF,La Liga,True,13,1,1,1,1,10,False,13,1.8
+POR_4_493,Tomás Araújo,24,Portugal,CB,S.L. Benfica,Other,False,5,0,0,2,3,4,False,4,1.2
+POR_8_886,Bruno Fernandes,32,Portugal,AM,Manchester United F.C.,Premier League,True,89,29,7,29,3,71,True,8,1.2
+POR_10_328,Bernardo Silva,32,Portugal,RW,Manchester City F.C.,Premier League,True,109,14,8,14,3,87,True,10,1.0
+POR_23_326,Vitinha,26,Portugal,CM,Paris Saint-Germain F.C.,Ligue 1,True,38,0,3,3,2,30,True,23,1.0
+POR_15_232,João Neves,22,Portugal,CM,Paris Saint-Germain F.C.,Ligue 1,True,22,3,1,3,0,17,True,15,2.0
+POR_21_769,Rúben Neves,29,Portugal,DM,Al Hilal Saudi Club,Other,False,67,1,5,1,0,53,False,21,1.0
+POR_24_858,Samu Costa,26,Portugal,DM,RCD Mallorca,La Liga,True,6,0,0,2,3,4,False,24,1.0
+POR_7_591,Cristiano Ronaldo,41,Portugal,ST,Al-Nassr FC,Other,False,228,143,18,143,2,182,True,7,1.0
+POR_17_602,Rafael Leão,27,Portugal,LW,AC Milan,Serie A,True,44,5,3,5,3,35,True,17,1.4
+POR_11_40,João Félix,27,Portugal,LW,Al-Nassr FC,Other,False,54,12,4,12,4,43,False,11,1.0
+POR_9_917,Gonçalo Ramos,25,Portugal,AM,Paris Saint-Germain F.C.,Ligue 1,True,25,10,2,10,2,20,False,9,1.2
+POR_18_160,Pedro Neto,26,Portugal,LW,Chelsea F.C.,Premier League,True,25,3,2,3,1,20,False,18,0.8
+POR_26_55,Francisco Conceição,24,Portugal,RW,Juventus FC,Serie A,True,17,4,1,4,1,13,False,19,0.8
+POR_19_219,Gonçalo Guedes,30,Portugal,LW,Real Sociedad,La Liga,True,35,8,2,8,2,28,False,19,0.6
+POR_16_838,Francisco Trincão,27,Portugal,RW,Sporting CP,Other,False,18,3,1,3,1,14,False,16,1.6
+SCO_21_332,Craig Gordon,44,Escocia,GK,,Other,False,84,0,6,0,4,67,False,21,0.2
+SCO_1_581,Angus Gunn,30,Escocia,GK,,Other,False,22,0,1,6,3,17,True,1,0.6
+SCO_12_364,Liam Kelly,30,Escocia,GK,,Other,False,3,0,0,5,4,2,False,12,1.2
+SCO_5_145,Grant Hanley,35,Escocia,CB,,Other,False,68,2,5,2,0,54,True,5,0.8
+SCO_13_735,Jack Hendry,31,Escocia,CB,,Other,False,38,3,3,3,4,30,False,13,1.2
+SCO_2_975,Aaron Hickey,24,Escocia,RB,,Other,False,21,0,1,6,3,16,True,2,0.8
+SCO_1_283,Dominic Hyam,23,Escocia,CB,,Other,False,5,0,0,6,1,4,False,16,1.4
+SCO_26_857,Scott McKenna,30,Escocia,CB,,Other,False,50,1,4,1,2,40,True,16,1.4
+SCO_22_988,Nathan Patterson,25,Escocia,RB,,Other,False,26,1,2,1,2,20,False,22,0.4
+SCO_24_283,Anthony Ralston,28,Escocia,RB,,Other,False,27,1,2,1,3,21,False,24,1.4
+SCO_3_786,Andy Robertson,32,Escocia,LB,,Other,False,94,4,7,4,0,75,True,3,0.6
+SCO_15_176,John Souttar,30,Escocia,CB,,Other,False,24,2,1,2,1,19,False,15,1.6
+SCO_6_726,Kieran Tierney,29,Escocia,CB,,Other,False,56,2,4,2,4,44,False,6,0.8
+SCO_11_10,Ryan Christie,31,Escocia,LW,,Other,False,68,10,5,10,2,54,True,11,1.2
+SCO_2_656,Tyler Fletcher,30,Escocia,CM,,Other,False,14,0,1,6,3,11,False,8,1.4
+SCO_19_3,Lewis Ferguson,27,Escocia,CM,,Other,False,24,1,1,1,1,19,True,19,0.8
+SCO_17_881,Ben Gannon-Doak,21,Escocia,RW,,Other,False,14,1,1,1,3,11,True,17,1.2
+SCO_3_638,Findlay Curtis,23,Escocia,AM,AM/Forward,Other,False,14,0,1,4,0,11,False,25,0.8
+SCO_7_912,John McGinn,32,Escocia,CM,,Other,False,86,20,6,20,0,68,True,7,0.8
+SCO_23_484,Kenny McLean,34,Escocia,CM,,Other,False,58,3,4,3,0,46,False,23,1.2
+SCO_4_81,Scott McTominay,30,Escocia,AM,,Other,False,70,15,5,15,4,56,True,4,0.6
+SCO_10_167,Ché Adams,30,Escocia,ST,,Other,False,47,13,3,13,1,37,True,10,1.8
+SCO_9_96,Lyndon Dykes,31,Escocia,ST,,Other,False,51,10,4,10,4,40,False,9,1.2
+SCO_18_287,George Hirst,27,Escocia,ST,,Other,False,10,1,0,1,3,8,False,18,0.6
+SCO_20_198,Lawrence Shankland,31,Escocia,ST,,Other,False,20,7,1,7,2,16,False,20,0.6
+SCO_14_987,Ross Stewart,30,Escocia,AM,,Other,False,3,0,0,3,3,2,False,14,0.6
+SPA_23_284,Unai Simón,29,Espana,GK,Athletic Bilbao,Other,False,58,0,4,4,3,46,True,1,0.4
+SPA_1_544,David Raya,31,Espana,GK,Arsenal F.C.,Premier League,True,13,0,1,7,4,10,False,13,1.2
+SPA_13_448,Joan García,25,Espana,GK,FC Barcelona,La Liga,True,2,0,0,5,4,1,False,23,1.2
+SPA_24_805,Marc Cucurella,28,Espana,LB,Chelsea F.C.,Premier League,True,24,1,1,1,4,19,True,22,1.0
+SPA_22_147,Pau Cubarsí,19,Espana,CB,FC Barcelona,La Liga,True,12,0,0,0,0,9,True,2,0.6
+SPA_14_852,Aymeric Laporte,32,Espana,CB,Al-Nassr FC,Other,False,46,2,3,2,1,36,True,3,0.6
+SPA_3_852,Carl Starfelt,31,Espana,CB,Celta Vigo,Other,False,14,0,1,1,2,11,False,4,0.8
+SPA_12_581,Pedro Porro,27,Espana,RB,Tottenham Hotspur F.C.,Premier League,True,18,0,1,4,1,14,False,12,1.0
+SPA_4_418,Eric García,25,Espana,CB/RB,FC Barcelona,La Liga,True,21,0,1,7,0,16,False,24,0.8
+SPA_5_592,Marcos Llorente,31,Espana,RB,Atlético Madrid,Other,False,24,0,1,4,3,19,True,5,1.0
+SPA_2_19,Marc Pubill,23,Espana,CB/RB,UD Almería,Other,False,2,0,0,2,1,1,False,15,1.2
+SPA_9_905,Gavi,22,Espana,CM,FC Barcelona,La Liga,True,30,5,2,5,3,24,False,9,1.0
+SPA_16_819,Rodrigo Hernández,30,Espana,DM,Manchester City F.C.,Premier League,True,62,4,4,4,1,49,True,16,1.2
+SPA_20_13,Pedri González,24,Espana,CM/AM,FC Barcelona,La Liga,True,41,6,3,6,1,32,True,20,1.2
+SPA_18_769,Martín Zubimendi,27,Espana,DM,Real Sociedad,La Liga,True,26,3,2,3,4,20,False,18,1.4
+SPA_8_639,Fabián Ruiz,30,Espana,CM,Paris Saint-Germain F.C.,Ligue 1,True,42,6,3,6,3,33,True,8,1.2
+SPA_15_134,Álex Baena,25,Espana,AM/LW,Villarreal CF,La Liga,True,17,2,1,2,3,13,False,10,0.8
+SPA_6_885,Mikel Merino,30,Espana,CM/ST,Arsenal F.C.,Premier League,True,43,10,3,10,2,34,False,6,1.0
+SPA_19_988,Lamine Yamal,19,Espana,RW,FC Barcelona,La Liga,True,25,6,2,6,1,20,True,17,0.8
+SPA_17_997,Nico Williams,24,Espana,LW,Athletic Bilbao,Other,False,30,6,2,6,1,24,True,11,0.8
+SPA_10_863,Dani Olmo,28,Espana,AT/LW,FC Barcelona,La Liga,True,50,12,4,12,0,40,False,21,0.6
+SPA_7_473,Ferran Torres,26,Espana,ST/RW,FC Barcelona,La Liga,True,57,24,4,24,0,45,False,7,0.8
+SPA_21_361,Mikel Oyarzabal,29,Espana,ST,Real Sociedad,La Liga,True,53,25,4,25,0,42,True,19,1.2
+SPA_11_530,Alejandro Grimaldo,24,Espana,LB,Bayer 04 Leverkusen,Bundesliga,True,23,4,1,4,4,18,False,14,1.2
+SPA_26_209,Borja Iglesias,33,Espana,ST,Real Betis,La Liga,True,8,0,0,2,3,6,False,26,0.8
+SPA_25_216,Víctor Muñoz,23,Espana,ST,CA Osasuna,Other,False,2,1,0,1,1,1,False,25,0.8
+SWE_12_678,Viktor Johansson,28,Suecia,GK,Stoke City F.C.,Other,False,12,0,0,0,4,9,True,12,0.4
+SWE_23_930,Kristoffer Nordfeldt,37,Suecia,GK,AIK Fotboll,Other,False,21,0,1,0,0,16,False,23,0.4
+SWE_1_687,Jacob Widell Zetterström,28,Suecia,GK,Derby County F.C.,Other,False,3,0,0,2,1,2,False,1,0.2
+SWE_14_379,Hjalmar Ekdal,28,Suecia,CM,Burnley F.C.,Other,False,13,0,1,7,0,10,False,14,1.2
+SWE_5_347,Gabriel Gudmundsson,27,Suecia,LB,Lille OSC,Other,False,24,0,1,7,2,19,True,5,1.4
+SWE_4_47,Isak Hien,27,Suecia,CB,Atalanta BC,Serie A,True,29,0,2,4,3,23,True,4,1.0
+SWE_1_508,Eric Smith,30,Suecia,ST,FC St. Pauli,Other,False,15,0,1,1,1,12,False,20,1.0
+SWE_2_848,Gustaf Lagerbielke,26,Suecia,RB,FC Twente,Other,False,11,2,0,2,2,8,True,2,1.4
+SWE_3_657,Victor Lindelöf,32,Suecia,CB,Manchester United F.C.,Premier League,True,76,3,6,3,1,60,True,3,0.8
+SWE_2_781,Erik Smith,30,Suecia,DM/CM,St. Pauli,Other,False,15,0,1,7,2,12,False,6,0.4
+SWE_15_871,Carl Starfelt,31,Suecia,CB/LB,Celta Vigo,Other,False,18,0,1,7,0,14,False,15,1.2
+SWE_24_231,Elliot Stroud,24,Suecia,CM/DM,Mjällby AIF,Other,False,1,0,0,7,0,28,False,24,1.4
+SWE_8_820,Daniel Svensson,24,Suecia,CM/AM,FC Nordsjælland,Other,False,13,0,1,6,3,10,False,8,0.8
+SWE_26_326,Taha Ali,28,Suecia,CB,Malmö FF,Other,False,2,0,0,3,0,1,False,26,0.4
+SWE_18_214,Yasin Ayari,23,Suecia,CM/AM,Brighton & Hove Albion,Premier League,True,21,3,1,3,1,16,False,18,1.0
+SWE_7_930,Lucas Bergvall,20,Suecia,CM,Tottenham Hotspur F.C.,Premier League,True,10,0,0,7,3,8,True,7,1.0
+SWE_16_468,Jesper Karlström,31,Suecia,DM/CM,Udinese Calcio,Serie A,True,24,0,1,3,1,19,False,16,1.0
+SWE_13_843,Ken Sema,33,Suecia,LW,Watford F.C.,Other,False,32,5,2,5,1,25,True,13,1.4
+SWE_19_361,Mattias Svanberg,27,Suecia,CM,VfL Wolfsburg,Bundesliga,True,40,2,3,2,3,32,True,19,0.8
+SWE_22_659,Besfort Zeneli,24,Suecia,RB/RWB,IF Elfsborg,Other,False,8,0,0,1,4,6,False,22,0.8
+SWE_21_576,Alexander Bernhardsson,28,Suecia,CB,Holstein Kiel,Other,False,11,0,0,2,0,8,False,21,1.0
+SWE_11_815,Anthony Elanga,24,Suecia,RW,Newcastle United F.C.,Premier League,True,30,6,2,6,1,24,True,11,1.0
+SWE_17_403,Viktor Gyökeres,28,Suecia,ST,Arsenal F.C.,Premier League,True,33,20,2,20,1,26,True,17,0.6
+SWE_9_668,Alexander Isak,27,Suecia,ST,Liverpool F.C.,Premier League,True,58,17,4,17,4,46,True,9,1.0
+SWE_25_129,Gustaf Nilsson,29,Suecia,ST,Club Brugge KV,Other,False,9,4,0,4,3,7,False,25,0.8
+SWE_10_741,Benjamin Nygren,25,Suecia,AM/LW,FC Nordsjælland,Other,False,11,3,0,3,2,8,False,10,1.2
+SWI_1_62,Gregor Kobel,29,Suiza,GK,Borussia Dortmund,Bundesliga,True,21,0,1,6,1,16,True,1,1.2
+SWI_12_201,Yvon Mvogo,32,Suiza,GK,FC Lorient,Other,False,13,0,1,7,4,10,False,12,1.4
+SWI_21_671,Marvin Keller,24,Suiza,GK,BSC Young Boys,Other,False,1,0,0,6,4,24,False,21,1.2
+SWI_5_6,Manuel Akanji,31,Suiza,CB,Inter Milan,Serie A,True,81,4,6,4,0,64,True,5,1.6
+SWI_4_603,Nico Elvedi,30,Suiza,CB,Borussia Mönchengladbach,Other,False,67,3,5,3,3,53,True,4,1.4
+SWI_13_399,Ricardo Rodriguez,34,Suiza,LB,Real Betis,La Liga,True,138,9,11,9,3,110,True,13,0.8
+SWI_3_863,Silvan Widmer,33,Suiza,RB,1. FSV Mainz 05,Bundesliga,True,60,5,4,5,1,48,True,3,1.0
+SWI_2_980,Miro Muheim,28,Suiza,DM/CM,Hamburger SV,Other,False,10,0,0,7,0,8,False,6,1.6
+SWI_24_827,Aurèle Amenda,23,Suiza,DM/CM,Eintracht Frankfurt,Bundesliga,True,7,0,0,5,4,5,False,15,1.2
+SWI_1_984,Eray Cömert,26,Suiza,RB,Valencia CF,La Liga,True,21,0,1,0,2,16,False,2,1.0
+SWI_25_64,Luca Jaquez,23,Suiza,CB,VfB Stuttgart,Bundesliga,True,3,0,0,2,2,2,False,14,1.4
+SWI_10_543,Granit Xhaka,34,Suiza,CM,Sunderland A.F.C.,Other,False,146,17,11,17,0,116,True,10,1.6
+SWI_9_73,Johan Manzambi,21,Suiza,CB,SC Freiburg,Bundesliga,True,12,3,0,3,1,9,False,24,1.0
+SWI_8_634,Remo Freuler,34,Suiza,CM/AM,Bologna FC 1909,Serie A,True,88,11,7,11,3,70,False,8,0.6
+SWI_6_478,Denis Zakaria,30,Suiza,CM,AS Monaco,Ligue 1,True,65,3,5,3,4,52,True,20,1.2
+SWI_14_488,Ardon Jashari,24,Suiza,LB/LWB,AC Milan,Serie A,True,8,0,0,7,2,6,False,22,0.6
+SWI_15_248,Djibril Sow,29,Suiza,CM/DM,Sevilla FC,La Liga,True,52,0,4,4,3,41,False,25,1.2
+SWI_16_875,Christian Fassnacht,33,Suiza,LW/RW,BSC Young Boys,Other,False,23,5,1,5,4,18,False,11,0.8
+SWI_20_700,Michel Aebischer,29,Suiza,CM,Pisa Sporting Club,Other,False,40,2,3,2,1,32,False,16,1.2
+SWI_22_561,Fabian Rieder,24,Suiza,AM,FC Augsburg,Bundesliga,True,28,1,2,1,0,22,True,26,1.2
+SWI_17_811,Ruben Vargas,28,Suiza,LW,FC Augsburg,Bundesliga,True,61,11,4,11,0,48,True,17,1.0
+SWI_7_694,Breel Embolo,29,Suiza,ST,Stade Rennais FC,Other,False,86,24,6,24,0,68,True,7,0.6
+SWI_19_264,Noah Okafor,26,Suiza,ST,AC Milan,Serie A,True,25,2,2,2,0,20,False,9,1.4
+SWI_11_156,Dan Ndoye,26,Suiza,RW,Bologna FC 1909,Serie A,True,31,8,2,8,3,24,True,19,1.6
+SWI_23_860,Zeki Amdouni,26,Suiza,ST,Burnley F.C.,Other,False,29,11,2,11,1,23,False,23,0.6
+SWI_26_331,Cédric Itten,30,Suiza,RB/RWB,BSC Young Boys,Other,False,15,5,1,5,2,12,False,18,1.0
+TÜR_23_220,Altay Bayındır,30,Turquia,GK,Manchester United F.C.,Premier League,True,39,0,3,1,4,31,False,12,0.8
+TÜR_1_221,Mert Günok,37,Turquia,GK,Fenerbahçe S.K.,Other,False,37,0,2,0,4,29,True,1,0.4
+TÜR_12_846,Uğurcan Çakır,28,Turquia,GK,Galatasaray S.K.,Other,False,12,0,0,5,3,9,False,23,0.6
+TÜR_3_44,Merih Demiral,28,Turquia,CB,Al-Ahli Saudi FC,Other,False,63,6,5,6,3,50,True,3,1.4
+TÜR_2_439,Zeki Çelik,29,Turquia,RB,AS Roma,Serie A,True,61,3,4,3,1,48,True,2,1.0
+TÜR_4_302,Çağlar Söyüncü,30,Turquia,CB,Fenerbahçe S.K.,Other,False,60,2,4,2,0,48,True,4,0.4
+TÜR_18_474,Mert Müldür,27,Turquia,RB/CB,Fenerbahçe S.K.,Other,False,45,3,3,3,4,36,False,18,0.6
+TÜR_20_392,Samet Akaydın,27,Turquia,CB,Çaykur Rizespor,Other,False,30,2,2,2,3,24,False,25,1.2
+TÜR_15_52,Ozan Kabak,26,Turquia,CB,TSG 1899 Hoffenheim,Bundesliga,True,30,2,2,2,2,24,False,15,1.6
+TÜR_14_475,Abdülkerim Bardakcı,32,Turquia,CB,Galatasaray S.K.,Other,False,27,2,2,2,2,21,False,14,2.0
+TÜR_13_157,Eren Elmalı,26,Turquia,LB,Galatasaray S.K.,Other,False,23,0,1,4,2,18,False,13,0.8
+TÜR_25_984,Ferdi Kadıoğlu,32,Turquia,LB,Brighton & Hove Albion F.C.,Premier League,True,19,1,1,1,0,15,True,20,1.6
+TÜR_1_803,Hakan Çalhanoğlu,27,Turquia,CM,Inter Milan,Serie A,True,20,0,1,0,0,16,True,10,1.8
+TÜR_22_793,Kaan Ayhan,32,Turquia,DM/CM,Galatasaray S.K.,Other,False,73,5,5,5,0,58,False,22,1.6
+TÜR_6_387,Orkun Kökçü,26,Turquia,CM,S.L. Benfica,Other,False,50,4,4,4,0,40,False,6,1.0
+TÜR_16_938,İsmail Yüksek,27,Turquia,DM/CM,Fenerbahçe S.K.,Other,False,32,1,2,1,1,25,False,16,1.0
+TÜR_5_108,Salih Özcan,28,Turquia,CM,Borussia Dortmund,Bundesliga,True,30,1,2,1,1,24,True,5,0.6
+TÜR_7_973,Kerem Aktürkoğlu,28,Turquia,LW,Fenerbahçe S.K.,Other,False,52,15,4,15,1,41,True,7,1.0
+TÜR_17_459,İrfan Can Kahveci,31,Turquia,RW/ST,Kasımpaşa S.K.,Other,False,47,6,3,6,2,37,False,17,1.0
+TUR_9_Gul,Deniz Gül,30,Turquia,ST,West Bromwich Albion F.C.,Other,False,21,0,1,7,1,16,False,9,0.8
+TUR_8_Guler,Arda Güler,21,Turquia,AM,Real Madrid CF,La Liga,True,30,6,2,6,0,24,True,8,0.8
+TÜR_11_277,Kenan Yıldız,21,Turquia,ST,Juventus FC,Serie A,True,28,5,2,5,1,22,True,11,0.6
+TÜR_19_304,Yunus Akgün,26,Turquia,RW/LW,Galatasaray S.K.,Other,False,19,4,1,4,1,15,False,19,1.4
+TÜR_24_575,Barış Alper Yılmaz,26,Turquia,RW,Galatasaray S.K.,Other,False,11,0,0,3,0,8,True,21,1.2
+TÜR_9_142,Oğuz Aydın,22,Turquia,RW/ST,Fenerbahçe S.K.,Other,False,8,2,0,2,2,6,False,24,1.2
+TÜR_26_694,Can Uzun,21,Turquia,AM/LW,Eintracht Frankfurt,Bundesliga,True,6,1,0,1,1,4,False,26,1.4
+ARG_15_446,Emiliano Martínez,27,Argentina,GK,Aston Villa,Premier League,True,10,0,0,2,2,8,True,23,1.2
+ARG_12_613,Gerónimo Rulli,34,Argentina,GK,Olympique de Marseille,Ligue 1,True,8,0,0,5,4,6,False,12,1.4
+ARG_1_295,Juan Musso,32,Argentina,GK,Atlético Madrid,Other,False,4,0,0,5,0,3,False,1,0.4
+ARG_4_410,Gonzalo Montiel,29,Argentina,RB,River Plate,Other,False,39,2,3,2,4,31,False,4,1.0
+ARG_26_99,Nahuel Molina,28,Argentina,RB,Atlético Madrid,Other,False,58,1,4,1,4,46,True,26,0.4
+ARG_6_717,Lisandro Martínez,28,Argentina,CB,Manchester United,Premier League,True,28,1,2,1,4,22,True,6,1.0
+ARG_19_674,Nicolás Otamendi,38,Argentina,CB,S.L. Benfica,Other,False,132,8,10,8,3,105,False,19,0.2
+ARG_2_489,Leonardo Balerdi,27,Argentina,CB,Olympique de Marseille,Ligue 1,True,11,0,0,6,4,8,False,2,0.8
+ARG_13_403,Cristian Romero,28,Argentina,CB,Tottenham Hotspur,Premier League,True,51,3,4,3,3,40,True,13,0.8
+ARG_25_518,Facundo Medina,27,Argentina,CB,RC Lens,Ligue 1,True,9,0,0,3,2,7,False,25,1.0
+ARG_3_156,Nicolás Tagliafico,34,Argentina,LB,Olympique Lyonnais,Ligue 1,True,76,1,6,1,0,60,True,3,1.4
+ARG_5_8,Leandro Paredes,32,Argentina,DM,Boca Juniors,Other,False,77,5,6,5,2,61,False,5,1.0
+ARG_7_457,Rodrigo De Paul,32,Argentina,CM,Atlético Madrid,Other,False,87,2,6,2,2,69,True,7,0.6
+ARG_14_269,Exequiel Palacios,28,Argentina,CM,Bayer Leverkusen,Bundesliga,True,40,0,3,6,1,32,False,14,1.4
+ARG_24_64,Enzo Fernández,25,Argentina,CM,Chelsea,Premier League,True,42,6,3,6,2,33,True,24,1.4
+ARG_20_456,Alexis Mac Allister,28,Argentina,CM,Liverpool,Premier League,True,46,6,3,6,3,36,True,20,1.0
+ARG_11_182,Giovani Lo Celso,30,Argentina,AM,Real Betis,La Liga,True,67,4,5,4,4,53,False,11,0.4
+ARG_8_80,Valentín Barco,22,Argentina,LM,RC Strasbourg,Ligue 1,True,4,2,0,2,2,3,False,8,0.6
+ARG_10_252,Lionel Messi,39,Argentina,RW,Inter Miami,Other,False,199,117,15,117,3,159,True,10,0.4
+ARG_18_135,Nico Paz,22,Argentina,AM,Como 1907,Other,False,9,1,0,1,3,7,False,18,1.4
+ARG_16_235,Thiago Almada,25,Argentina,AM,Atlético Madrid,Other,False,16,5,1,5,4,12,False,16,0.8
+ARG_1_8,Nicolás González,23,Argentina,LM,Juventus,Serie A,True,7,0,0,0,1,5,False,15,1.6
+ARG_17_481,Giuliano Simeone,24,Argentina,RW,Atlético Madrid,Other,False,13,2,1,2,1,10,False,17,0.8
+ARG_22_763,Lautaro Martínez,29,Argentina,ST,Inter Milan,Serie A,True,77,37,6,37,2,61,True,22,0.2
+ARG_21_453,José Manuel López,26,Argentina,LM,SE Palmeiras,Other,False,5,0,0,4,3,4,False,21,0.8
+ARG_9_597,Julián Álvarez,26,Argentina,LW,Atlético Madrid,Other,False,51,14,4,14,1,40,True,9,0.6
+BRA_1_871,Alisson Becker,34,Brasil,GK,Liverpool,Premier League,True,78,0,6,5,1,62,True,1,0.6
+BRA_23_856,Ederson Moraes,33,Brasil,GK,Fenerbahçe,Other,False,32,0,2,1,3,25,False,23,1.4
+BRA_12_747,Weverton,39,Brasil,GK,Grêmio,Other,False,11,0,0,4,0,8,False,12,0.6
+BRA_6_326,Alex Sandro,35,Brasil,LB,Flamengo,Other,False,45,2,3,2,4,36,True,6,1.4
+BRA_14_665,Gleison Bremer,29,Brasil,CB,Juventus,Serie A,True,8,1,0,1,3,6,False,14,1.2
+BRA_13_337,Danilo,35,Brasil,RB,Flamengo,Other,False,70,1,5,1,2,56,True,13,1.4
+BRA_16_899,Douglas Santos,32,Brasil,LB,Zenit St. Petersburg,Other,False,7,0,0,5,1,5,False,16,1.2
+BRA_3_69,Gabriel Magalhães,29,Brasil,CB,Arsenal,Premier League,True,17,1,1,1,1,13,True,3,0.8
+BRA_15_492,Léo Pereira,30,Brasil,CB,Flamengo,Other,False,4,0,0,4,2,3,False,15,0.8
+BRA_4_196,Marquinhos,32,Brasil,CB,Paris Saint-Germain,Ligue 1,True,105,7,8,7,0,84,True,4,0.8
+BRA_24_282,Roger Ibañez,28,Brasil,CB,Al-Ahli,Other,False,7,0,0,7,3,5,False,24,0.6
+BRA_1_958,Éderson,29,Brasil,CM,Atalanta,Serie A,True,16,0,1,2,3,12,False,2,1.4
+BRA_8_551,Bruno Guimarães,29,Brasil,CM,Newcastle United,Premier League,True,43,3,3,3,0,34,True,8,1.6
+BRA_5_412,Casemiro,34,Brasil,DM,Manchester United,Premier League,True,86,9,6,9,1,68,True,5,0.6
+BRA_18_729,Danilo Santos,25,Brasil,CM,Botafogo,Other,False,4,2,0,2,2,3,False,18,0.6
+BRA_17_152,Fabinho,33,Brasil,DM,Al-Ittihad,Other,False,33,0,2,5,2,26,False,17,1.4
+BRA_20_280,Lucas Paquetá,29,Brasil,CM,Flamengo,Other,False,63,13,5,13,2,50,True,20,1.6
+BRA_19_811,Endrick,20,Brasil,RW,,Other,False,17,4,1,4,4,13,False,19,0.4
+BRA_22_240,Gabriel Martinelli,25,Brasil,LW,Arsenal,Premier League,True,23,4,1,4,2,18,False,22,1.0
+BRA_25_367,Igor Thiago,25,Brasil,ST,Brentford,Premier League,True,4,2,0,2,4,3,False,25,1.0
+BRA_21_711,Luiz Henrique,25,Brasil,RW,Zenit St. Petersburg,Other,False,15,2,1,2,4,12,False,21,1.2
+BRA_9_910,Matheus Cunha,27,Brasil,ST,Manchester United,Premier League,True,23,1,1,1,2,18,True,9,1.2
+BRA_2_938,Neymar Jr.,23,Brasil,AM,Santos FC,Other,False,6,0,0,5,2,4,False,10,0.6
+BRA_11_39,Raphinha,30,Brasil,RW,Barcelona,La Liga,True,39,11,3,11,2,31,True,11,1.2
+BRA_26_228,Rayan,20,Brasil,RW,Bournemouth,Premier League,True,2,1,0,1,4,1,False,26,0.8
+BRA_7_968,Vinícius Júnior,26,Brasil,LW,Real Madrid,La Liga,True,49,9,3,9,4,39,True,7,1.0
+COL_1_645,David Ospina,38,Colombia,GK,,Other,False,130,0,10,1,3,104,False,1,0.8
+COL_24_669,Álvaro Montero,31,Colombia,GK,,Other,False,12,0,0,4,4,9,False,24,0.4
+COL_12_201,Camilo Vargas,37,Colombia,GK,,Other,False,42,0,3,5,3,33,True,12,0.6
+COL_2_162,Daniel Muñoz,30,Colombia,RB,,Other,False,46,3,3,3,0,36,True,2,0.6
+COL_3_155,Jhon Lucumí,28,Colombia,CB,,Other,False,37,1,2,1,4,29,True,3,1.2
+COL_4_22,Santiago Arias,34,Colombia,RB,,Other,False,68,0,5,7,2,54,False,4,1.2
+COL_23_526,Davinson Sánchez,30,Colombia,CB,,Other,False,79,4,6,4,4,63,True,23,1.2
+COL_17_535,Johan Mojica,34,Colombia,LB,,Other,False,45,1,3,1,4,36,True,17,1.0
+COL_13_526,Yerry Mina,32,Colombia,CB,,Other,False,54,8,4,8,1,43,False,13,1.0
+COL_18_666,Willer Ditta,28,Colombia,CB,,Other,False,5,0,0,0,2,4,False,18,1.8
+COL_22_937,Deiver Machado,33,Colombia,LB,,Other,False,15,0,1,0,3,12,False,22,1.2
+COL_8_650,Jorge Carrascal,28,Colombia,AM,,Other,False,25,2,2,2,1,20,False,8,0.4
+COL_5_335,Kevin Castaño,26,Colombia,CM,,Other,False,25,0,2,6,2,20,False,5,0.8
+COL_14_942,Gustavo Puerta,23,Colombia,CB,,Other,False,6,1,0,1,4,4,False,14,1.2
+COL_1_24,Juan Fernando Quintero,26,Colombia,AM,,Other,False,16,0,1,7,4,12,False,20,1.6
+COL_15_387,Juan Portilla,28,Colombia,CM,,Other,False,10,0,0,2,3,8,False,15,1.4
+COL_16_180,Jefferson Lerma,32,Colombia,CM,,Other,False,65,5,5,5,4,52,True,16,1.0
+COL_6_288,Richard Ríos,26,Colombia,CM,,Other,False,32,2,2,2,4,25,True,6,0.2
+COL_11_153,Jhon Arias,29,Colombia,RW,,Other,False,38,6,3,6,1,30,True,11,1.4
+COL_10_537,James Rodríguez,35,Colombia,AM,,Other,False,126,31,10,31,1,100,True,10,0.4
+COL_21_453,Jaminton Campaz,26,Colombia,AM,,Other,False,10,1,0,1,2,8,False,21,0.8
+COL_7_215,Luis Díaz,29,Colombia,LW,,Other,False,74,22,5,22,3,59,True,7,1.2
+COL_9_854,Jhon Córdoba,33,Colombia,ST,,Other,False,21,6,1,6,1,16,True,9,1.2
+COL_25_982,Luis Suárez,29,Colombia,ST,,Other,False,12,5,0,5,4,9,False,25,0.2
+COL_26_428,Andrés Gómez,24,Colombia,AM,,Other,False,8,2,0,2,1,6,False,26,1.0
+COL_19_514,Cucho Hernández,27,Colombia,ST,,Other,False,9,2,0,2,0,7,False,19,0.8
+ECU_1_60,Hernán Galíndez,39,Ecuador,GK,,Other,False,35,0,2,4,1,28,True,1,1.4
+ECU_12_166,Moisés Ramírez,26,Ecuador,GK,,Other,False,7,0,0,6,4,5,False,12,1.2
+ECU_22_648,Gonzalo Valle,30,Ecuador,GK,,Other,False,4,0,0,7,0,3,False,22,0.8
+ECU_6_621,Willian Pacho,25,Ecuador,CB,,Other,False,34,2,2,2,2,27,True,6,1.0
+ECU_3_805,Piero Hincapié,24,Ecuador,LB,,Other,False,52,2,4,2,2,41,True,3,0.4
+ECU_4_110,Joel Ordóñez,22,Ecuador,CB,,Other,False,17,0,1,5,1,13,False,4,1.2
+ECU_2_155,Félix Torres,29,Ecuador,CB,,Other,False,49,5,3,5,3,39,True,2,0.6
+ECU_7_716,Pervis Estupiñán,28,Ecuador,LW,,Other,False,54,5,4,5,3,43,True,7,1.0
+ECU_26_843,Yaimar Medina,22,Ecuador,LB,,Other,False,6,0,0,0,2,4,False,26,0.4
+ECU_17_624,Ángelo Preciado,28,Ecuador,RB,,Other,False,56,0,4,6,1,44,True,17,0.4
+ECU_25_302,Jackson Porozo,26,Ecuador,CB,,Other,False,9,1,0,1,0,7,False,25,0.4
+ECU_14_673,Alan Minda,23,Ecuador,RW,,Other,False,20,2,1,2,2,16,True,14,1.2
+ECU_23_755,Moisés Caicedo,25,Ecuador,CM,,Other,False,61,3,4,3,0,48,True,23,0.8
+ECU_5_522,Jordy Alcívar,27,Ecuador,DM,,Other,False,11,1,0,1,3,8,False,5,1.2
+ECU_18_868,Denil Castillo,22,Ecuador,CM,,Other,False,5,0,0,1,1,4,False,18,1.0
+ECU_9_129,John Yeboah,26,Ecuador,ST,,Other,False,22,3,1,3,0,17,False,9,0.6
+ECU_21_375,Alan Franco,28,Ecuador,CM,,Other,False,58,1,4,1,4,46,True,21,1.8
+ECU_15_485,Pedro Vite,24,Ecuador,AM,,Other,False,17,1,1,1,2,13,False,15,1.4
+ECU_10_469,Kendry Páez,19,Ecuador,AM,,Other,False,26,2,2,2,0,20,True,10,0.6
+ECU_20_499,Nilson Angulo,23,Ecuador,LW,,Other,False,14,2,1,2,1,11,False,20,0.6
+ECU_19_685,Gonzalo Plata,26,Ecuador,AM,,Other,False,50,8,4,8,2,40,False,19,1.0
+ECU_11_250,Kevin Rodríguez,26,Ecuador,ST,,Other,False,31,2,2,2,2,24,False,11,1.2
+ECU_8_97,Anthony Valencia,23,Ecuador,RW,,Other,False,3,1,0,1,2,2,False,8,1.2
+ECU_13_18,Enner Valencia,37,Ecuador,ST,,Other,False,105,49,8,49,2,84,True,13,0.6
+ECU_16_363,Jordy Caicedo,29,Ecuador,ST,,Other,False,20,4,1,4,1,16,False,16,0.6
+ECU_24_99,Jeremy Arévalo,21,Ecuador,ST,,Other,False,4,0,0,4,4,3,False,24,0.8
+PAR_1_113,Gatito Fernández,28,Paraguay,GK,,Other,False,7,0,0,2,2,5,True,1,1.2
+PAR_12_168,Orlando Gill,26,Paraguay,GK,,Other,False,6,0,0,4,1,4,False,12,1.6
+PAR_22_6,Gastón Olveira,33,Paraguay,GK,,Other,False,1,0,0,2,0,30,False,22,1.6
+PAR_15_99,Gustavo Gómez,33,Paraguay,CB,,Other,False,89,4,7,4,4,71,True,15,0.8
+PAR_6_9,Júnior Alonso,33,Paraguay,LB,,Other,False,71,3,5,3,3,56,True,6,1.6
+PAR_5_884,Fabián Balbuena,35,Paraguay,CB,,Other,False,47,2,3,2,0,37,False,5,1.2
+PAR_3_136,Omar Alderete,30,Paraguay,CB,,Other,False,36,3,2,3,3,28,True,3,1.0
+PAR_2_720,Juan José Cáceres,30,Paraguay,RB,,Other,False,18,0,1,0,0,14,True,4,1.2
+PAR_13_863,José Canale,30,Paraguay,CB,,Other,False,2,0,0,3,2,1,False,13,1.0
+PAR_26_677,Alexandro Maidana,21,Paraguay,LB,,Other,False,2,1,0,1,1,1,False,26,0.8
+PAR_2_237,Gustavo Velázquez,35,Paraguay,CB,,Other,False,13,1,1,1,1,10,False,2,0.2
+PAR_10_435,Miguel Almirón,32,Paraguay,RW,,Other,False,76,10,6,10,1,60,True,10,1.8
+PAR_3_866,Kaku,27,Paraguay,AM,Alejandro Romero,Other,False,10,0,0,7,4,8,False,17,0.6
+PAR_14_626,Andrés Cubas,30,Paraguay,DM,,Other,False,33,0,2,7,2,26,True,14,0.6
+PAR_7_41,Ramón Sosa,27,Paraguay,LW,,Other,False,29,1,2,1,0,23,True,7,1.2
+PAR_8_577,Diego Gómez,23,Paraguay,CM,,Other,False,24,3,1,3,0,19,True,8,1.6
+PAR_16_966,Damián Bobadilla,25,Paraguay,CM,,Other,False,19,1,1,1,2,15,False,16,1.4
+PAR_20_637,Braian Ojeda,26,Paraguay,DM,,Other,False,17,0,1,7,4,13,False,20,1.0
+PAR_23_434,Matías Galarza,24,Paraguay,CM,,Other,False,15,3,1,3,3,12,False,23,0.6
+PAR_11_244,Maurício Magalhães,25,Paraguay,AM,,Other,False,3,0,0,3,0,2,False,11,0.8
+PAR_9_501,Antonio Sanabria,30,Paraguay,ST,,Other,False,48,7,3,7,2,38,True,9,0.6
+PAR_19_945,Julio Enciso,22,Paraguay,AM,,Other,False,32,4,2,4,1,25,True,19,1.2
+PAR_21_125,Gabriel Ávalos,35,Paraguay,ST,,Other,False,23,2,1,2,1,18,False,21,1.0
+PAR_18_474,Álex Arce,31,Paraguay,ST,,Other,False,15,1,1,1,1,12,False,18,1.0
+PAR_25_184,Isidro Pitta,27,Paraguay,ST,,Other,False,5,0,0,5,3,4,False,25,1.0
+PAR_24_203,Gustavo Caballero,25,Paraguay,LW,,Other,False,2,1,0,1,3,1,False,24,0.8
+URU_23_83,Fernando Muslera,40,Uruguay,GK,Club Estudiantes de La Plata,Other,False,134,0,10,1,1,107,False,12,0.4
+URU_1_18,Sergio Rochet,33,Uruguay,GK,Sport Club Internacional,Other,False,35,0,2,0,0,28,True,1,1.6
+URU_12_901,Santiago Mele,29,Uruguay,GK,C.F. Monterrey,Other,False,8,0,0,7,0,6,False,23,0.2
+URU_4_115,Ronald Araújo,27,Uruguay,CB,FC Barcelona,La Liga,True,27,1,2,1,1,21,True,4,0.8
+URU_2_412,José María Giménez,31,Uruguay,CB,Atlético Madrid,Other,False,99,9,7,9,3,79,True,2,1.4
+URU_24_951,Santiago Bueno,28,Uruguay,ST/LW,Wolverhampton Wanderers F.C.,Other,False,8,0,0,7,0,6,False,16,0.8
+URU_3_337,Sebastián Cáceres,27,Uruguay,CB,Club América,Other,False,23,0,1,7,3,18,False,3,0.8
+URU_16_254,Mathías Olivera,29,Uruguay,CB/LB,SSC Napoli,Serie A,True,35,2,2,2,3,28,False,6,1.4
+URU_13_46,Guillermo Varela,33,Uruguay,CB,CR Flamengo,Other,False,27,0,2,4,4,21,False,13,1.6
+URU_17_833,Matías Viña,29,Uruguay,LB,CR Flamengo,Other,False,43,1,3,1,3,34,True,17,0.2
+URU_22_759,Joaquín Piquerez,28,Uruguay,RB/RWB,SE Palmeiras,Other,False,19,0,1,1,3,15,False,22,1.2
+URU_26_Zalazar,Rodrigo Zalazar,26,Uruguay,CM/DM,FC Dynamo Moscow,Other,False,5,1,0,1,1,4,False,24,1.2
+URU_8_486,Federico Valverde,28,Uruguay,CM,Real Madrid CF,La Liga,True,73,9,5,9,4,58,True,15,1.2
+URU_6_988,Rodrigo Bentancur,29,Uruguay,LB,Tottenham Hotspur F.C.,Premier League,True,73,3,5,3,3,58,False,6,0.6
+URU_5_977,Manuel Ugarte,25,Uruguay,DM,Manchester United F.C.,Premier League,True,35,1,2,1,1,28,True,5,1.0
+URU_15_661,Emiliano Martínez,27,Uruguay,CM/AM,SE Palmeiras,Other,False,10,0,0,3,0,8,False,21,1.4
+URU_8_Nandez,Nahitan Nández,27,Uruguay,RB,Al-Qadsiah FC,Other,False,7,2,0,2,4,5,True,8,0.8
+URU_10_715,Giorgian de Arrascaeta,32,Uruguay,AM/LW,CR Flamengo,Other,False,59,13,4,13,0,47,False,10,1.2
+URU_7_212,Nicolás de la Cruz,29,Uruguay,CM,CR Flamengo,Other,False,34,5,2,5,4,27,True,7,0.8
+URU_21_Vinas,Federico Viñas,28,Uruguay,ST,Galatasaray S.K.,Other,False,14,1,1,1,1,11,False,14,1.0
+URU_1_315,Maximiliano Araújo,25,Uruguay,LW,Sporting CP,Other,False,12,0,0,0,1,9,True,20,1.4
+URU_18_958,Brian Rodríguez,26,Uruguay,DM/CM,Club América,Other,False,33,4,2,4,3,26,False,9,1.0
+URU_11_76,Facundo Pellistri,25,Uruguay,RW,Panathinaikos F.C.,Other,False,39,2,3,2,2,31,True,11,0.8
+URU_9_562,Darwin Núñez,27,Uruguay,ST,Al-Hilal SFC,Other,False,38,13,3,13,4,30,True,19,1.0
+URU_14_Canobbio,Agustín Canobbio,28,Uruguay,ST/RW,Orlando City SC,Other,False,11,2,0,2,1,8,False,18,0.8
+URU_25_Sanabria,Juan Manuel Sanabria,32,Uruguay,LB/LWB,EC Bahia,Other,False,10,3,0,3,2,8,False,25,0.8
+AUS_1_249,Maty Ryan,34,Australia,GK,Levante,Other,False,104,0,8,0,0,83,True,1,0.8
+AUS_12_63,Paul Izzo,31,Australia,GK,Randers FC,Other,False,4,0,0,5,1,3,False,12,1.0
+AUS_18_651,Patrick Beach,23,Australia,GK,Melbourne City,Other,False,2,0,0,4,4,1,False,18,1.0
+AUS_5_907,Jordania Bos,24,Australia,LWB,Feyenoord,Other,False,27,4,2,4,1,21,True,5,1.0
+AUS_16_927,Aziz Behich,36,Australia,LB,Melbourne City,Other,False,84,3,6,3,0,67,False,16,1.0
+AUS_19_357,Harry Souttar,28,Australia,CB,Leicester City,Other,False,38,11,3,11,3,30,True,19,1.2
+AUS_3_418,Alessandro Circati,23,Australia,RM,Parma,Other,False,13,1,1,1,2,10,False,3,1.4
+AUS_25_23,Lucas Herrington,19,Australia,CB,Colorado Rapids,Other,False,4,0,0,4,3,3,False,25,0.8
+AUS_21_115,Cameron Burgess,31,Australia,CB,Swansea City,Other,False,27,0,2,3,2,21,True,21,1.2
+AUS_15_402,Kai Trewin,25,Australia,CB,New York City FC,Other,False,6,0,0,4,0,4,False,15,0.2
+AUS_2_924,Milos Degenek,32,Australia,CB,APOEL FC,Other,False,57,1,4,1,3,45,False,2,1.6
+AUS_6_196,Jason Geria,33,Australia,CB,Albirex Niigata,Other,False,14,0,1,0,3,11,True,6,1.2
+AUS_4_503,Jacob Italiano,25,Australia,RWB,Grazer AK,Other,False,5,0,0,4,3,4,True,4,0.8
+AUS_22_814,Jackson Irvine,33,Australia,CM,FC St. Pauli,Other,False,82,14,6,14,2,65,True,22,1.0
+AUS_13_978,Aiden O'Neill,28,Australia,CM,New York City FC,Other,False,31,0,2,3,1,24,True,13,1.4
+AUS_1_505,Paul Okon-Engstler,25,Australia,ST,Sydney FC,Other,False,15,0,1,3,3,12,False,24,1.4
+AUS_14_415,Cameron Devlin,28,Australia,AM,Heart of Midlothian,Other,False,5,0,0,0,0,4,False,14,0.8
+AUS_8_10,Connor Metcalfe,27,Australia,ST,FC St. Pauli,Other,False,36,1,2,1,2,28,False,8,0.8
+AUS_7_176,Mathew Leckie,35,Australia,LB,Melbourne City,Other,False,81,14,6,14,3,64,False,7,0.6
+AUS_23_441,Nishan Velupillay,25,Australia,LB,Melbourne Victory,Other,False,7,3,0,3,2,5,False,23,1.0
+AUS_20_799,Cristian Volpato,23,Australia,ST,U.S. Sassuolo,Other,False,1,0,0,4,0,30,False,20,0.2
+AUS_17_531,Nestory Irankunda,20,Australia,AM,Watford F.C.,Other,False,15,5,1,5,4,12,True,17,1.0
+AUS_11_334,Awer Mabil,31,Australia,ST,CD Castellón,Other,False,38,10,3,10,3,30,False,11,1.6
+AUS_10_533,Ajdin Hrustic,30,Australia,AM,Heracles Almelo,Other,False,37,3,2,3,4,29,True,10,1.0
+AUS_9_926,Mohamed Toure,22,Australia,ST,Norwich City,Other,False,10,2,0,2,4,8,True,9,1.4
+AUS_26_741,Tete Yengi,26,Australia,ST,FC Machida Zelvia,Other,False,1,1,0,1,2,28,False,26,0.2
+IRA_1_393,Alireza Beiranvand,34,Iran,GK,,Other,False,87,0,6,0,1,69,True,1,1.0
+IRA_22_783,Seyed Hossein Hosseini,34,Iran,GK,,Other,False,14,0,1,4,0,11,False,22,1.0
+IRA_12_847,Payam Niazmand,31,Iran,GK,,Other,False,15,0,1,3,0,12,False,12,1.4
+IRA_1_477,Danial Eiri,30,Iran,CB,,Other,False,8,0,0,5,3,6,False,25,1.2
+IRA_2_651,Ehsan Hajsafi,27,Iran,LB,,Other,False,20,0,1,6,1,16,False,3,1.4
+IRA_2_768,Saleh Hardani,28,Iran,RB,,Other,False,18,1,1,1,0,14,False,2,1.2
+IRA_3_572,Hossein Kanaanizadegan,27,Iran,CB,,Other,False,19,0,1,0,0,15,True,13,1.0
+IRA_4_972,Shojae Khalilzadeh,23,Iran,CB,,Other,False,9,0,0,3,1,7,True,4,1.0
+IRA_5_96,Milad Mohammadi,33,Iran,LB,,Other,False,77,1,6,1,4,61,True,5,1.4
+IRA_5_922,Ali Nemati,28,Iran,CB,,Other,False,13,0,1,0,3,10,False,19,1.2
+IRA_23_128,Ramin Rezaeian,36,Iran,RB,,Other,False,74,8,5,8,0,59,True,23,1.4
+IRA_6_61,Rouzbeh Cheshmi,28,Iran,CM,,Other,False,15,0,1,4,0,12,True,15,0.8
+IRA_6_129,Saeid Ezatolahi,30,Iran,CM,,Other,False,84,2,6,2,1,67,True,6,1.0
+IRA_7_758,Mehdi Ghayedi,29,Iran,LW,,Other,False,19,0,1,6,2,15,False,10,0.4
+IRA_14_906,Saman Ghoddos,33,Iran,AM,,Other,False,68,3,5,3,1,54,True,14,1.0
+IRA_21_883,Mohammad Ghorbani,25,Iran,RB,,Other,False,16,0,1,7,1,12,False,21,1.0
+IRA_7_406,Alireza Jahanbakhsh,33,Iran,RW,,Other,False,99,17,7,17,4,79,True,7,0.8
+IRA_8_679,Mohammad Mohebi,29,Iran,LW,FC Rostov,Other,False,11,0,0,5,2,8,True,8,0.6
+IRA_9_746,Amirmohammad Razzaghinia,29,Iran,CM,,Other,False,22,0,1,2,1,17,False,26,1.0
+IRA_16_458,Mehdi Torabi,32,Iran,CM,,Other,False,52,7,4,7,3,41,False,16,1.2
+IRA_10_70,Aria Yousefi,29,Iran,LB,,Other,False,22,0,1,3,0,17,False,17,1.2
+IRA_11_806,Ali Alipour,31,Iran,ST,,Other,False,14,1,1,1,4,11,False,11,1.0
+IRA_24_236,Shahriyar Moghanlou,29,Iran,LB,,Other,False,16,0,1,1,4,12,False,20,0.6
+IRA_18_551,Amirhossein Hosseinzadeh,26,Iran,AM,SS/Winger,Other,False,18,5,1,5,0,14,False,18,0.6
+IRA_11_168,Dennis Eckert Ayensa,28,Iran,ST,,Other,False,8,0,0,2,0,6,False,24,1.0
+IRA_9_812,Mehdi Taremi,34,Iran,ST,,Other,False,106,59,8,59,0,84,True,9,0.6
+IRA_1_336,Fahad Talib,32,Iraq,GK,,Other,False,21,0,1,5,0,16,False,1,1.2
+IRA_12_567,Jalal Hassan,35,Iraq,GK,,Other,False,104,0,8,7,1,83,True,12,0.8
+IRA_22_371,Ahmed Basil,30,Iraq,GK,,Other,False,16,0,1,3,1,12,False,22,1.2
+IRA_3_633,Hussein Ali,24,Iraq,RB,,Other,False,27,1,2,1,2,21,True,3,0.6
+IRA_1_245,Manaf Younis,25,Iraq,CB,,Other,False,13,0,1,5,2,10,False,6,1.2
+IRA_4_944,Zaid Tahseen,25,Iraq,CB,,Other,False,28,1,2,1,1,22,True,4,0.4
+IRA_2_69,Rebin Sulaka,34,Iraq,CB,,Other,False,56,1,4,1,3,44,True,2,1.0
+IRA_2_278,Akam Hashem,25,Iraq,CB,,Other,False,18,0,1,2,0,14,False,5,1.4
+IRA_23_417,Merchas Doski,27,Iraq,LB,,Other,False,31,1,2,1,1,24,True,23,1.2
+IRA_3_18,Ahmed Hassan Makenzie,30,Iraq,LB,Al-Shorta SC,Other,False,11,0,0,1,2,8,False,15,1.2
+IRA_4_51,Zaid Ismail,24,Iraq,DM,,Other,False,8,0,0,4,3,6,False,24,0.6
+IRA_26_72,Frans Putros,33,Iraq,CB,,Other,False,28,0,2,6,0,22,False,26,0.6
+IRA_25_973,Mustafa Saadoon​,25,Iraq,RB,,Other,False,17,0,1,4,1,13,False,25,1.2
+IRA_16_756,Amir Al-Ammari​,29,Iraq,CM,KS Cracovia,Other,False,51,3,4,3,2,40,True,16,0.8
+IRA_19_705,Ahmed Qasem,26,Iraq,AM,,Other,False,9,0,0,7,4,7,False,11,0.8
+IRA_14_296,Zidane Iqbal,23,Iraq,AM,,Other,False,25,2,2,2,1,20,True,14,1.0
+IRA_20_421,Aimar Sher,24,Iraq,CM,,Other,False,7,0,0,5,3,5,True,20,1.4
+IRA_8_405,Ibrahim Bayesh,26,Iraq,CM,,Other,False,76,8,6,8,1,60,False,8,1.4
+IRA_5_146,Ali Jassim,27,Iraq,LW,Como 1907,Other,False,24,0,1,5,1,19,True,17,0.0
+IRA_7_116,Youssef Amyn,23,Iraq,RW,,Other,False,27,2,2,2,3,21,True,7,1.4
+IRA_21_152,Marko Farji,22,Iraq,AM,,Other,False,12,0,0,2,0,9,False,21,1.2
+IRA_17_916,Ali Youssef,22,Iraq,ST,,Other,False,36,2,2,2,2,28,False,13,0.8
+IRA_9_969,Ali Al-Hamadi,24,Iraq,AM,Ipswich Town / Luton Town,Premier League,True,20,5,1,5,2,16,False,9,1.0
+IRA_6_341,Ali Yousef,23,Iraq,ST,Al-Shorta,Other,False,6,0,0,4,1,4,False,6,1.0
+IRA_18_910,Aymen Hussein,30,Iraq,ST,,Other,False,95,33,7,33,1,76,True,18,1.4
+IRA_10_841,Mohanad Ali,26,Iraq,ST,,Other,False,72,26,5,26,4,57,False,10,1.2
+JAP_1_792,Zion Suzuki,24,Japon,GK,Parma Calcio 1913,Other,False,25,0,2,4,4,20,True,1,0.6
+JAP_12_214,Keisuke Osako,27,Japon,GK,Sanfrecce Hiroshima,Other,False,11,0,0,5,1,8,False,12,0.4
+JAP_23_444,Tomoki Hayakawa,27,Japon,GK,Kashima Antlers,Other,False,4,0,0,6,1,3,False,23,1.4
+JAP_5_683,Yuto Nagatomo,40,Japon,LB,FC Tokyo,Other,False,145,4,11,4,3,116,False,5,1.0
+JAP_3_579,Shogo Taniguchi,35,Japon,CB,Sint-Truiden,Other,False,39,1,3,1,2,31,True,3,0.4
+JAP_1_397,Ko Itakura,27,Japon,CB,Ajax Amsterdam,Other,False,8,0,0,3,2,6,True,4,1.4
+JAP_16_930,Tsuyoshi Watanabe,29,Japon,CB,Feyenoord,Other,False,12,0,0,4,3,9,False,16,0.6
+JAP_22_778,Takehiro Tomiyasu,28,Japon,CB,Ajax Amsterdam,Other,False,43,1,3,1,0,34,False,22,1.4
+JAP_21_627,Hiroki Ito,27,Japon,CB,Bayern Munich,Bundesliga,True,25,1,2,1,2,20,True,21,0.6
+JAP_20_708,Ayumu Seko,26,Japon,CB,Le Havre,Other,False,14,0,1,5,0,11,False,20,0.8
+JAP_2_653,Yukinari Sugawara,26,Japon,RB,Werder Bremen,Bundesliga,True,22,2,1,2,2,17,False,2,1.6
+JAP_25_729,Junnosuke Suzuki,23,Japon,CB,F.C. Copenhagen,Other,False,6,0,0,6,4,4,False,25,1.2
+JAP_6_677,Wataru Endo,33,Japon,CM,Liverpool FC,Premier League,True,74,4,5,4,4,59,True,6,0.8
+JAP_14_864,Junya Ito,33,Japon,LW,KRC Genk,Other,False,69,15,5,15,3,55,False,14,1.2
+JAP_15_598,Daichi Kamada,30,Japon,AM,Crystal Palace,Premier League,True,49,12,3,12,3,39,True,15,1.2
+JAP_10_111,Ritsu Doan,28,Japon,RWB,Eintracht Frankfurt,Bundesliga,True,66,11,5,11,1,52,True,10,0.6
+JAP_7_868,Ao Tanaka,28,Japon,CM,Leeds United,Other,False,38,8,3,8,4,30,True,7,1.6
+JAP_13_729,Keito Nakamura,26,Japon,AM,Stade de Reims,Other,False,26,11,2,11,4,20,False,13,1.8
+JAP_24_431,Kaishu Sano,26,Japon,DM,Mainz 05,Bundesliga,True,14,0,1,1,0,11,False,24,0.6
+JAP_8_175,Takefusa Kubo,25,Japon,AM,Real Sociedad,La Liga,True,49,7,3,7,4,39,True,8,0.6
+JAP_17_390,Yuito Suzuki,25,Japon,AM,SC Freiburg,Bundesliga,True,6,0,0,3,4,4,False,17,1.6
+JAP_19_976,Koki Ogawa,29,Japon,ST,NEC Nijmegen,Other,False,15,11,1,11,4,12,False,19,1.2
+JAP_11_854,Daizen Maeda,29,Japon,LWB,Celtic FC,Other,False,28,5,2,5,3,22,True,11,0.6
+JAP_18_682,Ayase Ueda,28,Japon,ST,Feyenoord,Other,False,40,16,3,16,2,32,True,18,1.0
+JAP_26_411,Kento Shiogai,21,Japon,ST,VfL Wolfsburg,Bundesliga,True,2,0,0,1,0,1,False,26,1.4
+JAP_9_278,Keisuke Goto,21,Japon,ST,Sint-Truiden,Other,False,4,0,0,6,4,3,False,9,1.2
+JOR_1_785,Yazid Abulaila,28,Jordania,GK,Al-Hussein SC,Other,False,19,0,1,0,3,15,True,1,1.2
+JOR_2_786,Abdallah Al Fakhouri,27,Jordania,GK,Al-Wehdat,Other,False,11,0,0,2,2,8,False,22,1.0
+JOR_3_22,Nour Bani Attiah,25,Jordania,GK,Al-Faisaly,Other,False,18,0,1,6,1,14,False,12,1.2
+JOR_4_829,Ehsan Haddad,29,Jordania,RWB,,Other,False,6,0,0,0,2,4,True,23,0.4
+JOR_19_667,Saed Al-Rosan,29,Jordania,CB,Al-Hussein SC,Other,False,21,2,1,2,2,16,False,19,0.6
+JOR_16_435,Mohammad Abualnadi,25,Jordania,CB,Selangor FC,Other,False,18,0,1,7,4,14,True,16,1.4
+JOR_4_807,Husam Abu Dahab,26,Jordania,CB,,Other,False,17,0,1,3,3,13,False,4,1.0
+JOR_5_366,Mohammad Abu Hashish,24,Jordania,LWB,Al-Karma,Other,False,17,0,1,1,2,13,True,2,1.2
+JOR_5_476,Yazan Al-Arab,30,Jordania,CB,FC Seoul,Other,False,80,3,6,3,4,64,True,5,0.8
+JOR_26_62,Mohammad Al Dawoud,29,Jordania,CM,,Other,False,1,0,0,5,4,27,False,25,1.4
+JOR_3_737,Abdallah Nasib,32,Jordania,CB,Al-Zawraa,Other,False,65,2,5,2,1,52,True,3,1.2
+JOR_17_345,Saleem Obaid,34,Jordania,CB,Al-Hussein SC,Other,False,12,0,0,7,0,9,False,17,1.2
+JOR_6_351,Mousa Al-Taamari,29,Jordania,AM,Stade Rennais F.C.,Other,False,13,0,1,5,4,10,True,10,0.8
+JOR_21_82,Nizar Al Rashdan,27,Jordania,CM,,Other,False,47,4,3,4,1,37,True,21,1.4
+JOR_8_165,Noor Al-Rawabdeh,29,Jordania,CM,Selangor FC,Other,False,68,3,5,3,4,54,True,8,0.8
+JOR_14_488,Rajaei Ayed,33,Jordania,CM,Al-Hussein SC,Other,False,73,0,5,5,1,58,False,14,1.2
+JOR_6_786,Amer Jamous,24,Jordania,DM,Al-Zawraa,Other,False,19,1,1,1,0,15,False,6,1.0
+JOR_15_764,Ibrahim Sadeh,26,Jordania,CM,Al-Karma,Other,False,57,3,4,3,3,45,False,15,1.2
+JOR_7_149,Mohannad Abu Taha,28,Jordania,LB,,Other,False,13,0,1,5,1,10,False,20,0.8
+JOR_8_850,Mohammad Abu Zrayq Sharara,23,Jordania,AM,,Other,False,18,0,1,4,4,14,False,7,1.4
+JOR_10_355,Mousa Al-Tamari,29,Jordania,LW,Rennes,Ligue 1,True,92,24,7,24,2,73,False,10,1.2
+JOR_24_211,Ali Azaizeh,22,Jordania,RW,,Other,False,4,0,0,3,3,3,False,24,1.0
+JOR_9_126,Odeh Al-Fakhouri,23,Jordania,AM,Pyramids FC,Other,False,8,0,0,6,2,6,False,11,1.0
+JOR_9_957,Ali Olwan,26,Jordania,ST,,Other,False,66,29,5,29,1,52,True,9,1.2
+JOR_10_700,Ibrahim Sabra,29,Jordania,ST,Lokomotiva Zagreb,Other,False,8,0,0,5,0,6,False,18,0.6
+JOR_13_162,Mahmoud Al-Mardi,33,Jordania,AM,Al-Hussein SC,Other,False,87,8,6,8,0,69,True,13,1.2
+QAT_21_382,Salah Zakaria,27,Qatar,GK,,Other,False,10,0,0,6,1,8,False,21,1.0
+QAT_22_298,Meshaal Barsham,28,Qatar,GK,,Other,False,60,0,4,5,3,48,True,22,0.6
+QAT_1_107,Mahmoud Abunada,26,Qatar,GK,Al-Rayyan,Other,False,6,0,0,3,2,4,False,1,0.8
+QAT_16_66,Boualem Khoukhi,36,Qatar,CB,,Other,False,128,21,10,21,3,102,True,16,0.6
+QAT_2_603,Pedro Miguel,36,Qatar,RB,Al-Sadd,Other,False,111,4,8,4,4,88,True,2,1.0
+QAT_18_545,Sultan Al-Brake,30,Qatar,LB,,Other,False,20,0,1,2,0,16,False,18,0.8
+QAT_1_776,Hashmi Hussein,30,Qatar,CB,,Other,False,16,0,1,7,4,12,False,25,1.2
+QAT_2_485,Issa Laaye,24,Qatar,CB,,Other,False,16,0,1,2,2,12,False,4,1.6
+QAT_4_701,Ayoub Alawi,29,Qatar,RB,,Other,False,4,0,0,1,1,3,False,13,0.6
+QAT_3_73,Lucas Mendes,36,Qatar,CB,,Other,False,28,2,2,2,1,22,True,3,1.0
+QAT_3_947,Homam Al-Amin,24,Qatar,LB,,Other,False,24,0,1,7,3,19,True,14,0.8
+QAT_4_639,Ahmed Fathi,26,Qatar,CM,,Other,False,15,0,1,7,1,12,True,20,1.0
+QAT_5_303,Jassem Jaber,25,Qatar,CB,,Other,False,7,0,0,2,4,5,False,5,1.0
+QAT_23_801,Assim Madibo,30,Qatar,CM,,Other,False,64,0,5,0,3,51,True,23,1.4
+QAT_6_672,Abdulaziz Hatem,36,Qatar,CM,,Other,False,132,11,10,11,3,105,False,6,1.0
+QAT_12_63,Karim Boudiaf,36,Qatar,CM,,Other,False,128,6,10,6,0,102,False,12,1.6
+QAT_6_958,Mohammed Al-Manai,29,Qatar,CM,,Other,False,11,0,0,5,2,8,False,26,1.0
+QAT_19_504,Almoez Ali,30,Qatar,ST,,Other,False,128,58,10,58,0,102,True,19,0.6
+QAT_11_475,Akram Afif,30,Qatar,LW,,Other,False,136,40,10,40,0,108,True,11,1.0
+QAT_24_758,Ahmed Al-Janahi,20,Qatar,RW,,Other,False,5,0,0,7,2,4,False,17,1.2
+QAT_8_570,Edmilson Junior,32,Qatar,RW,,Other,False,16,0,1,7,2,12,True,8,1.2
+QAT_17_157,Tahseen Mohammed,26,Qatar,AM,,Other,False,15,1,1,1,0,12,False,24,1.2
+QAT_7_642,Ahmed Alaa,26,Qatar,ST,,Other,False,18,0,1,3,4,14,False,7,0.8
+QAT_10_212,Hassan Al-Haydos,36,Qatar,AM,,Other,False,189,39,15,39,4,151,True,10,1.0
+QAT_9_65,Mohammed Muntari,33,Qatar,AM,,Other,False,74,17,5,17,1,59,False,9,1.6
+QAT_15_630,Youssef Abdulrazzaq,27,Qatar,LW,,Other,False,44,3,3,3,0,35,False,15,1.6
+SAU_1_766,Mohammed Al-Owais,28,Arabia Saudi,GK,,Other,False,10,0,0,7,1,8,False,21,0.2
+SAU_1_547,Nawaf Al-Aqidi,26,Arabia Saudi,GK,,Other,False,24,0,1,2,0,19,True,1,1.6
+SAU_22_326,Ahmed Al-Kassar,35,Arabia Saudi,GK,,Other,False,9,0,0,5,4,7,False,22,0.8
+SAU_4_161,Abdulelah Al-Amri,29,Arabia Saudi,CB,,Other,False,44,1,3,1,1,35,False,4,1.4
+SAU_2_250,Hassan Al-Tambakti,27,Arabia Saudi,CB,,Other,False,13,0,1,2,1,10,True,5,0.6
+SAU_25_767,Jehad Thakri,25,Arabia Saudi,CB,,Other,False,8,0,0,7,1,6,False,25,1.6
+SAU_3_505,Ali Lajami,30,Arabia Saudi,CB,,Other,False,24,1,1,1,0,19,True,3,0.6
+SAU_3_749,Hassan Kadesh,29,Arabia Saudi,CB,,Other,False,18,0,1,5,2,14,False,14,1.2
+SAU_12_591,Saud Abdulhamid,27,Arabia Saudi,RB,,Other,False,55,1,4,1,1,44,True,12,1.2
+SAU_4_670,Mohammed Abu Al-Shamat,29,Arabia Saudi,RB,,Other,False,13,0,1,4,0,10,False,26,1.0
+SAU_2_858,Ali Majrashi,27,Arabia Saudi,RB,,Other,False,21,0,1,5,0,16,False,2,0.6
+SAU_24_732,Moteb Al-Harbi,26,Arabia Saudi,LB,,Other,False,13,0,1,1,1,10,True,24,1.0
+SAU_5_575,Nawaf Boushal,23,Arabia Saudi,LB,,Other,False,24,0,1,4,3,19,False,13,1.2
+SAU_6_807,Mohamed Kanno,26,Arabia Saudi,CM,,Other,False,7,0,0,2,3,5,True,23,1.8
+SAU_7_373,Alaa Hejji,24,Arabia Saudi,CM,,Other,False,17,0,1,3,1,13,False,18,1.2
+SAU_15_75,Abdullah Al-Khaibari,30,Arabia Saudi,CM,,Other,False,42,0,3,7,3,33,True,15,1.4
+SAU_16_413,Ziyad Al-Johani,25,Arabia Saudi,CM,,Other,False,12,0,0,3,1,9,False,16,1.0
+SAU_6_927,Nasser Al-Dawsari,28,Arabia Saudi,CM,,Other,False,47,1,3,1,0,37,False,6,0.6
+SAU_7_520,Musab Al-Juwayr,23,Arabia Saudi,AM,Al Qadsiah,Other,False,37,6,2,6,2,29,True,7,0.6
+SAU_8_724,Sultan Mandash,25,Arabia Saudi,RW,,Other,False,6,0,0,2,2,4,False,20,1.2
+SAU_10_180,Salem Al-Dawsari,35,Arabia Saudi,LW,,Other,False,111,27,8,27,1,88,True,10,0.4
+SAU_17_120,Khalid Al-Ghannam,26,Arabia Saudi,AM,,Other,False,7,0,0,6,4,5,False,17,0.6
+SAU_9_27,Ayman Yahya,24,Arabia Saudi,RW,,Other,False,5,0,0,5,2,4,True,8,1.2
+SAU_10_85,Firas Al-Buraikan,24,Arabia Saudi,ST,,Other,False,5,0,0,6,0,4,True,9,0.6
+SAU_11_358,Saleh Al-Shehri,28,Arabia Saudi,ST,,Other,False,19,0,1,5,2,15,False,11,0.6
+SAU_12_420,Abdullah Al-Hamdan,29,Arabia Saudi,AM,,Other,False,6,0,0,7,3,4,False,19,1.0
+SOU_1_624,Jo Hyeon-woo,24,Korea del Sur,GK,Ulsan HD FC,Other,False,9,0,0,6,2,7,False,21,1.6
+SOU_1_508,Kim Seung-gyu,36,Korea del Sur,GK,FC Tokyo,Other,False,86,0,6,1,2,68,True,1,0.2
+SOU_12_315,Song Bum-keun,29,Korea del Sur,GK,Jeonbuk Hyundai Motors,Other,False,3,0,0,3,0,2,False,12,0.4
+SOU_4_540,Kim Min-jae,30,Korea del Sur,CB,FC Bayern Munich,Bundesliga,True,79,4,6,4,2,63,True,4,0.6
+SOU_2_120,Cho Yu-min,25,Korea del Sur,CB,Sharjah FC,Other,False,14,0,1,7,0,11,True,13,1.0
+SOU_2_660,Lee Han-beom,24,Korea del Sur,CB,FC Midtjylland,Other,False,8,0,0,2,1,6,False,3,0.0
+SOU_3_583,Park Jin-seob,25,Korea del Sur,CB,Zhejiang FC,Other,False,15,0,1,5,1,12,False,20,1.2
+SOU_4_347,Kim Tae-hyeon,30,Korea del Sur,CM/AM,Kashima Antlers,Other,False,18,0,1,4,0,14,False,14,0.8
+SOU_5_936,Kim Jin-gyu,29,Korea del Sur,CM/DM,Jeonbuk Hyundai Motors,Other,False,24,0,1,3,4,19,False,16,1.4
+SOU_13_405,Lee Tae-seok,24,Korea del Sur,LB,FK Austria Wien,Other,False,15,1,1,1,2,12,True,5,1.4
+SOU_22_866,Seol Young-woo,28,Korea del Sur,RB,Red Star Belgrade,Other,False,34,0,2,7,4,27,True,22,0.8
+SOU_23_852,Jens Castrop,23,Korea del Sur,RB,Borussia Mönchengladbach,Other,False,7,0,0,3,4,5,False,2,1.4
+SOU_15_388,Kim Moon-hwan,31,Korea del Sur,CB/DM,Daejeon Hana Citizen,Other,False,36,0,2,0,2,28,False,15,0.6
+SOU_20_168,Yang Hyun-jun,24,Korea del Sur,ST,Celtic F.C.,Other,False,9,0,0,0,0,7,False,24,0.8
+SOU_8_349,Paik Seung-ho,29,Korea del Sur,CM,Birmingham City F.C.,Other,False,27,3,2,3,0,21,True,8,1.2
+SOU_6_715,Hwang In-beom,30,Korea del Sur,CM,Feyenoord,Other,False,73,6,5,6,4,58,True,6,1.6
+SOU_6_771,Lee Ki-hyuk,26,Korea del Sur,LB/LWB,Gangwon FC,Other,False,20,0,1,4,4,16,False,23,0.8
+SOU_17_951,Bae Jun-ho,23,Korea del Sur,RW/LW,Stoke City F.C.,Other,False,13,2,1,2,1,10,False,17,0.2
+SOU_7_612,Cho Gue-sung,27,Korea del Sur,ST,FC Midtjylland,Other,False,9,0,0,5,4,7,False,9,1.0
+SOU_11_69,Hwang Hee-chan,30,Korea del Sur,RW,Wolverhampton Wanderers F.C.,Other,False,79,17,6,17,0,63,True,11,1.0
+SOU_26_745,Lee Dong-gyeong,29,Korea del Sur,CM,Ulsan HD FC,Other,False,18,4,1,4,1,14,False,25,1.2
+SOU_10_95,Lee Jae-sung,34,Korea del Sur,AM/LW,1. FSV Mainz 05,Bundesliga,True,105,15,8,15,2,84,False,10,1.2
+SOU_19_699,Lee Kang-in,25,Korea del Sur,AM,Paris Saint-Germain F.C.,Ligue 1,True,47,10,3,10,2,37,True,18,1.6
+SOU_8_277,Oh Hyeon-gyu,30,Korea del Sur,ST,Beşiktaş J.K.,Other,False,11,0,0,1,1,8,True,19,1.0
+SOU_7_140,Son Heung-min,34,Korea del Sur,LW,LAFC,Other,False,144,56,11,56,4,115,True,7,1.6
+SOU_9_341,Eom Ji-sung,30,Korea del Sur,LW/RW,Swansea City A.F.C.,Other,False,18,0,1,1,1,14,False,26,1.2
+UZB_1_579,Utkir Yusupov,35,Uzbekistan,GK,Navbahor Namangan,Other,False,45,0,3,5,0,36,True,1,1.2
+UZB_16_261,Botirali Ergashev,31,Uzbekistan,GK,FC Neftchi Fergana,Other,False,5,0,0,3,2,4,False,21,1.0
+UZB_1_334,Abduvohid Nematov,26,Uzbekistan,GK,FC Nasaf,Other,False,19,0,1,7,3,15,False,12,1.4
+UZB_2_563,Rustam Ashurmatov,27,Uzbekistan,CB,Esteghlal F.C.,Other,False,7,0,0,4,1,5,True,5,1.6
+UZB_26_736,Umar Eshmurodov,22,Uzbekistan,CB/DM,Selangor F.C.,Other,False,4,1,0,1,2,3,False,15,0.6
+UZB_24_Karimov,Bekhruz Karimov,24,Uzbekistan,RB/RWB,Çaykur Rizespor,Other,False,12,0,0,7,2,9,False,4,1.2
+UZB_26_Urozov,Jakhongir Urozov,23,Uzbekistan,CB,FC Pakhtakor Tashkent,Other,False,5,0,0,5,1,4,False,23,1.4
+UZB_2_520,Abdukodir Khusanov,22,Uzbekistan,CB,RC Lens,Ligue 1,True,27,0,2,6,3,21,True,3,0.6
+UZB_18_131,Abdulla Abdullaev,29,Uzbekistan,CM/AM,Khor Fakkan Club,Other,False,29,0,2,1,1,23,False,18,1.0
+UZB_4_467,Farrukh Sayfiev,35,Uzbekistan,CB,FC Navbahor Namangan,Other,False,71,1,5,1,0,56,False,6,1.0
+UZB_3_704,Khojiakbar Alijonov,29,Uzbekistan,RB,FC Pakhtakor Tashkent,Other,False,52,3,4,3,1,41,True,2,1.4
+UZB_13_263,Sherzod Nasrullaev,28,Uzbekistan,LB,FC Nasaf,Other,False,40,2,3,2,2,32,True,13,1.4
+UZB_23_Esanov,Sherzod Esanov,29,Uzbekistan,LB/LWB,FC Nasaf,Other,False,8,0,0,0,0,6,False,25,1.2
+UZB_23_441,Odiljon Hamrobekov,23,Uzbekistan,DM,Navbahor Namangan,Other,False,1,0,0,1,1,29,True,9,1.6
+UZB_25_Ulmasaliev,Avazbek Ulmasaliev,23,Uzbekistan,CM,Sivasspor,Other,False,18,0,1,4,4,14,False,19,1.4
+UZB_6_213,Akmal Mozgovoy,27,Uzbekistan,DM/CM,FC Nasaf,Other,False,25,1,2,1,0,20,False,22,1.4
+UZB_7_411,Otabek Shukurov,30,Uzbekistan,CM,Al-Fayha FC,Other,False,90,10,7,10,0,72,True,7,1.0
+UZB_8_513,Jamshid Iskanderov,33,Uzbekistan,CM,FC Navbahor Namangan,Other,False,46,4,3,4,2,36,False,8,1.6
+UZB_19_679,Abbosbek Fayzullaev,28,Uzbekistan,AM,CSKA Moscow,Other,False,24,0,1,3,4,19,True,20,0.6
+UZB_19_Ganiev,Azizjon Ganiev,30,Uzbekistan,ST,FC Nasaf,Other,False,13,0,1,4,2,10,False,16,1.4
+UZB_10_507,Jaloliddin Masharipov,33,Uzbekistan,RW,Esteghlal F.C.,Other,False,75,14,6,14,2,60,True,10,1.4
+UZB_17_40,Dostonbek Khamdamov,30,Uzbekistan,RW/ST,FC Pakhtakor Tashkent,Other,False,37,5,2,5,3,29,False,17,1.6
+UZB_11_186,Oston Urunov,26,Uzbekistan,LW,Persepolis F.C.,Other,False,45,10,3,10,4,36,True,11,0.2
+UZB_20_990,Azizbek Amonov,29,Uzbekistan,CB/LB,Khor Fakkan Club,Other,False,13,2,1,2,0,10,False,26,0.8
+UZB_21_724,Igor Sergeev,33,Uzbekistan,ST/LW,BG Pathum United,Other,False,85,25,6,25,1,68,False,24,1.2
+UZB_14_571,Eldor Shomurodov,31,Uzbekistan,ST,Cagliari Calcio,Other,False,93,44,7,44,4,74,True,14,1.0
+ALG_16_206,Oussama Benbot,32,Argelia,GK,USM Alger,Other,False,3,0,0,7,3,2,True,16,0.8
+ALG_23_281,Luca Zidane,28,Argelia,GK,Granada CF,Other,False,7,0,0,3,3,5,False,23,1.4
+ALG_1_708,Melvin Mastil,28,Argelia,GK,Lausanne-Sport,Other,False,19,0,1,1,2,15,False,1,1.4
+ALG_15_335,Rayan Aït-Nouri,25,Argelia,LB,Manchester City,Premier League,True,30,0,2,7,4,24,True,15,0.6
+ALG_13_708,Jaouen Hadjam,23,Argelia,LB,Young Boys,Other,False,18,3,1,3,4,14,False,13,0.6
+ALG_4_65,Rafik Belghali,30,Argelia,RB,Hellas Verona,Serie A,True,21,0,1,1,0,16,False,17,1.0
+ALG_2_168,Achref Abada,27,Argelia,RB,USM Alger,Other,False,5,0,0,4,0,4,True,3,1.4
+ALG_2_534,Aïssa Mandi,35,Argelia,CB,LOSC Lille,Ligue 1,True,119,8,9,8,4,95,True,2,0.8
+ALG_21_737,Ramy Bensebaini,31,Argelia,CB,Borussia Dortmund,Bundesliga,True,82,9,6,9,1,65,False,21,1.4
+ALG_26_755,Samir Chergui,27,Argelia,CB,Paris FC,Other,False,5,0,0,7,2,4,True,26,1.2
+ALG_3_464,Zineddine Belaïd,24,Argelia,CB,JS Kabylie,Other,False,16,0,1,3,3,12,False,5,0.8
+ALG_4_394,Mohamed Amine Tougai,26,Argelia,CB,Espérance de Tunis,Other,False,30,2,2,2,0,24,False,4,1.0
+ALG_6_58,Ramiz Zerrouki,28,Argelia,MID,Feyenoord,Other,False,53,3,4,3,3,42,False,6,0.8
+ALG_19_685,Nabil Bentaleb,32,Argelia,MID,LOSC Lille,Ligue 1,True,60,6,4,6,2,48,True,19,1.2
+ALG_14_181,Hicham Boudaoui,27,Argelia,MID,OGC Nice,Ligue 1,True,34,0,2,7,1,27,True,14,0.8
+ALG_24_603,Yacine Titraoui,23,Argelia,MID,Charleroi,Other,False,5,0,0,7,2,4,False,24,1.0
+ALG_22_313,Ibrahim Maza,21,Argelia,MID,Bayer Leverkusen,Bundesliga,True,17,2,1,2,3,13,True,22,1.2
+ALG_10_43,Farès Chaïbi,24,Argelia,MID,Eintracht Frankfurt,Bundesliga,True,31,3,2,3,1,24,False,10,0.4
+ALG_8_43,Houssem Aouar,28,Argelia,MID,Al-Ittihad,Other,False,23,6,1,6,2,18,False,8,0.2
+ALG_7_729,Riyad Mahrez,35,Argelia,RW,Al-Ahli,Other,False,116,38,9,38,2,92,True,7,1.2
+ALG_11_985,Anis Hadj Moussa,24,Argelia,RW,Feyenoord,Other,False,15,2,1,2,0,12,False,11,1.4
+ALG_25_986,Farès Ghedjemis,24,Argelia,RW,Frosinone,Other,False,1,1,0,1,4,28,False,25,0.8
+ALG_20_692,Adil Boulbina,23,Argelia,LW,Al-Duhail,Other,False,11,5,0,5,4,8,False,20,1.0
+ALG_9_15,Amine Gouiri,26,Argelia,ST,Olympique de Marseille,Ligue 1,True,23,10,1,10,1,18,False,9,1.4
+ALG_5_137,Mohamed Amoura,29,Argelia,ST,VfL Wolfsburg,Bundesliga,True,24,0,1,1,4,19,True,18,1.2
+ALG_6_948,Nadhir Benbouali,27,Argelia,ST,ETO FC Győr,Other,False,10,0,0,2,4,8,True,12,1.2
+CAB_1_171,Vozinha,40,Cabo Verde,GK,G.D. Chaves,Other,False,90,0,7,6,0,72,True,1,0.4
+CAB_12_407,Márcio da Rosa,29,Cabo Verde,GK,PFC Montana,Other,False,11,0,0,6,2,8,False,12,0.4
+CAB_23_211,CJ dos Santos,26,Cabo Verde,GK,San Diego FC,Other,False,1,0,0,6,1,25,False,23,1.2
+CAB_22_720,Steven Moreira,32,Cabo Verde,RB,Columbus Crew,Other,False,20,0,1,2,0,16,True,22,1.0
+CAB_24_602,Wagner Pina,24,Cabo Verde,RB,Trabzonspor,Other,False,14,0,1,5,4,11,False,24,0.4
+CAB_8_432,João Paulo Fernandes,28,Cabo Verde,LB,,Other,False,41,1,3,1,2,32,False,8,1.0
+CAB_13_35,Sidny Lopes Cabral,24,Cabo Verde,LB,Benfica,Other,False,11,3,0,3,3,8,True,13,0.8
+CAB_5_881,Logan Costa,25,Cabo Verde,CB,Villarreal CF,La Liga,True,28,0,2,0,4,22,False,5,2.0
+CAB_1_238,Roberto Lopes Pico,29,Cabo Verde,CB,Shamrock Rovers,Other,False,15,0,1,6,2,12,True,4,1.0
+CAB_25_415,Kelvin Pires,26,Cabo Verde,CB,,Other,False,6,1,0,1,2,4,False,25,1.4
+CAB_2_381,Stopira,38,Cabo Verde,CB,Torreense,Other,False,61,4,4,4,0,48,False,2,1.2
+CAB_2_785,Diney,26,Cabo Verde,CB,Al Bataeh,Other,False,9,0,0,0,3,7,True,3,0.6
+CAB_10_42,Jamiro Monteiro,33,Cabo Verde,CM,PEC Zwolle,Other,False,55,5,4,5,4,44,True,10,1.6
+CAB_18_813,Telmo Arcanjo,25,Cabo Verde,AM,Vitória de Guimarães,Other,False,16,1,1,1,4,12,False,18,1.2
+CAB_16_165,Yannick Semedo,31,Cabo Verde,CM,Farense,Other,False,11,1,0,1,3,8,False,16,0.0
+CAB_15_454,Laros Duarte,29,Cabo Verde,CM,Puskás Akadémia,Other,False,20,1,1,1,1,16,False,15,0.6
+CAB_14_522,Deroy Duarte,27,Cabo Verde,CM,Ludogorets Razgrad,Other,False,33,0,2,6,1,26,True,14,1.0
+CAB_6_496,Kevin Pina,29,Cabo Verde,CM,Krasnodar,Other,False,31,3,2,3,0,24,True,6,0.8
+CAB_20_651,Ryan Mendes,36,Cabo Verde,LW,Iğdır FK,Other,False,98,22,7,22,2,78,True,20,0.8
+CAB_17_209,Willy Semedo,32,Cabo Verde,RW,Omonia Nicosia,Other,False,38,3,3,3,0,30,True,17,1.4
+CAB_11_543,Garry Rodrigues,36,Cabo Verde,RW,Apollon Limassol,Other,False,61,10,4,10,4,48,False,11,0.8
+CAB_7_534,Jovane Cabral,28,Cabo Verde,AM,Estrela Amadora,Other,False,29,3,2,3,3,23,False,7,0.8
+CAB_21_715,Nuno da Costa,35,Cabo Verde,ST,İstanbul Başakşehir,Other,False,9,2,0,2,3,7,False,21,1.2
+CAB_19_699,Dailon Livramento,25,Cabo Verde,ST,Casa Pia,Other,False,22,7,1,7,1,17,True,19,0.6
+CAB_9_46,Gilson Benchimol,25,Cabo Verde,ST,Akron Tolyatti,Other,False,21,6,1,6,4,16,False,9,0.8
+CAB_26_540,Hélio Varela,24,Cabo Verde,LW,Maccabi Tel Aviv,Other,False,21,0,1,0,4,16,False,26,0.8
+DR _1_119,Lionel Mpasi,32,DR Congo,GK,,Other,False,28,0,2,3,1,22,True,1,1.0
+DR _16_585,Timothy Fayulu,27,DR Congo,GK,,Other,False,3,0,0,1,3,2,False,16,1.0
+DR _21_860,Matthieu Epolo,21,DR Congo,GK,,Other,False,1,0,0,0,4,27,False,21,1.0
+DR _22_931,Chancel Mbemba,32,DR Congo,CB,,Other,False,109,7,8,7,1,87,True,22,0.8
+DR _4_845,Axel Tuanzebe,29,DR Congo,CB,,Other,False,13,1,1,1,2,10,True,4,0.6
+DR _26_119,Arthur Masuaku,33,DR Congo,LB,,Other,False,44,4,3,4,1,35,True,26,1.6
+DR _24_662,Gédéon Kalulu,29,DR Congo,RB,,Other,False,28,0,2,0,4,22,False,24,1.2
+DR _12_848,Joris Kayembe,32,DR Congo,CB,,Other,False,26,1,2,1,4,20,False,12,1.6
+DR _2_36,Aaron Wan-Bissaka,29,DR Congo,RB,,Other,False,12,0,0,3,3,9,True,2,1.2
+DR _15_450,Meschack Elia,31,DR Congo,AM,Winger/AM,Other,False,17,1,1,1,1,13,True,13,1.4
+DR _3_226,Steve Kapuadi,28,DR Congo,CB,,Other,False,3,0,0,6,3,2,False,3,0.4
+DR _5_982,Dylan Batubinsika,30,DR Congo,CB,,Other,False,15,1,1,1,4,12,False,5,1.2
+DR _14_819,Noah Sadiki,22,DR Congo,CM,,Other,False,20,0,1,0,2,16,False,14,1.4
+DR _18_285,Charles Pickel,29,DR Congo,CM,,Other,False,34,1,2,1,4,27,True,18,0.6
+DR _25_424,Edo Kayembe,28,DR Congo,CM,,Other,False,42,2,3,2,0,33,False,25,1.4
+DR _8_578,Samuel Moutoussamy,30,DR Congo,CM,,Other,False,58,0,4,5,0,46,True,8,1.6
+DR _6_297,Ngal'ayel Mukau,22,DR Congo,CM,,Other,False,14,0,1,6,3,11,False,6,1.6
+DR _7_384,Nathanaël Mbuku,24,DR Congo,LW,,Other,False,19,2,1,2,3,15,False,7,1.2
+DR _1_160,Meschak Elia,23,DR Congo,AM,Alanyaspor,Other,False,19,0,1,2,1,15,False,1,1.2
+DR _9_217,Brian Cipenga,28,DR Congo,ST,Winger,Other,False,8,0,0,7,4,6,False,9,1.4
+DR _11_827,Gaël Kakuta,35,DR Congo,AM,,Other,False,31,5,2,5,2,24,False,11,1.2
+DR _10_329,Théo Bongonda,31,DR Congo,RW,,Other,False,38,7,3,7,4,30,True,10,0.8
+DR _23_211,Simon Banza,30,DR Congo,ST,,Other,False,15,2,1,2,0,12,False,23,1.4
+DR _20_195,Yoane Wissa,30,DR Congo,LW,,Other,False,38,8,3,8,1,30,True,20,0.8
+DR _19_637,Fiston Mayele,32,DR Congo,AM,,Other,False,36,5,2,5,1,28,False,19,0.4
+DR _17_566,Cédric Bakambu,35,DR Congo,ST,,Other,False,70,21,5,21,3,56,True,17,0.8
+CÔT_1_661,Yahia Fofana,26,Costa de Marfil,GK,,Other,False,36,0,2,7,2,28,True,1,1.2
+CÔT_16_439,Mohamed Koné,24,Costa de Marfil,GK,,Other,False,21,0,1,7,4,16,False,16,1.4
+CÔT_23_501,Alban Lafont,27,Costa de Marfil,GK,,Other,False,4,0,0,1,1,3,False,23,0.8
+CÔT_20_731,Emmanuel Agbadou,29,Costa de Marfil,CB,,Other,False,21,2,1,2,4,16,False,20,1.2
+CÔT_1_964,Christopher Opéri,27,Costa de Marfil,CB,,Other,False,6,0,0,1,3,4,False,13,1.0
+CÔT_2_388,Ousmane Diomandé,23,Costa de Marfil,CB,,Other,False,16,1,1,1,2,12,True,2,0.4
+CÔT_17_453,Guéla Doué,24,Costa de Marfil,RB,,Other,False,20,3,1,3,4,16,False,17,0.8
+CÔT_3_487,Ghislain Konan,31,Costa de Marfil,LB,,Other,False,54,0,4,2,3,43,True,3,1.4
+CÔT_7_748,Odilon Kossounou,25,Costa de Marfil,CB,,Other,False,36,0,2,0,3,28,False,7,1.2
+CÔT_21_277,Evan Ndicka,27,Costa de Marfil,CB,,Other,False,29,0,2,3,3,23,True,21,1.4
+CÔT_5_658,Wilfried Singo,26,Costa de Marfil,RB,,Other,False,35,1,2,1,1,28,True,5,1.0
+CÔT_6_974,Seko Fofana,31,Costa de Marfil,CM,,Other,False,32,7,2,7,2,25,True,6,1.2
+CÔT_25_123,Parfait Guiagon,25,Costa de Marfil,AM,,Other,False,5,0,0,7,0,4,False,25,1.2
+CÔT_8_867,Franck Kessié,30,Costa de Marfil,CM,,Other,False,104,15,8,15,2,83,True,8,0.8
+CÔT_26_705,Christ Inao Oulaï,20,Costa de Marfil,CM,,Other,False,9,0,0,6,2,7,False,26,1.2
+CÔT_18_762,Ibrahim Sangaré,29,Costa de Marfil,CM,,Other,False,55,11,4,11,2,44,True,18,1.2
+CÔT_4_692,Jean Michaël Seri,35,Costa de Marfil,DM,,Other,False,65,4,5,4,3,52,False,4,0.8
+CÔT_10_810,Simon Adingra,24,Costa de Marfil,LW,,Other,False,29,5,2,5,4,23,True,10,0.4
+CÔT_9_767,Ange-Yoan Bonny,23,Costa de Marfil,ST,,Other,False,1,0,0,1,1,29,False,9,1.6
+CÔT_15_504,Amad Diallo,24,Costa de Marfil,RW,,Other,False,19,6,1,6,0,15,True,15,1.0
+CÔT_14_955,Oumar Diakité,23,Costa de Marfil,RW,,Other,False,29,6,2,6,3,23,False,14,1.4
+CÔT_11_196,Yan Diomandé,20,Costa de Marfil,RB,,Other,False,10,3,0,3,4,8,False,11,0.6
+CÔT_22_235,Evann Guessand,25,Costa de Marfil,ST,,Other,False,21,4,1,4,4,16,True,22,1.4
+CÔT_19_704,Nicolas Pépé,31,Costa de Marfil,RW,,Other,False,56,12,4,12,2,44,False,19,0.2
+CÔT_24_581,Bazoumana Touré,20,Costa de Marfil,LW,,Other,False,6,2,0,2,1,4,False,24,0.8
+CÔT_12_709,Elye Wahi,23,Costa de Marfil,ST,,Other,False,2,0,0,7,0,1,False,12,1.6
+EGY_1_975,Mohamed El Shenawy,28,Egipto,GK,,Other,False,23,0,1,6,2,18,True,1,1.2
+EGY_2_541,Mostafa Shobeir,25,Egipto,GK,,Other,False,22,0,1,4,1,17,False,16,1.6
+EGY_3_255,Mohamed Awad,23,Egipto,GK,,Other,False,21,0,1,6,3,16,False,23,1.2
+EGY_26_344,Rami Rabia,27,Egipto,CB,,Other,False,19,0,1,0,4,15,True,3,1.0
+EGY_3_875,Mohamed Hany,30,Egipto,RB,,Other,False,43,0,3,5,0,34,True,12,1.2
+EGY_24_454,Ahmed Ramadan ,24,Egipto,CB,,Other,False,3,0,0,7,1,2,False,4,0.6
+EGY_14_205,Khaled Sobhi,32,Egipto,CB,,Other,False,64,4,5,4,4,51,False,15,1.2
+EGY_5_210,Mohamed Hamdy,33,Egipto,LB,,Other,False,47,6,3,6,0,37,True,5,1.0
+EGY_2_545,Ahmed Nabil ,33,Egipto,LB,,Other,False,18,1,1,1,4,14,False,13,0.8
+EGY_4_756,Hossam Abdelmaguid,25,Egipto,CB,,Other,False,13,0,1,7,3,10,False,2,0.6
+EGY_4_141,Mohamed Abdelmonem,24,Egipto,CB,,Other,False,15,0,1,0,1,12,True,6,1.4
+EGY_13_331,Akram Tawfik,28,Egipto,RB,,Other,False,39,1,3,1,3,31,False,25,1.6
+EGY_15_280,Hamdi Fathi,30,Egipto,CM,,Other,False,9,0,0,6,1,7,True,14,0.6
+EGY_5_420,Marwan Attia,26,Egipto,CM,,Other,False,20,0,1,7,3,16,True,8,1.0
+EGY_6_420,Ahmed Sayed ,26,Egipto,CM,,Other,False,15,0,1,1,1,12,False,5,1.0
+EGY_7_455,Mohamed Elneny,24,Egipto,DM,,Other,False,10,0,0,1,4,8,False,10,1.2
+EGY_21_565,Nasser Maher,25,Egipto,AM,,Other,False,15,1,1,1,1,12,False,18,1.4
+EGY_8_401,Mostafa Mohamed,23,Egipto,ST,,Other,False,16,0,1,5,3,12,True,19,1.0
+EGY_8_491,Emam Ashour,28,Egipto,CM,,Other,False,29,0,2,5,2,23,True,22,0.8
+EGY_9_54,Mahmoud Abdel Monem Kahraba,30,Egipto,LW,,Other,False,8,0,0,2,2,6,False,7,1.2
+EGY_10_130,Mahmoud Trézéguet,27,Egipto,LW,,Other,False,15,0,1,0,1,12,True,17,1.0
+EGY_20_439,Ibrahim Adel,25,Egipto,AM,,Other,False,24,3,1,3,4,19,False,20,0.6
+EGY_12_854,Mohamed Sherif,24,Egipto,AM,,Other,False,4,0,0,0,0,3,False,21,0.6
+EGY_22_813,Omar Marmoush,27,Egipto,RM,,Other,False,50,11,4,11,3,40,False,9,0.6
+EGY_10_985,Mohamed Salah,34,Egipto,RW,,Other,False,116,67,9,67,3,92,True,11,1.0
+EGY_9_236,Osama Faisal,18,Egipto,AM,,Other,False,2,0,0,3,4,1,False,24,1.0
+GHA_16_586,Benjamin Asare,34,Ghana,GK,Accra Hearts of Oak,Other,False,13,0,1,0,2,10,False,16,0.8
+GHA_1_507,Lawrence Ati-Zigi,25,Ghana,GK,FC St. Gallen,Other,False,17,0,1,3,4,13,True,1,1.0
+GHA_12_794,Joseph Anang,26,Ghana,GK,St Patrick's Athletic,Other,False,1,0,0,5,3,20,False,12,1.2
+GHA_2_59,Baba Abdul Rahman,23,Ghana,LB,PAOK FC,Other,False,14,0,1,1,1,11,False,17,1.0
+GHA_14_281,Gideon Mensah,28,Ghana,LB,AJ Auxerre,Other,False,40,0,3,4,2,32,True,14,1.4
+GHA_26_234,Marvin Senaya,25,Ghana,RB,AJ Auxerre,Other,False,2,0,0,5,4,1,False,26,1.0
+GHA_2_163,Alidu Seidu,26,Ghana,RB,Stade Rennais,Other,False,24,1,1,1,3,19,True,2,1.4
+GHA_6_813,Abdul Mumin,28,Ghana,CB,Rayo Vallecano,La Liga,True,5,0,0,0,1,4,True,6,0.6
+GHA_18_464,Jerome Opoku,28,Ghana,CB,İstanbul Başakşehir,Other,False,11,1,0,1,2,8,True,18,0.4
+GHA_4_653,Jonas Adjetey,23,Ghana,CB,VfL Wolfsburg,Bundesliga,True,10,0,0,4,2,8,False,4,0.8
+GHA_21_727,Kojo Peprah Oppong,22,Ghana,CB,OGC Nice,Ligue 1,True,4,0,0,4,1,3,False,21,1.2
+GHA_23_322,Derrick Luckassen,31,Ghana,CB,Pafos FC,Other,False,1,0,0,4,1,23,False,23,1.0
+GHA_15_15,Elisha Owusu,29,Ghana,CM,AJ Auxerre,Other,False,20,0,1,6,4,16,True,15,1.0
+GHA_5_784,Thomas Partey,33,Ghana,CM,,Other,False,59,16,4,16,1,47,True,5,1.0
+GHA_8_971,Kwasi Sibo,28,Ghana,CM,Real Oviedo,Other,False,8,0,0,4,4,6,False,8,1.6
+GHA_20_6,Augustine Boakye,26,Ghana,AM,AS Saint-Étienne,Other,False,15,0,1,4,2,12,False,20,1.0
+GHA_3_999,Caleb Yirenkyi,20,Ghana,CM,FC Nordsjælland,Other,False,11,1,0,1,2,8,False,3,1.2
+GHA_3_492,Abdul Fatawu Issahaku,23,Ghana,RW,Leicester City,Other,False,11,0,0,0,2,8,True,7,1.0
+GHA_4_243,Kamaldeen Sulemana,23,Ghana,LW,Atalanta BC,Serie A,True,17,0,1,0,3,13,True,22,1.2
+GHA_13_256,Christopher Bonsu Baah,22,Ghana,LW,Al Qadsiah,Other,False,9,0,0,6,1,7,False,13,1.2
+GHA_24_981,Ernest Nuamah,23,Ghana,AM,Olympique Lyonnais,Ligue 1,True,19,4,1,4,1,15,False,24,1.0
+GHA_11_869,Antoine Semenyo,26,Ghana,AM,,Other,False,34,3,2,3,0,27,True,11,1.2
+GHA_10_55,Brandon Thomas-Asante,28,Ghana,ST,Coventry City,Other,False,8,1,0,1,2,6,False,10,1.0
+GHA_5_427,Prince Kwabena Adu,24,Ghana,ST,FC Viktoria Plzeň,Other,False,10,0,0,4,0,8,False,25,1.0
+GHA_19_725,Iñaki Williams,32,Ghana,AM,Athletic Club,La Liga,True,26,2,2,2,1,20,False,19,0.8
+GHA_9_462,Jordania Ayew,35,Ghana,ST,Leicester City,Other,False,120,34,9,34,4,96,True,9,1.8
+MOR_1_267,Yassine Bounou,35,Marruecos,GK,,Other,False,90,0,7,2,4,72,True,1,0.4
+MOR_12_983,Munir Mohamedi,37,Marruecos,GK,,Other,False,52,0,4,0,4,41,False,12,1.2
+MOR_1_109,Alaa Bellaarouch,24,Marruecos,GK,,Other,False,6,0,0,0,3,4,False,23,1.2
+MOR_3_790,Noussair Mazraoui,29,Marruecos,LB,,Other,False,45,2,3,2,0,36,True,3,0.8
+MOR_2_474,Romain Saïss,29,Marruecos,CB,,Other,False,16,0,1,6,2,12,True,6,1.2
+MOR_19_313,Abdel Abqar,28,Marruecos,CB,,Other,False,18,0,1,3,1,14,False,4,1.2
+MOR_2_647,Achraf Hakimi,28,Marruecos,RB,,Other,False,96,11,7,11,1,76,True,2,1.4
+MOR_13_67,Yahia Attiyat Allah,25,Marruecos,LB,,Other,False,3,0,0,5,1,2,False,25,0.8
+MOR_18_800,Chadi Riad,23,Marruecos,CB,,Other,False,6,1,0,1,4,4,True,15,0.8
+MOR_17_Saadane,Marwane Saâdane,29,Marruecos,CB,,Other,False,11,0,0,0,3,8,False,17,0.2
+MOR_25_23,Mohamed Chibi,23,Marruecos,RB,,Other,False,3,0,0,1,2,2,False,22,1.4
+MOR_14_514,Amine Harit,29,Marruecos,AM,,Other,False,4,0,0,4,4,3,False,10,0.8
+MOR_15_618,Oussama El Azzouzi,21,Marruecos,DM,,Other,False,4,0,0,1,2,3,False,26,1.2
+MOR_6_734,Amir Richardson,19,Marruecos,CM,,Other,False,3,0,0,6,0,2,False,18,1.6
+MOR_24_520,Hakim Ziyech,25,Marruecos,RW,,Other,False,16,2,1,2,1,12,False,7,1.4
+MOR_4_623,Sofyan Amrabat,30,Marruecos,DM,,Other,False,75,0,6,0,0,60,True,4,1.6
+MOR_8_886,Azzedine Ounahi,26,Marruecos,CM,,Other,False,49,9,3,9,4,39,True,8,1.0
+MOR_23_933,Bilal El Khannouss,22,Marruecos,AM,,Other,False,37,3,2,3,2,29,True,14,0.6
+MOR_11_30,Ismael Saibari,25,Marruecos,CM,,Other,False,30,9,2,9,1,24,False,24,1.2
+MOR_16_Sbai,Amine Sbaï,30,Marruecos,LW,,Other,False,24,0,1,2,1,19,True,16,0.8
+MOR_7_83,Soufiane Boufal,21,Marruecos,LW,,Other,False,5,0,0,3,3,4,False,5,0.8
+MOR_5_274,Soufiane Rahimi,25,Marruecos,CB,ST/Winger,Other,False,21,0,1,1,2,16,False,20,0.6
+MOR_20_267,Ayoub El Kaabi,33,Marruecos,ST,,Other,False,71,36,5,36,3,56,False,9,1.0
+MOR_10_760,Brahim Díaz,27,Marruecos,RW,,Other,False,26,15,2,15,4,20,True,21,1.2
+MOR_16_705,Eliesse Ben Seghir,21,Marruecos,AM,,Other,False,4,0,0,0,1,3,False,11,1.4
+MOR_21_343,Youssef En-Nesyri,22,Marruecos,ST,,Other,False,2,0,0,2,1,1,True,19,0.8
+SEN_16_870,Édouard Mendy,34,Senegal,GK,Al-Ahli Saudi FC,Other,False,58,0,4,3,3,46,True,16,1.2
+SEN_23_660,Mory Diaw,33,Senegal,GK,Le Havre AC,Other,False,5,0,0,4,3,4,False,23,1.4
+SEN_1_93,Yehvann Diouf,27,Senegal,GK,OGC Nice,Ligue 1,True,2,0,0,6,0,1,False,1,0.8
+SEN_15_437,Krépin Diatta,27,Senegal,RB,AS Monaco,Ligue 1,True,62,2,4,2,0,49,False,15,0.6
+SEN_24_298,Antoine Mendy,22,Senegal,RB,OGC Nice,Ligue 1,True,7,0,0,4,4,5,True,24,0.8
+SEN_3_618,Kalidou Koulibaly,35,Senegal,CB,Al Hilal Saudi Club,Other,False,104,2,8,2,4,83,True,3,1.4
+SEN_25_482,El Hadji Malick Diouf,22,Senegal,LB,West Ham United F.C.,Premier League,True,20,1,1,1,1,16,False,25,0.6
+SEN_2_473,Mamadou Sarr,21,Senegal,CB,Chelsea F.C.,Premier League,True,8,0,0,6,3,6,False,2,1.4
+SEN_19_546,Moussa Niakhaté,30,Senegal,CB,Olympique Lyonnais,Ligue 1,True,32,0,2,3,3,25,True,19,0.8
+SEN_4_656,Abdoulaye Seck,34,Senegal,CB,Maccabi Haifa,Other,False,23,4,1,4,2,18,False,4,1.0
+SEN_14_151,Ismaïl Jakobs,27,Senegal,LB,Galatasaray S.K.,Other,False,31,0,2,5,0,24,True,14,0.4
+SEN_5_459,Idrissa Gana Gueye,37,Senegal,CM,Everton F.C.,Premier League,True,136,7,10,7,0,108,True,5,1.2
+SEN_26_843,Pape Gueye,27,Senegal,CM,Villarreal CF,La Liga,True,42,6,3,6,3,33,False,26,1.2
+SEN_8_603,Lamine Camara,22,Senegal,CM,AS Monaco,Ligue 1,True,45,7,3,7,1,36,True,8,1.0
+SEN_21_227,Habib Diarra,22,Senegal,CM,Sunderland A.F.C.,Other,False,21,4,1,4,0,16,False,21,0.6
+SEN_6_942,Pathé Ciss,32,Senegal,DM,Rayo Vallecano,La Liga,True,31,0,2,5,3,24,False,6,0.8
+SEN_17_727,Pape Matar Sarr,24,Senegal,CM,Tottenham Hotspur F.C.,Premier League,True,41,4,3,4,4,32,True,17,0.6
+SEN_22_886,Bara Sapoko Ndiaye,19,Senegal,AM,FC Bayern Munich,Bundesliga,True,1,0,0,6,3,27,False,22,1.2
+SEN_10_337,Sadio Mané,34,Senegal,LW,Al-Nassr FC,Other,False,130,54,10,54,3,104,True,10,1.2
+SEN_18_148,Ismaïla Sarr,28,Senegal,RW,Crystal Palace F.C.,Premier League,True,84,19,6,19,1,67,True,18,0.8
+SEN_13_799,Iliman Ndiaye,26,Senegal,LW,Everton F.C.,Premier League,True,41,4,3,4,0,32,False,13,0.8
+SEN_7_267,Assane Diao,21,Senegal,RW,Como 1907,Other,False,5,0,0,2,2,4,False,7,0.8
+SEN_20_316,Ibrahim Mbaye,18,Senegal,RM,Paris Saint-Germain F.C.,Ligue 1,True,11,3,0,3,1,8,False,20,1.4
+SEN_11_595,Nicolas Jackson,25,Senegal,ST,FC Bayern Munich,Bundesliga,True,34,8,2,8,3,27,True,11,1.0
+SEN_9_316,Bamba Dieng,26,Senegal,AM,FC Lorient,Other,False,23,2,1,2,0,18,False,9,1.0
+SEN_12_620,Chérif Ndiaye,30,Senegal,AM,Samsunspor,Other,False,19,4,1,4,0,15,False,12,1.0
+SOU_1_256,Ronwen Williams,34,Sudafrica,GK,Mamelodi Sundowns F.C.,Other,False,64,0,5,1,0,51,True,1,0.6
+SOU_22_704,Ricardo Goss,32,Sudafrica,GK,Siwelele F.C.,Other,False,7,0,0,5,3,5,False,22,1.0
+SOU_16_364,Sipho Chaine,30,Sudafrica,GK,Orlando Pirates F.C.,Other,False,4,0,0,2,2,3,False,16,1.2
+SOU_20_759,Khuliso Mudau,31,Sudafrica,RB,Mamelodi Sundowns F.C.,Other,False,34,1,2,1,0,27,True,20,1.0
+SOU_19_481,Nkosinathi Sibisi,31,Sudafrica,CB,Orlando Pirates F.C.,Other,False,21,0,1,4,3,16,True,19,0.6
+SOU_21_873,Ime Okon,22,Sudafrica,CB,Hannover 96,Other,False,8,1,0,1,4,6,True,21,1.4
+SOU_3_833,Khulumani Ndamane,22,Sudafrica,CB,Mamelodi Sundowns F.C.,Other,False,5,0,0,7,2,4,False,3,0.6
+SOU_6_439,Aubrey Modiba,31,Sudafrica,LB,Mamelodi Sundowns F.C.,Other,False,48,3,3,3,1,38,True,6,1.4
+SOU_1_825,Samukele Kabini,24,Sudafrica,LB,Molde FK,Other,False,21,0,1,7,2,16,False,18,1.2
+SOU_2_958,Thabang Matuludi,27,Sudafrica,RB,Polokwane City F.C.,Other,False,3,0,0,1,1,2,False,2,0.6
+SOU_24_160,Olwethu Makhanya,22,Sudafrica,CB,Philadelphia Union,Other,False,1,0,0,5,3,23,False,24,0.6
+SOU_2_453,Kamogelo Sebelebele,26,Sudafrica,AM,Orlando Pirates F.C.,Other,False,9,0,0,4,4,7,False,25,0.2
+SOU_26_229,Bradley Cross,25,Sudafrica,LB,Kaizer Chiefs F.C.,Other,False,1,0,0,6,1,29,False,26,0.4
+SOU_14_82,Mbekezeli Mbokazi,21,Sudafrica,CB,Chicago Fire FC,Other,False,10,1,0,1,1,8,False,14,1.0
+SOU_4_429,Teboho Mokoena,29,Sudafrica,CM,Mamelodi Sundowns F.C.,Other,False,57,9,4,9,0,45,True,4,1.2
+SOU_5_330,Thalente Mbatha,26,Sudafrica,DM,Orlando Pirates F.C.,Other,False,16,3,1,3,4,12,False,5,0.4
+SOU_3_175,Yaya Sithole,27,Sudafrica,CM,C.D. Tondela,Other,False,10,0,0,1,4,8,True,13,1.8
+SOU_23_434,Jayden Adams,25,Sudafrica,CM,Mamelodi Sundowns F.C.,Other,False,8,2,0,2,0,6,False,23,0.8
+SOU_7_534,Oswin Appollis,25,Sudafrica,RW,Orlando Pirates F.C.,Other,False,27,8,2,8,0,21,True,7,1.2
+SOU_15_267,Iqraam Rayners,31,Sudafrica,AM,Mamelodi Sundowns F.C.,Other,False,20,5,1,5,1,16,False,15,0.8
+SOU_8_607,Tshepang Moremi,26,Sudafrica,RW,Orlando Pirates F.C.,Other,False,10,1,0,1,0,8,False,8,0.8
+SOU_10_624,Relebohile Mofokeng,22,Sudafrica,LW,Orlando Pirates F.C.,Other,False,14,1,1,1,1,11,True,10,0.4
+SOU_17_542,Evidence Makgopa,26,Sudafrica,ST,Orlando Pirates F.C.,Other,False,27,6,2,6,3,21,False,17,0.6
+SOU_11_240,Themba Zwane,37,Sudafrica,AM,Mamelodi Sundowns F.C.,Other,False,55,12,4,12,3,44,True,11,1.2
+SOU_9_485,Lyle Foster,26,Sudafrica,ST,Burnley F.C.,Other,False,31,10,2,10,0,24,True,9,0.8
+SOU_12_294,Thapelo Maseko,23,Sudafrica,LW,AEL Limassol,Other,False,8,1,0,1,0,6,False,12,1.2
+TUN_16_413,Aymen Dahmen,29,Tunez,GK,CS Sfaxien,Other,False,37,0,2,5,1,29,True,16,1.0
+TUN_22_550,Sabri Ben Hessen,30,Tunez,RB,Étoile du Sahel,Other,False,1,0,0,5,0,22,False,22,1.0
+TUN_1_212,Abdelmouhib Chamakh,30,Tunez,GK,Club Africain,Other,False,7,0,0,0,1,5,False,1,0.6
+TUN_3_713,Montassar Talbi,28,Tunez,CB,FC Lorient,Other,False,64,4,5,4,1,51,True,3,0.6
+TUN_6_614,Dylan Bronn,31,Tunez,CB,Servette FC,Other,False,52,2,4,2,4,41,True,6,0.8
+TUN_4_253,Omar Rekik,25,Tunez,CB,NK Maribor,Other,False,6,0,0,2,0,4,False,4,1.0
+TUN_20_285,Yan Valery,27,Tunez,RB,BSC Young Boys,Other,False,22,0,1,0,4,17,True,20,1.0
+TUN_2_259,Ali Abdi,33,Tunez,LB,OGC Nice,Ligue 1,True,46,7,3,7,1,36,True,2,1.0
+TUN_23_440,Moutaz Neffati,22,Tunez,LB,IFK Norrköping,Other,False,5,0,0,7,3,4,False,23,1.0
+TUN_24_258,Raed Chikhaoui,22,Tunez,RB/RWB,US Monastir,Other,False,10,0,0,0,4,8,False,24,0.4
+TUN_5_947,Adem Arous,22,Tunez,CB,Kasımpaşa S.K.,Other,False,2,0,0,2,2,1,False,5,1.4
+TUN_2_353,Mohamed Amine Ben Hamida,24,Tunez,CB,Espérance de Tunis,Other,False,19,0,1,6,1,15,False,21,0.8
+TUN_17_42,Ellyes Skhiri,31,Tunez,CM,Eintracht Frankfurt,Bundesliga,True,83,4,6,4,2,66,True,17,1.2
+TUN_10_845,Hannibal Mejbri,23,Tunez,AM,Burnley F.C.,Other,False,45,1,3,1,2,36,True,10,1.0
+TUN_3_250,Anis Ben Slimane,24,Tunez,CM,Norwich City F.C.,Other,False,5,0,0,6,1,4,False,25,1.0
+TUN_4_225,Hadj Mahmoud,28,Tunez,CB/DM,FC Lugano,Other,False,24,0,1,1,0,19,False,15,0.4
+TUN_13_141,Rani Khedira,32,Tunez,CM,1. FC Union Berlin,Other,False,3,0,0,3,4,2,True,13,0.6
+TUN_12_653,Mortadha Ben Ouanes,32,Tunez,GK,Kasımpaşa S.K.,Other,False,18,0,1,4,1,14,False,12,1.4
+TUN_7_641,Elias Achouri,27,Tunez,LW,F.C. Copenhagen,Other,False,30,5,2,5,4,24,True,7,0.4
+TUN_11_372,Ismaël Gharbi,22,Tunez,RW,FC Augsburg,Bundesliga,True,17,2,1,2,1,13,True,11,0.8
+TUN_8_640,Elias Saad,27,Tunez,CM,Hannover 96,Other,False,15,3,1,3,2,12,False,8,0.0
+TUN_26_418,Sebastian Tounekti,24,Tunez,ST,Celtic F.C.,Other,False,12,1,0,1,1,9,False,26,1.8
+TUN_19_537,Firas Chaouat,30,Tunez,ST,Club Africain,Other,False,30,6,2,6,0,24,True,19,0.4
+TUN_14_581,Khalil Ayari,21,Tunez,AM/CM,Paris Saint-Germain F.C.,Ligue 1,True,4,0,0,5,1,3,False,14,0.8
+TUN_9_139,Hazem Mastouri,29,Tunez,ST,FC Dynamo Makhachkala,Other,False,19,4,1,4,0,15,False,9,0.4
+TUN_18_29,Rayan Elloumi,19,Tunez,RW/LW,Vancouver Whitecaps FC,Other,False,4,0,0,6,3,3,False,18,0.8
+CUR_1_487,Eloy Room,37,Curaçao,GK,,Other,False,72,0,5,4,3,57,True,1,1.0
+CUR_25_197,Tyrick Bodak,24,Curaçao,GK,,Other,False,4,0,0,3,2,3,False,25,0.4
+CUR_26_495,Trevor Doornbusch,27,Curaçao,GK,,Other,False,8,0,0,3,4,6,False,26,0.6
+CUR_23_645,Riechedly Bazoer,30,Curaçao,CB,,Other,False,5,0,0,3,2,4,True,23,0.8
+CUR_20_575,Joshua Brenet,32,Curaçao,RB,,Other,False,18,2,1,2,1,14,True,20,0.6
+CUR_4_241,Roshon van Eijma,28,Curaçao,CB,,Other,False,28,1,2,1,3,22,False,4,1.4
+CUR_5_503,Sherel Floranus,28,Curaçao,LB,,Other,False,27,0,2,3,0,21,True,5,1.2
+CUR_24_971,Deveron Fonville,23,Curaçao,LB,,Other,False,2,0,0,3,2,1,False,24,0.4
+CUR_3_324,Juriën Gaari,33,Curaçao,CB,,Other,False,60,1,4,1,2,48,False,3,1.2
+CUR_18_679,Armando Obispo,27,Curaçao,CB,,Other,False,6,0,0,5,1,4,True,18,0.8
+CUR_2_964,Shurandy Sambo,25,Curaçao,RB,,Other,False,8,0,0,5,0,6,False,2,0.6
+CUR_7_669,Juninho Bacuna,29,Curaçao,CM,,Other,False,50,14,4,14,4,40,True,7,0.6
+CUR_10_36,Leandro Bacuna,35,Curaçao,CM,,Other,False,72,16,5,16,4,57,True,10,1.0
+CUR_8_582,Livano Comenencia,22,Curaçao,RB,,Other,False,20,2,1,2,0,16,False,8,1.2
+CUR_22_153,Kevin Felida,27,Curaçao,DM,,Other,False,19,1,1,1,2,15,False,22,0.8
+CUR_15_587,Ar'jany Martha,23,Curaçao,AM,,Other,False,9,2,0,2,3,7,False,15,1.6
+CUR_13_305,Tyrese Noslin,24,Curaçao,RM,,Other,False,7,1,0,1,1,5,False,13,1.0
+CUR_6_587,Godfried Roemeratoe,27,Curaçao,CM,,Other,False,29,1,2,1,1,23,True,6,0.8
+CUR_11_775,Jeremy Antonisse,24,Curaçao,LW,,Other,False,27,4,2,4,0,21,False,11,1.2
+CUR_21_65,Tahith Chong,27,Curaçao,LW,,Other,False,6,3,0,3,1,4,True,21,0.4
+CUR_14_121,Kenji Gorre,32,Curaçao,LW,Maccabi Haifa,Other,False,38,6,3,6,3,30,False,14,0.8
+CUR_12_41,Sontje Hansen,24,Curaçao,RW,,Other,False,6,1,0,1,2,4,True,12,0.4
+CUR_19_678,Gervane Kastaneer,30,Curaçao,ST,,Other,False,29,9,2,9,2,23,False,19,1.4
+CUR_17_308,Brandley Kuwas,34,Curaçao,AM,,Other,False,36,2,2,2,2,28,False,17,0.4
+CUR_1_809,Jürgen Locadia,29,Curaçao,ST,,Other,False,10,0,0,5,0,8,True,9,1.2
+CUR_16_613,Jearl Margaritha,26,Curaçao,LW,,Other,False,22,5,1,5,2,17,False,16,0.8
+HAI_1_535,Johny Placide,38,Haiti,GK,,Other,False,83,0,6,7,4,66,True,1,0.6
+HAI_12_194,Alexandre Pierre,25,Haiti,GK,,Other,False,17,0,1,4,0,13,False,12,0.6
+HAI_23_586,Josué Duverger,26,Haiti,GK,,Other,False,7,0,0,0,1,5,False,23,1.0
+HAI_2_664,Carlens Arcus,30,Haiti,RB,,Other,False,56,1,4,1,2,44,True,2,0.8
+HAI_24_842,Wilguens Paugain,25,Haiti,LB,,Other,False,8,0,0,4,0,6,False,24,0.8
+HAI_1_804,Duke Lacroix,30,Haiti,LB,,Other,False,11,0,0,7,0,8,False,13,0.4
+HAI_8_123,Martin Expérience,27,Haiti,LB,,Other,False,21,0,1,2,4,16,True,8,0.4
+HAI_22_714,Jean-Kévin Duverne,29,Haiti,CB,,Other,False,17,1,1,1,4,13,True,22,0.8
+HAI_4_400,Ricardo Adé,36,Haiti,CB,,Other,False,61,2,4,2,0,48,True,4,1.4
+HAI_5_424,Hannes Delcroix,27,Haiti,CB,,Other,False,7,0,0,6,4,5,False,5,1.2
+HAI_3_643,Keeto Thermoncy,20,Haiti,CB,,Other,False,1,0,0,1,2,31,False,3,0.6
+HAI_2_603,Carl Fred Sainté,29,Haiti,CM,,Other,False,20,0,1,6,3,16,False,6,1.0
+HAI_14_193,Leverton Pierre,28,Haiti,CM,,Other,False,33,0,2,3,4,26,True,14,0.2
+HAI_17_521,Danley Jean Jacques,26,Haiti,CM,,Other,False,31,6,2,6,3,24,True,17,1.0
+HAI_10_704,Jean-Ricner Bellegarde,28,Haiti,AM,,Other,False,10,0,0,3,0,8,True,10,0.8
+HAI_26_123,Woodensky Pierre,22,Haiti,CM,,Other,False,1,0,0,3,4,24,False,26,1.2
+HAI_25_517,Dominique Simon,26,Haiti,CM,,Other,False,2,0,0,0,4,1,False,25,1.2
+HAI_3_514,Louicius Deedson,29,Haiti,LW,,Other,False,22,0,1,4,3,17,False,11,0.6
+HAI_21_110,Josué Casimir,25,Haiti,RW,,Other,False,7,0,0,2,1,5,True,21,1.4
+HAI_7_267,Derrick Etienne Jr.,30,Haiti,LW,,Other,False,50,8,4,8,3,40,False,7,1.6
+HAI_15_322,Ruben Providence,25,Haiti,LM,,Other,False,15,3,1,3,0,12,False,15,0.6
+HAI_9_464,Duckens Nazon,32,Haiti,ST,,Other,False,83,44,6,44,3,66,True,9,1.2
+HAI_20_682,Frantzdy Pierrot,31,Haiti,ST,,Other,False,53,34,4,34,2,42,False,20,0.4
+HAI_18_139,Wilson Isidor,26,Haiti,LW,,Other,False,4,2,0,2,0,3,True,18,0.6
+HAI_19_63,Yassin Fortuné,27,Haiti,RW,,Other,False,4,0,0,2,0,3,False,19,1.0
+HAI_16_470,Lenny Joseph,26,Haiti,ST,ST/Winger,Other,False,2,1,0,1,3,1,False,16,1.2
+PAN_22_136,Orlando Mosquera,32,Panama,GK,,Other,False,49,0,3,4,1,39,False,22,1.4
+PAN_1_804,Luis Mejía,35,Panama,GK,,Other,False,56,0,4,6,3,44,True,1,0.8
+PAN_12_233,César Samudio,32,Panama,GK,,Other,False,5,0,0,3,1,4,False,12,1.0
+PAN_2_190,César Blackman,28,Panama,RB,,Other,False,40,3,3,3,2,32,False,2,1.0
+PAN_26_620,Jorge Gutiérrez,28,Panama,LB,,Other,False,18,0,1,2,1,14,False,26,1.2
+PAN_23_417,Michael Amir Murillo,30,Panama,RB,,Other,False,93,9,7,9,4,74,True,23,0.8
+PAN_4_7,Fidel Escobar,31,Panama,CB,Deportivo Saprissa,Other,False,99,4,7,4,0,79,True,4,1.0
+PAN_16_929,Andrés Andrade,28,Panama,CB,,Other,False,50,1,4,1,4,40,False,16,1.0
+PAN_5_953,Edgardo Fariña,25,Panama,CB,,Other,False,18,0,1,3,3,14,False,5,1.0
+PAN_3_446,José Córdoba,25,Panama,CB,,Other,False,32,1,2,1,4,25,True,3,1.2
+PAN_15_451,Éric Davis,35,Panama,LB,CD Plaza Amador,Other,False,107,9,8,9,3,85,True,15,0.6
+PAN_13_259,Jiovany Ramos,29,Panama,CB,,Other,False,23,2,1,2,2,18,False,13,1.0
+PAN_25_108,Roderick Miller,34,Panama,CB,Turan Tovuz,Other,False,49,2,3,2,3,39,False,25,1.0
+PAN_20_756,Aníbal Godoy,36,Panama,CM,,Other,False,159,4,12,4,0,127,True,20,1.2
+PAN_8_238,Adalberto Carrasquilla,28,Panama,CM,,Other,False,73,3,5,3,2,58,True,8,0.6
+PAN_14_148,Carlos Harvey,26,Panama,DM,,Other,False,28,3,2,3,1,22,False,14,0.6
+PAN_6_681,Cristian Martínez,29,Panama,DM,Hapoel Ironi Kiryat Shmona,Other,False,67,2,5,2,1,53,False,6,0.4
+PAN_7_869,José Luis Rodríguez,28,Panama,LW,,Other,False,70,8,5,8,4,56,True,7,1.0
+PAN_21_743,César Yanis,30,Panama,RW,Cobresal,Other,False,55,5,4,5,4,44,False,21,1.2
+PAN_1_371,Yoel Bárcenas,28,Panama,RW,,Other,False,19,0,1,6,2,15,True,11,0.4
+PAN_19_631,Alberto Quintero,39,Panama,LB,CD Plaza Amador,Other,False,141,7,11,7,0,112,False,19,1.0
+PAN_24_40,Azarías Londoño,25,Panama,ST,,Other,False,12,1,0,1,0,9,False,24,0.6
+PAN_10_765,Ismael Díaz,29,Panama,AM,,Other,False,56,17,4,17,2,44,True,10,0.6
+PAN_18_508,Cecilio Waterman,35,Panama,RM,,Other,False,55,15,4,15,2,44,False,18,1.4
+PAN_17_766,José Fajardo,33,Panama,ST,,Other,False,69,17,5,17,1,55,True,17,0.8
+PAN_9_952,Tomás Rodríguez,27,Panama,ST,Deportivo Saprissa,Other,False,13,4,1,4,3,10,False,9,1.0
+NEW_1_405,Max Crocombe,33,Nueva Zelanda,GK,Millwall FC,Other,False,24,0,1,3,0,19,True,1,1.0
+NEW_12_1,Alex Paulsen,24,Nueva Zelanda,GK,Lechia Gdańsk,Other,False,8,0,0,2,3,6,False,12,1.4
+NEW_22_70,Michael Woud,27,Nueva Zelanda,GK,Auckland FC,Other,False,7,0,0,1,4,5,False,22,0.6
+NEW_2_582,Tim Payne,32,Nueva Zelanda,RB,Wellington Phoenix,Other,False,52,3,4,3,2,41,True,2,1.0
+NEW_3_875,Francis de Vries,32,Nueva Zelanda,LB,Auckland FC,Other,False,20,1,1,1,4,16,False,3,0.6
+NEW_4_289,Tyler Bindon,21,Nueva Zelanda,CB,Nottingham Forest,Premier League,True,25,2,2,2,3,20,False,4,1.6
+NEW_5_572,Michael Boxall,38,Nueva Zelanda,CB,Minnesota United,Other,False,64,1,5,1,0,51,True,5,1.2
+NEW_13_580,Liberato Cacace,26,Nueva Zelanda,LB,Wrexham AFC,Other,False,37,1,2,1,1,29,True,13,0.8
+NEW_15_320,Nando Pijnaker,27,Nueva Zelanda,CB,Auckland FC,Other,False,26,0,2,0,1,20,False,15,0.4
+NEW_16_409,Finn Surman,23,Nueva Zelanda,CB,Portland Timbers,Other,False,19,2,1,2,4,15,True,16,0.4
+NEW_24_851,Callan Elliot,27,Nueva Zelanda,RB,Auckland FC,Other,False,11,0,0,3,1,8,False,24,0.4
+NEW_26_809,Tommy Smith,36,Nueva Zelanda,CB,Braintree Town,Other,False,57,2,4,2,4,45,False,26,1.0
+NEW_6_483,Joe Bell,27,Nueva Zelanda,CM,Viking FK,Other,False,32,1,2,1,3,25,True,6,1.2
+NEW_1_444,Matt Garbett,27,Nueva Zelanda,RW,Peterborough United,Other,False,15,0,1,2,1,12,True,7,0.2
+NEW_8_303,Marko Stamenić,24,Nueva Zelanda,CM,Swansea City,Other,False,40,3,3,3,1,32,True,8,0.6
+NEW_10_340,Sarpreet Singh,27,Nueva Zelanda,AM,Wellington Phoenix,Other,False,28,3,2,3,1,22,True,10,0.6
+NEW_14_849,Alex Rufer,30,Nueva Zelanda,CM,Wellington Phoenix,Other,False,26,0,2,5,0,20,False,14,0.8
+NEW_23_482,Ryan Thomas,32,Nueva Zelanda,CM,PEC Zwolle,Other,False,25,3,2,3,2,20,False,23,0.2
+NEW_9_545,Chris Wood,35,Nueva Zelanda,ST,Nottingham Forest,Premier League,True,90,45,7,45,0,72,True,9,0.6
+NEW_2_850,Eli Just,30,Nueva Zelanda,LW,Motherwell FC,Other,False,6,0,0,6,3,4,True,11,1.0
+NEW_17_511,Kosta Barbarouses,36,Nueva Zelanda,RB,Western Sydney Wanderers,Other,False,76,10,6,10,1,60,False,17,1.4
+NEW_18_844,Ben Waine,25,Nueva Zelanda,ST,Port Vale F.C.,Other,False,31,9,2,9,3,24,False,18,0.6
+NEW_19_581,Ben Old,24,Nueva Zelanda,AM,Saint-Étienne,Other,False,24,2,1,2,2,19,False,19,1.0
+NEW_20_994,Callum McCowatt,27,Nueva Zelanda,LW,Silkeborg IF,Other,False,33,5,2,5,1,26,False,20,1.2
+NEW_21_330,Jesse Randall,24,Nueva Zelanda,RW,Auckland FC,Other,False,11,2,0,2,3,8,False,21,1.2
+NEW_25_832,Lachlan Bayliss,24,Nueva Zelanda,CM,Newcastle Jets,Premier League,True,4,0,0,2,1,3,False,25,1.4

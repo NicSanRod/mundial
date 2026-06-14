@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Persona: {{ persona.nombre }}</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background: #2d6cdf;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1b4fb5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #2d6cdf;
+            color: white;
+        }
+
+        tr:hover {
+            background: #f1f5ff;
+        }
+
+        .empty {
+            text-align: center;
+            color: #777;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>👤 {{ persona.nombre }}</h1>
+
+    <div class="card">
+        <p style="text-align:center;">
+            Puntuación: <strong>{{ persona.puntuacion }}</strong>
+        </p>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="card">
+        <h2>Añadir predicción</h2>
+
+        <form action="/predicciones/{{ persona.id }}" method="POST">
+
+            <label>Partido</label>
+            <select name="partido" required>
+                {% for p in partidos %}
+                <option value="{{ p.id }}">
+                    {{ p.local.nombre }} vs {{ p.visitante.nombre }}
+                </option>
+                {% endfor %}
+            </select>
+
+            <label>Goles Local</label>
+            <input type="number" name="goles_local" required>
+
+            <label>Goles Visitante</label>
+            <input type="number" name="goles_visitante" required>
+
+            <label>Goleador Local</label>
+            <select name="goleador_local" required>
+                {% for j in jugadores %}
+                <option value="{{ j.id }}">{{ j.nombre }}</option>
+                {% endfor %}
+            </select>
+
+            <label>Goleador Visitante</label>
+            <select name="goleador_visitante" required>
+                {% for j in jugadores %}
+                <option value="{{ j.id }}">{{ j.nombre }}</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">Guardar predicción</button>
+        </form>
+    </div>
+
+    <!-- PREDICCIONES -->
+    <h2>Predicciones</h2>
+
+    {% if persona.predicciones %}
+    <table>
+        <tr>
+            <th>Partido</th>
+            <th>Resultado</th>
+            <th>Goleador Local</th>
+            <th>Goleador Visitante</th>
+        </tr>
+
+        {% for p in persona.predicciones %}
+        <tr>
+            <td>{{ p.partido.local.nombre }} vs {{ p.partido.visitante.nombre }}</td>
+            <td>{{ p.goles_local }} - {{ p.goles_visitante }}</td>
+            <td>{{ p.goleador_local.nombre }}</td>
+            <td>{{ p.goleador_visitante.nombre }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p class="empty">No hay predicciones registradas.</p>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

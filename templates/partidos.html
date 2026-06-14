@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Partidos</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        form {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background: #2d6cdf;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1b4fb5;
+        }
+
+        .card {
+            background: white;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .match {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .score {
+            color: #444;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>⚽ Gestión de Partidos</h1>
+
+    <!-- CREAR PARTIDO -->
+    <h1>Crear Partido</h1>
+    <form action="/partidos" method="POST">
+        <label>Local</label>
+        <select name="local" required>
+            {% for s in selecciones %}
+            <option value="{{ s.id }}">{{ s.nombre }}</option>
+            {% endfor %}
+        </select>
+
+        <label>Visitante</label>
+        <select name="visitante" required>
+            {% for s in selecciones %}
+            <option value="{{ s.id }}">{{ s.nombre }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Crear Partido</button>
+    </form>
+
+    <!-- MODIFICAR PARTIDO -->
+    <h1>Modificar Partido</h1>
+    <form action="/partidos/modificar" method="POST">
+        <label>Partido</label>
+        <select name="partido_id" required>
+            {% for p in partidos %}
+            <option value="{{ p.id }}">
+                {{ p.local.nombre }} vs {{ p.visitante.nombre }}
+            </option>
+            {% endfor %}
+        </select>
+
+        <label>Goles Local</label>
+        <input type="number" name="goles_local" required>
+
+        <label>Goles Visitante</label>
+        <input type="number" name="goles_visitante" required>
+
+        <button type="submit">Actualizar</button>
+    </form>
+
+    <!-- GOLEADORES -->
+    <h1>Goleadores</h1>
+    <form action="/goleadores" method="POST">
+        <label>Partido</label>
+        <select name="partido_id" required>
+            {% for p in partidos %}
+            <option value="{{ p.id }}">
+                {{ p.local.nombre }} vs {{ p.visitante.nombre }}
+            </option>
+            {% endfor %}
+        </select>
+
+        <label>Goleador</label>
+        <select name="goleador" required>
+            {% for j in jugadores %}
+            <option value="{{ j.id }}">{{ j.nombre }}</option>
+            {% endfor %}
+        </select>
+
+        <label>Cantidad</label>
+        <input type="number" name="cantidad" required>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <!-- LISTA PARTIDOS -->
+    <div class="section">
+        <h1>Partidos</h1>
+
+        {% for p in partidos %}
+        {% if p.goles_local %}
+        <div class="card">
+            <div class="match">
+                {{ p.local.nombre }} vs {{ p.visitante.nombre }}
+            </div>
+            <div class="score">
+                {{ p.goles_local }} - {{ p.goles_visitante }}
+            </div>
+        </div>
+        {% else %}
+        <div class="card">
+            <div class="match">
+                {{ p.local.nombre }} vs {{ p.visitante.nombre }}
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- LISTA GOLEADORES -->
+    <div class="section">
+        <h1>Goleadores</h1>
+
+        {% for g in goleadores %}
+        <div class="card">
+            <div class="match">
+                {{ g.partido.local.nombre }} vs {{ g.partido.visitante.nombre }}
+            </div>
+            <div class="score">
+                ⚽ {{ g.goleador.nombre }} — {{ g.cantidad }} goles
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+</body>
+</html>
