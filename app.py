@@ -69,7 +69,7 @@ class Partido(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     local_id=db.Column(db.Integer, db.ForeignKey('seleccion.id'), nullable=False)
     visitante_id=db.Column(db.Integer, db.ForeignKey('seleccion.id'), nullable=False)
-    goles_local=db.Column(db.Integer.nullable=True)
+    goles_local=db.Column(db.Integer,nullable=True)
     goles_visitante=db.Column(db.Integer,nullable=True)
     
     local=db.relationship('Seleccion', foreign_keys=[local_id])
