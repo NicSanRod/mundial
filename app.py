@@ -147,7 +147,6 @@ def llenar_db():
     
 with app.app_context():
     if Seleccion.query.all() is None:
-        db.drop_all()
         db.create_all()
         llenar_db()
     
