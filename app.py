@@ -2,14 +2,24 @@ import os
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import pandas
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ruta_datos = os.path.join(BASE_DIR, "datos")
+ruta_jugadores = os.path.join(ruta_datos,"world_cup_2026_squads.csv")
+ruta_partidos = os.path.join(ruta_datos,"partidos.csv")
 
-df_jugadores = pandas.read_csv("datos\\world_cup_2026_squads.csv")
-df_partidos =pandas.read_csv("datos\\partidos.csv")
+
+df_jugadores = pandas.read_csv(ruta_jugadores)
+df_partidos =pandas.read_csv(ruta_partidos)
 orden = ['GK', 'LB', 'CB', 'RB','DM','CM','AM','LW','ST','RW']
 prioridades = {valor: indice for indice, valor in enumerate(orden)}
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+url=os.enviroment.get('DATABASE_URL')
+if url is None:
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user:pass@host:5432/mundial_ivdg'
+else:
+    app.config['SQLALCHEMY_DATABASE_URI'] = url
+
 db = SQLAlchemy(app)
 
 class Persona(db.Model):
