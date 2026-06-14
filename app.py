@@ -128,13 +128,20 @@ def llenar_db():
     for index, row in df_partidos.iterrows():
         local_obj = Seleccion.query.filter_by(nombre=row["local"]).first()
         visitante_obj = Seleccion.query.filter_by(nombre=row["visitante"]).first()
-        
-        partido = Partido(
-            local=local_obj, 
-            visitante=visitante_obj, 
-            goles_local=row["goles_local"], 
-            goles_visitante=row["goles_visitante"]
-        )
+        if row["goles_local"] is not None:
+            partido = Partido(
+                local=local_obj, 
+                visitante=visitante_obj, 
+                goles_local=row["goles_local"], 
+                goles_visitante=row["goles_visitante"]
+            )
+        else:
+             partido = Partido(
+                local=local_obj, 
+                visitante=visitante_obj, 
+                goles_local=999, 
+                goles_visitante=999
+            )   
         
         db.session.add(partido)
         db.session.commit()
