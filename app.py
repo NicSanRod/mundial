@@ -221,7 +221,7 @@ def partido():
         local_id=request.form["local"]
         visitante_id=request.form["visitante"]
         
-        partido=Partido(local_id=local_id,visitante_id=visitante_id)
+        partido=Partido(local_id=local_id,visitante_id=visitante_id,goles_local=999,goles_visitante=999)
         db.session.add(partido)
         db.session.commit()
         return redirect(url_for('partido'))

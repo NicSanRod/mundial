@@ -162,7 +162,7 @@
         <h1>Partidos</h1>
 
         {% for p in partidos %}
-        {% if p.goles_local %}
+        {% if p.goles_local!=999 %}
         <div class="card">
             <div class="match">
                 {{ p.local.nombre }} vs {{ p.visitante.nombre }}
