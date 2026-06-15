@@ -128,19 +128,19 @@ def llenar_db():
     for index, row in df_partidos.iterrows():
         local_obj = Seleccion.query.filter_by(nombre=row["local"]).first()
         visitante_obj = Seleccion.query.filter_by(nombre=row["visitante"]).first()
-        if row["goles_local"] is not None:
+        if pandas.isna( row["goles_local"]):
             partido = Partido(
                 local=local_obj, 
                 visitante=visitante_obj, 
-                goles_local=row["goles_local"], 
-                goles_visitante=row["goles_visitante"]
+                goles_local=999, 
+                goles_visitante=999
             )
         else:
              partido = Partido(
                 local=local_obj, 
                 visitante=visitante_obj, 
-                goles_local=999, 
-                goles_visitante=999
+                 goles_local=row["goles_local"], 
+                goles_visitante=row["goles_visitante"]
             )   
         
         db.session.add(partido)
