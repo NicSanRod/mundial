@@ -228,7 +228,7 @@ def borrar_prediccion(id):
     aux=prediccion.persona_id
     db.session.delete(prediccion)
     db.session.commit()
-    contar(persona)
+    contar(Persona.query.get(aux))
     return redirect(url_for('persona', id=aux))
 @app.route('/partidos',methods=['GET','POST'])
 def partido():
