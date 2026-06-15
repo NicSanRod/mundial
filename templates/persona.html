@@ -116,9 +116,9 @@
             <form action="/predicciones/{{ persona.id }}" method="POST">
 
                 <label>Partido</label>
-                <select name="partido" required>
+                <select id="partido" name="partido" required>
                     {% for p in partidos %}
-                    <option value="{{ p.id }}">
+                    <option value="{{ p.id }}" data-local="{{ p.local.id }}" data-visitante="{{ p.visitante.id }}">
                         {{ p.local.nombre }} vs {{ p.visitante.nombre }}
                     </option>
                     {% endfor %}
@@ -131,17 +131,11 @@
                 <input type="number" name="goles_visitante" required>
 
                 <label>Goleador Local</label>
-                <select name="goleador_local" required>
-                    {% for j in jugadores %}
-                    <option value="{{ j.id }}">{{ j.nombre }}</option>
-                    {% endfor %}
+                <select id="goleador_local" name="goleador_local" required>
                 </select>
 
                 <label>Goleador Visitante</label>
-                <select name="goleador_visitante" required>
-                    {% for j in jugadores %}
-                    <option value="{{ j.id }}">{{ j.nombre }}</option>
-                    {% endfor %}
+                <select id="goleador_visitante" name="goleador_visitante" required>
                 </select>
 
                 <button type="submit">Guardar predicción</button>
@@ -182,5 +176,51 @@
     </div>
 
 </body>
+<script>
+    const jugadores = [
+        {% for j in jugadores %}
+    {
+        id: {{j.id}},
+        nombre: "{{ j.nombre }}",
+            seleccion_id: {{j.seleccion_id}}
+    } {% if not loop.last %}, {% endif %}
+    {% endfor %}
+];
+</script>
+<script>
+
+    function actualizarJugadores() {
+
+        const partido = document.getElementById("partido");
+        const opcion = partido.options[partido.selectedIndex];
+
+        const localId = parseInt(opcion.dataset.local);
+        const visitanteId = parseInt(opcion.dataset.visitante);
+
+        const selectLocal = document.getElementById("goleador_local");
+        const selectVisitante = document.getElementById("goleador_visitante");
+
+        selectLocal.innerHTML = "";
+        selectVisitante.innerHTML = "";
+
+        jugadores.forEach(j => {
+
+            if (j.seleccion_id === localId) {
+                selectLocal.innerHTML +=
+                    `<option value="${j.id}">${j.nombre}</option>`;
+            }
+
+            if (j.seleccion_id === visitanteId) {
+                selectVisitante.innerHTML +=
+                    `<option value="${j.id}">${j.nombre}</option>`;
+            }
+        });
+    }
+
+    document.getElementById("partido")
+        .addEventListener("change", actualizarJugadores);
+
+    actualizarJugadores();
+</script>
 
 </html>

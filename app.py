@@ -260,6 +260,7 @@ def partido_goles():
     return redirect(url_for('partido'))
 @app.route('/goleadores',methods=['POST'])
 def goleadores():
+    print(request.form)
     partido_id=request.form["partido_id"]
     goleador=request.form["goleador"]
     cantidad=request.form["cantidad"]
