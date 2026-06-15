@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Persona: {{ persona.nombre }}</title>
@@ -18,7 +19,8 @@
             padding: 20px;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             text-align: center;
             color: #333;
         }
@@ -28,7 +30,7 @@
             padding: 15px;
             margin: 15px 0;
             border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
         label {
@@ -37,7 +39,8 @@
             font-weight: bold;
         }
 
-        select, input {
+        select,
+        input {
             width: 100%;
             padding: 8px;
             margin-top: 5px;
@@ -67,10 +70,11 @@
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
-        th, td {
+        th,
+        td {
             padding: 12px;
             text-align: center;
             border-bottom: 1px solid #eee;
@@ -95,81 +99,88 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <h1>👤 {{ persona.nombre }}</h1>
+        <h1>👤 {{ persona.nombre }}</h1>
 
-    <div class="card">
-        <p style="text-align:center;">
-            Puntuación: <strong>{{ persona.puntuacion }}</strong>
-        </p>
+        <div class="card">
+            <p style="text-align:center;">
+                Puntuación: <strong>{{ persona.puntuacion }}</strong>
+            </p>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="card">
+            <h2>Añadir predicción</h2>
+
+            <form action="/predicciones/{{ persona.id }}" method="POST">
+
+                <label>Partido</label>
+                <select name="partido" required>
+                    {% for p in partidos %}
+                    <option value="{{ p.id }}">
+                        {{ p.local.nombre }} vs {{ p.visitante.nombre }}
+                    </option>
+                    {% endfor %}
+                </select>
+
+                <label>Goles Local</label>
+                <input type="number" name="goles_local" required>
+
+                <label>Goles Visitante</label>
+                <input type="number" name="goles_visitante" required>
+
+                <label>Goleador Local</label>
+                <select name="goleador_local" required>
+                    {% for j in jugadores %}
+                    <option value="{{ j.id }}">{{ j.nombre }}</option>
+                    {% endfor %}
+                </select>
+
+                <label>Goleador Visitante</label>
+                <select name="goleador_visitante" required>
+                    {% for j in jugadores %}
+                    <option value="{{ j.id }}">{{ j.nombre }}</option>
+                    {% endfor %}
+                </select>
+
+                <button type="submit">Guardar predicción</button>
+            </form>
+        </div>
+
+        <!-- PREDICCIONES -->
+        <h2>Predicciones</h2>
+
+        {% if persona.predicciones %}
+        <table>
+            <tr>
+                <th>Partido</th>
+                <th>Resultado</th>
+                <th>Goleador Local</th>
+                <th>Goleador Visitante</th>
+            </tr>
+
+            {% for p in persona.predicciones %}
+            <tr>
+                <td>{{ p.partido.local.nombre }} vs {{ p.partido.visitante.nombre }}</td>
+                <td>{{ p.goles_local }} - {{ p.goles_visitante }}</td>
+                <td>{{ p.goleador_local.nombre }}</td>
+                <td>{{ p.goleador_visitante.nombre }}</td>
+                <td>
+                    <a href="/predicciones/borrar/{{ p.id }}">
+                        <button>Borrar</button>
+                    </a>
+                </td>
+            </tr>
+
+            {% endfor %}
+        </table>
+        {% else %}
+        <p class="empty">No hay predicciones registradas.</p>
+        {% endif %}
+
     </div>
-
-    <!-- FORMULARIO -->
-    <div class="card">
-        <h2>Añadir predicción</h2>
-
-        <form action="/predicciones/{{ persona.id }}" method="POST">
-
-            <label>Partido</label>
-            <select name="partido" required>
-                {% for p in partidos %}
-                <option value="{{ p.id }}">
-                    {{ p.local.nombre }} vs {{ p.visitante.nombre }}
-                </option>
-                {% endfor %}
-            </select>
-
-            <label>Goles Local</label>
-            <input type="number" name="goles_local" required>
-
-            <label>Goles Visitante</label>
-            <input type="number" name="goles_visitante" required>
-
-            <label>Goleador Local</label>
-            <select name="goleador_local" required>
-                {% for j in jugadores %}
-                <option value="{{ j.id }}">{{ j.nombre }}</option>
-                {% endfor %}
-            </select>
-
-            <label>Goleador Visitante</label>
-            <select name="goleador_visitante" required>
-                {% for j in jugadores %}
-                <option value="{{ j.id }}">{{ j.nombre }}</option>
-                {% endfor %}
-            </select>
-
-            <button type="submit">Guardar predicción</button>
-        </form>
-    </div>
-
-    <!-- PREDICCIONES -->
-    <h2>Predicciones</h2>
-
-    {% if persona.predicciones %}
-    <table>
-        <tr>
-            <th>Partido</th>
-            <th>Resultado</th>
-            <th>Goleador Local</th>
-            <th>Goleador Visitante</th>
-        </tr>
-
-        {% for p in persona.predicciones %}
-        <tr>
-            <td>{{ p.partido.local.nombre }} vs {{ p.partido.visitante.nombre }}</td>
-            <td>{{ p.goles_local }} - {{ p.goles_visitante }}</td>
-            <td>{{ p.goleador_local.nombre }}</td>
-            <td>{{ p.goleador_visitante.nombre }}</td>
-        </tr>
-        {% endfor %}
-    </table>
-    {% else %}
-    <p class="empty">No hay predicciones registradas.</p>
-    {% endif %}
-
-</div>
 
 </body>
+
 </html>

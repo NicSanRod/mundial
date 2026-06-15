@@ -154,9 +154,9 @@ def llenar_db():
     
     
 with app.app_context():
-    db.drop_all()
     db.create_all()
-    llenar_db()
+    if Seleccion.query.first() is None:
+        llenar_db()
     
 def contar(persona):
     count=0
@@ -168,6 +168,8 @@ def contar(persona):
             if p.goles_local==par.goles_local and p.goles_visitante==par.goles_visitante:
                 count+=4
             
+            elif (par.goles_local-par.goles_visitante)!=0 and ((p.goles_local-p.goles_visitante)/(par.goles_local-par.goles_visitante))>0:
+                count+=1
             elif (p.goles_local-p.goles_visitante)==(par.goles_local-par.goles_visitante):
                 count+=1
             
@@ -194,7 +196,7 @@ def persona(id):
     persona = Persona.query.get_or_404(id)
     partidos = Partido.query.all()
     jugadores = Jugador.query.all()
-    
+    contar(persona)
     return render_template('persona.html', 
                            persona=persona, 
                            partidos=partidos, 
@@ -220,9 +222,14 @@ def predicciones(id):
                               goleador_visitante=goleador_visitante,
                               persona=persona))
     db.session.commit()
-    contar(Persona.query.get(id))
     return redirect(url_for('persona', id=id))
-    
+@app.route('/predicciones/borrar/<int:id>')
+def borrar_prediccion(id):
+    prediccion=Prediccion.query.get(id)
+    aux=prediccion.persona_id
+    db.session.delete(prediccion)
+    db.session.commit()
+    return redirect(url_for('persona', id=aux))
 @app.route('/partidos',methods=['GET','POST'])
 def partido():
     if request.method=="POST":
