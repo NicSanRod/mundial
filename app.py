@@ -196,7 +196,6 @@ def persona(id):
     persona = Persona.query.get_or_404(id)
     partidos = Partido.query.all()
     jugadores = Jugador.query.all()
-    contar(persona)
     return render_template('persona.html', 
                            persona=persona, 
                            partidos=partidos, 
@@ -214,7 +213,7 @@ def predicciones(id):
     goleador_local=Jugador.query.get(goleador_local_id)
     goleador_visitante=Jugador.query.get(goleador_visitante_id)
     persona=Persona.query.get(id)
-
+    contar(persona)
     db.session.add(Prediccion(partido=partido,
                               goles_local=goles_local,
                               goles_visitante=goles_visitante,
@@ -227,6 +226,7 @@ def predicciones(id):
 def borrar_prediccion(id):
     prediccion=Prediccion.query.get(id)
     aux=prediccion.persona_id
+    contar(Persona.query.get(aux))
     db.session.delete(prediccion)
     db.session.commit()
     return redirect(url_for('persona', id=aux))
