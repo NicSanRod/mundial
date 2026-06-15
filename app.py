@@ -213,7 +213,6 @@ def predicciones(id):
     goleador_local=Jugador.query.get(goleador_local_id)
     goleador_visitante=Jugador.query.get(goleador_visitante_id)
     persona=Persona.query.get(id)
-    contar(persona)
     db.session.add(Prediccion(partido=partido,
                               goles_local=goles_local,
                               goles_visitante=goles_visitante,
@@ -221,14 +220,15 @@ def predicciones(id):
                               goleador_visitante=goleador_visitante,
                               persona=persona))
     db.session.commit()
+    contar(persona)
     return redirect(url_for('persona', id=id))
 @app.route('/predicciones/borrar/<int:id>')
 def borrar_prediccion(id):
     prediccion=Prediccion.query.get(id)
     aux=prediccion.persona_id
-    contar(Persona.query.get(aux))
     db.session.delete(prediccion)
     db.session.commit()
+    contar(persona)
     return redirect(url_for('persona', id=aux))
 @app.route('/partidos',methods=['GET','POST'])
 def partido():
