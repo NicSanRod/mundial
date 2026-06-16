@@ -165,9 +165,7 @@ def cuenta(partido,prediccion):
 
 def cuenta_resultado(partido,prediccion):
     count=0
-    print(partido.goles_local)
     if partido.goles_local !=999:
-        print("Porq si")
         if partido.goles_local==prediccion.goles_local and partido.goles_visitante==prediccion.goles_visitante:
             count+=4
         elif (partido.goles_local-partido.goles_visitante)!=0 and ((prediccion.goles_local-prediccion.goles_visitante)/(partido.goles_local-partido.goles_visitante))>0:
@@ -179,24 +177,14 @@ def cuenta_resultado(partido,prediccion):
 
 def cuenta_goleador(partido,prediccion,goleador):
     count=0
-    local=Goleadores.query.filter_by(partido=partido, goleador=prediccion.goleador_local).first()
-    visitante=Goleadores.query.filter_by(partido=partido, goleador=prediccion.goleador_visitante).first()
+    local=Goleadores.query.filter_by(partido_id=partido.id, goleador=prediccion.goleador_local).first()
+    visitante=Goleadores.query.filter_by(partido_id=partido.id, goleador=prediccion.goleador_visitante).first()
         
-    if local is not None and local.id==goleador.id:
-        print("Bien")
+    if local is not None and local.goleador_id==goleador.goleador_id:
         count+=2*local.cantidad
-    if visitante is not None and visitante.id==goleador.id:
-        print
+    if visitante is not None and visitante.goleador_id==goleador.goleador_id:
         count+=2*visitante.cantidad
     return count
-def contar(persona):
-    count=0
-    
-    for prediccion in persona.predicciones:
-        partido=prediccion.partido
-        cont+=cuenta(partido=partido,prediccion=prediccion)
-    count-=persona.cervezas*3
-    persona.cambiar_puntuacion(count)
     
 def contar_cerveza(persona):
     persona.cervezas+=1
@@ -211,9 +199,7 @@ def descontar_cerveza(persona):
     
 def contar_prediccion(persona,prediccion):
     partido=prediccion.partido
-    print(partido)
     persona.puntuacion+=cuenta(prediccion=prediccion,partido=partido)
-    print(persona.puntuacion)
     db.session.commit()
     
 def descontar_prediccion(persona,prediccion):
@@ -237,10 +223,8 @@ def descontar_partido(persona,partido):
     
 def contar_goleador(persona,goleador):
     partido=goleador.partido
-    print(persona,partido,goleador)
     for prediccion in persona.predicciones:
         if prediccion.partido_id==partido.id:
-            print(persona,prediccion)
             persona.puntuacion+=cuenta_goleador(partido=partido,prediccion=prediccion,goleador=goleador)
     db.session.commit()
     
@@ -325,7 +309,6 @@ def restar_cerveza(id):
 @app.route('/partidos',methods=['GET','POST'])
 def partido():
     if request.method=="POST":
-        print(request.form)
         local_id=request.form["local"]
         visitante_id=request.form["visitante"]
         
@@ -366,7 +349,6 @@ def partido_goles():
     return redirect(url_for('partido'))
 @app.route('/goleadores',methods=['POST'])
 def goleadores():
-    print(request.form)
     partido_id=request.form["partido_id"]
     goleador=request.form["goleador"]
     cantidad=request.form["cantidad"]
