@@ -10,7 +10,7 @@ ruta_partidos = os.path.join(ruta_datos,"partidos.csv")
 
 df_jugadores = pandas.read_csv(ruta_jugadores)
 df_partidos =pandas.read_csv(ruta_partidos)
-orden = ['GK', 'LB', 'CB', 'RB','DM','CM','AM','LW','ST','RW']
+orden = ['N/A','GK', 'LB', 'CB', 'RB','DM','CM','AM','LW','ST','RW']
 prioridades = {valor: indice for indice, valor in enumerate(orden)}
 
 app = Flask(__name__)
@@ -263,6 +263,14 @@ def persona(id):
     persona = Persona.query.get_or_404(id)
     partidos = Partido.query.all()
     jugadores = Jugador.query.all()
+
+    jugadores.sort(
+        key=lambda j: (
+            j.seleccion_id,
+            prioridades.get(j.posicion, 999),
+            j.nombre
+        )
+    )
     return render_template('persona.html', 
                            persona=persona, 
                            partidos=partidos, 
@@ -328,7 +336,15 @@ def partido():
     else:
         partidos=Partido.query.all()
         selecciones=Seleccion.query.all()
-        jugadores=Jugador.query.all()
+        jugadores = Jugador.query.all()
+
+        jugadores.sort(
+            key=lambda j: (
+                j.seleccion_id,
+                prioridades.get(j.posicion, 999),
+                j.nombre
+            )
+        )
         goleadores=Goleadores.query.all()
         return render_template('partidos.html',selecciones=selecciones,partidos=partidos,jugadores=jugadores,goleadores=goleadores)
     
