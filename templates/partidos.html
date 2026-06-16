@@ -1,247 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Partidos</title>
-
+    <title>Gestión de Partidos</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            margin: 0;
-            padding: 0;
+        :root { 
+            --primary: #2d6cdf; --bg: #f4f6f8; --card: #ffffff; 
+            --text-main: #1e293b; --text-muted: #64748b; 
         }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { max-width: 1000px; margin: auto; }
 
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
+        /* Navegación */
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+        .back-link:hover { color: var(--primary); }
 
-        h1 {
-            text-align: center;
-            margin-top: 30px;
-            color: #333;
-        }
+        h1 { text-align: center; color: var(--text-main); margin-bottom: 30px; }
+        h2 { font-size: 1rem; color: var(--primary); margin-top: 0; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card); padding: 25px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+        
+        label { font-size: 0.85rem; font-weight: 600; margin-top: 15px; display: block; color: var(--text-muted); }
+        select, input { width: 100%; padding: 12px; margin-top: 6px; border: 1px solid #e2e8f0; border-radius: 10px; box-sizing: border-box; background: #f8fafc; }
+        
+        button { width: 100%; padding: 12px; background: var(--primary); color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: 700; margin-top: 20px; transition: all 0.2s; }
+        button:hover { background: #1b4fb5; transform: translateY(-1px); }
 
-        form {
-            background: white;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        select,
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            margin-top: 15px;
-            padding: 10px;
-            width: 100%;
-            background: #2d6cdf;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background: #1b4fb5;
-        }
-
-        .card {
-            background: white;
-            padding: 12px;
-            margin: 10px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-        }
-
-        .match {
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .score {
-            color: #444;
-        }
-
-        .section {
-            margin-top: 40px;
-        }
+        .list-card { background: white; padding: 18px 20px; border-radius: 12px; margin-bottom: 12px; border-left: 5px solid var(--primary); display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .section-title { margin-top: 50px; margin-bottom: 20px; text-align: center; }
     </style>
 </head>
 
 <body>
-
     <div class="container">
-
+        <a href="/" class="back-link">← Volver al inicio</a>
         <h1>⚽ Gestión de Partidos</h1>
 
-        <!-- CREAR PARTIDO -->
-        <h1>Crear Partido</h1>
-        <form action="/partidos" method="POST">
-            <label>Local</label>
-            <select name="local" required>
-                {% for s in selecciones %}
-                <option value="{{ s.id }}">{{ s.nombre }}</option>
-                {% endfor %}
-            </select>
-
-            <label>Visitante</label>
-            <select name="visitante" required>
-                {% for s in selecciones %}
-                <option value="{{ s.id }}">{{ s.nombre }}</option>
-                {% endfor %}
-            </select>
-
-            <button type="submit">Crear Partido</button>
-        </form>
-
-        <!-- MODIFICAR PARTIDO -->
-        <h1>Modificar Partido</h1>
-        <form action="/partidos/modificar" method="POST">
-            <label>Partido</label>
-            <select name="partido_id" required>
-                {% for p in partidos %}
-                <option value="{{ p.id }}">
-                    {{ p.local.nombre }} vs {{ p.visitante.nombre }}
-                </option>
-                {% endfor %}
-            </select>
-
-            <label>Goles Local</label>
-            <input type="number" name="goles_local" required>
-
-            <label>Goles Visitante</label>
-            <input type="number" name="goles_visitante" required>
-
-            <button type="submit">Actualizar</button>
-        </form>
-
-        <!-- GOLEADORES -->
-        <h1>Goleadores</h1>
-        <form action="/goleadores" method="POST">
-            <label>Partido</label>
-            <select id="partido_id" name="partido_id" required>
-                {% for p in partidos %}
-                <option value="{{ p.id }}" data-local="{{ p.local.id }}" data-visitante="{{ p.visitante.id }}">
-                    {{ p.local.nombre }} vs {{ p.visitante.nombre }}
-                </option>
-                {% endfor %}
-            </select>
-
-            <label>Goleador</label>
-            <select id="goleador" name="goleador" required>
-            </select>
-
-            <label>Cantidad</label>
-            <input type="number" name="cantidad" required>
-
-            <button type="submit">Guardar</button>
-        </form>
-
-        <!-- LISTA PARTIDOS -->
-        <div class="section">
-            <h1>Partidos</h1>
-
-            {% for p in partidos %}
-            {% if p.goles_local!=999 %}
+        <div class="grid">
             <div class="card">
-                <div class="match">
-                    {{ p.local.nombre }} vs {{ p.visitante.nombre }}
-                </div>
-                <div class="score">
-                    {{ p.goles_local }} - {{ p.goles_visitante }}
-                </div>
+                <h2>Crear Partido</h2>
+                <form action="/partidos" method="POST">
+                    <label>Local</label>
+                    <select name="local">{% for s in selecciones %}<option value="{{ s.id }}">{{ s.nombre }}</option>{% endfor %}</select>
+                    <label>Visitante</label>
+                    <select name="visitante">{% for s in selecciones %}<option value="{{ s.id }}">{{ s.nombre }}</option>{% endfor %}</select>
+                    <button type="submit">Crear Partido</button>
+                </form>
             </div>
-            {% else %}
+
             <div class="card">
-                <div class="match">
-                    {{ p.local.nombre }} vs {{ p.visitante.nombre }}
-                </div>
+                <h2>Modificar Resultado</h2>
+                <form action="/partidos/modificar" method="POST">
+                    <label>Partido</label>
+                    <select name="partido_id">{% for p in partidos %}<option value="{{ p.id }}">{{ p.local.nombre }} vs {{ p.visitante.nombre }}</option>{% endfor %}</select>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div><label>Goles Local</label><input type="number" name="goles_local" required></div>
+                        <div><label>Goles Visitante</label><input type="number" name="goles_visitante" required></div>
+                    </div>
+                    <button type="submit">Actualizar</button>
+                </form>
             </div>
-            {% endif %}
-            {% endfor %}
+
+            <div class="card">
+                <h2>Registrar Goleador</h2>
+                <form action="/goleadores" method="POST">
+                    <label>Partido</label>
+                    <select id="partido_id" name="partido_id" required>{% for p in partidos %}<option value="{{ p.id }}" data-local="{{ p.local.id }}" data-visitante="{{ p.visitante.id }}">{{ p.local.nombre }} vs {{ p.visitante.nombre }}</option>{% endfor %}</select>
+                    <label>Goleador</label>
+                    <select id="goleador" name="goleador" required></select>
+                    <label>Cantidad</label>
+                    <input type="number" name="cantidad" required>
+                    <button type="submit">Guardar</button>
+                </form>
+            </div>
         </div>
 
-        <!-- LISTA GOLEADORES -->
-        <div class="section">
-            <h1>Goleadores</h1>
-
-            {% for g in goleadores %}
-            <div class="card">
-                <div class="match">
-                    {{ g.partido.local.nombre }} vs {{ g.partido.visitante.nombre }}
-                </div>
-                <div class="score">
-                    ⚽ {{ g.goleador.nombre }} — {{ g.cantidad }} goles
-                </div>
-            </div>
-            {% endfor %}
+        <h2 class="section-title">Resultados de Partidos</h2>
+        {% for p in partidos %}
+        <div class="list-card">
+            <strong>{{ p.local.nombre }} vs {{ p.visitante.nombre }}</strong>
+            <span style="font-weight: 600;">{% if p.goles_local != 999 %}{{ p.goles_local }} - {{ p.goles_visitante }}{% else %}Pendiente{% endif %}</span>
         </div>
+        {% endfor %}
 
+        <h2 class="section-title">Goleadores</h2>
+        {% for g in goleadores %}
+        <div class="list-card" style="border-left-color: #f59e0b;">
+            <strong>{{ g.partido.local.nombre }} vs {{ g.partido.visitante.nombre }}</strong>
+            <span>⚽ {{ g.goleador.nombre }} — <strong style="color: #f59e0b;">{{ g.cantidad }} goles</strong></span>
+        </div>
+        {% endfor %}
     </div>
 
-</body>
 <script>
     const jugadores = [
         {% for j in jugadores %}
-    {
-        id: {{j.id}},
-        nombre: "{{ j.nombre }}",
-            seleccion_id: {{j.seleccion_id}}
-    } {% if not loop.last %}, {% endif %}
-    {% endfor %}
-];
+        { id: {{j.id}}, nombre: "{{ j.nombre }}", seleccion_id: {{j.seleccion_id}} } {% if not loop.last %}, {% endif %}
+        {% endfor %}
+    ];
 </script>
 <script>
-
     function actualizarJugadores() {
-
         const partido = document.getElementById("partido_id");
         const opcion = partido.options[partido.selectedIndex];
-
         const localId = parseInt(opcion.dataset.local);
         const visitanteId = parseInt(opcion.dataset.visitante);
-
         const select = document.getElementById("goleador");
-
         select.innerHTML = "";
-        
         jugadores.forEach(j => {
-
-            if (j.seleccion_id === localId) {
-                select.innerHTML +=
-                    `<option value="${j.id}">${j.nombre}</option>`;
-            }
-
-            if (j.seleccion_id === visitanteId) {
-                select.innerHTML +=
-                    `<option value="${j.id}">${j.nombre}</option>`;
+            if (j.seleccion_id === localId || j.seleccion_id === visitanteId) {
+                select.innerHTML += `<option value="${j.id}">${j.nombre}</option>`;
             }
         });
     }
-
-    document.getElementById("partido_id")
-        .addEventListener("change", actualizarJugadores);
-
+    document.getElementById("partido_id").addEventListener("change", actualizarJugadores);
     actualizarJugadores();
 </script>
-
+</body>
 </html>

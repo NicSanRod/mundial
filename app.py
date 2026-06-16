@@ -26,6 +26,7 @@ class Persona(db.Model):
     id= db.Column(db.Integer, primary_key=True)
     nombre=db.Column(db.String(20), nullable=False)
     puntuacion=db.Column(db.Integer,nullable=False)
+    cervezas=db.Column(db.Integer,nullable=False)
     
     def __str__(self):
         return f'{self.nombre} {self.puntuacion}'
@@ -156,8 +157,7 @@ def llenar_db():
 with app.app_context():
     db.create_all()
     if Seleccion.query.first() is None:
-        llenar_db()
-    
+        llenar_db()           
 def contar(persona):
     count=0
     
@@ -180,7 +180,7 @@ def contar(persona):
                 count+=2*local.cantidad
             if visitante is not None:
                 count+=2*visitante.cantidad
-            
+    count-=persona.cervezas*3
     persona.cambiar_puntuacion(count)
         
 @app.route('/')
@@ -196,6 +196,7 @@ def persona(id):
     persona = Persona.query.get_or_404(id)
     partidos = Partido.query.all()
     jugadores = Jugador.query.all()
+    contar(persona)
     return render_template('persona.html', 
                            persona=persona, 
                            partidos=partidos, 
@@ -228,8 +229,27 @@ def borrar_prediccion(id):
     aux=prediccion.persona_id
     db.session.delete(prediccion)
     db.session.commit()
-    contar(Persona.query.get(aux))
+    #contar(Persona.query.get(aux))
     return redirect(url_for('persona', id=aux))
+
+@app.route('/cerveza/sumar/<int:id>')
+def sumar_cerveza(id):
+    persona=Persona.query.get(id)
+    
+    persona.cervezas+=1
+    db.session.commit()
+    #contar(persona)
+    return redirect(url_for('persona', id=id))
+    
+@app.route('/cerveza/restar/<int:id>')
+def restar_cerveza(id):
+    persona=Persona.query.get(id)
+    
+    persona.cervezas-=1
+    db.session.commit()
+    #contar(persona)
+    return redirect(url_for('persona', id=id))
+
 @app.route('/partidos',methods=['GET','POST'])
 def partido():
     if request.method=="POST":

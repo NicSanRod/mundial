@@ -1,120 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Persona: {{ persona.nombre }}</title>
-
+    <title>Perfil: {{ persona.nombre }}</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            margin: 0;
-            padding: 0;
+        :root { 
+            --primary: #2d6cdf; --bg: #f4f6f8; --card: #ffffff; 
+            --text-main: #1e293b; --text-muted: #64748b; 
         }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { max-width: 800px; margin: auto; }
 
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
+        /* Navegación */
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+        .back-link:hover { color: var(--primary); }
 
-        h1,
-        h2 {
-            text-align: center;
-            color: #333;
-        }
+        h1, h2 { text-align: center; color: var(--text-main); }
+        
+        .card { background: var(--card); padding: 25px; margin: 20px 0; border-radius: 16px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06); }
+        
+        .stats-grid { display: flex; justify-content: space-around; font-size: 1.1rem; }
+        .stats-grid p { margin: 0; }
+        .stats-grid strong { color: var(--primary); font-size: 1.4rem; display: block; text-align: center; }
+        
+        .btn-group { display: flex; gap: 12px; margin-top: 20px; }
+        button { padding: 12px; width: 100%; border: none; border-radius: 10px; cursor: pointer; font-weight: 700; transition: all 0.2s; }
+        .btn-main { background: var(--primary); color: white; }
+        .btn-main:hover { background: #1b4fb5; transform: translateY(-1px); }
+        .btn-del { background: #fee2e2; color: #dc2626; padding: 8px 16px; border-radius: 6px; font-size: 0.85rem; }
+        .btn-del:hover { background: #fecaca; }
 
-        .card {
-            background: white;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        select,
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            margin-top: 15px;
-            padding: 10px;
-            width: 100%;
-            background: #2d6cdf;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background: #1b4fb5;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        }
-
-        th,
-        td {
-            padding: 12px;
-            text-align: center;
-            border-bottom: 1px solid #eee;
-        }
-
-        th {
-            background: #2d6cdf;
-            color: white;
-        }
-
-        tr:hover {
-            background: #f1f5ff;
-        }
-
-        .empty {
-            text-align: center;
-            color: #777;
-            margin-top: 10px;
-        }
+        label { margin-top: 18px; font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; }
+        select, input { width: 100%; padding: 12px; margin-top: 6px; border-radius: 10px; border: 1px solid #e2e8f0; background: #f8fafc; }
+        
+        table { width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 15px; }
+        th { background: #f8fafc; padding: 15px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        td { padding: 15px; border-bottom: 1px solid #f1f5f9; text-align: center; }
+        
+        .empty { text-align: center; color: var(--text-muted); font-style: italic; padding: 20px; }
     </style>
 </head>
-
 <body>
 
     <div class="container">
-
-        <h1>👤 {{ persona.nombre }}</h1>
+        <a href="/" class="back-link">← Volver al inicio</a>
+        
+        <h1>{{ persona.nombre }}</h1>
 
         <div class="card">
-            <p style="text-align:center;">
-                Puntuación: <strong>{{ persona.puntuacion }}</strong>
-            </p>
+            <div class="stats-grid">
+                <p>Puntuación <strong>{{ persona.puntuacion }}</strong></p>
+                <p>Cervezas <strong>{{ persona.cervezas }}</strong></p>
+            </div>
+            <div class="btn-group">
+                <a href="/cerveza/restar/{{ persona.id }}" style="flex:1"><button class="btn-main" style="background:#ef4444">Restar Cerveza</button></a>
+                <a href="/cerveza/sumar/{{ persona.id }}" style="flex:1"><button class="btn-main" style="background:#22c55e">Sumar Cerveza</button></a>
+            </div>
         </div>
 
-        <!-- FORMULARIO -->
         <div class="card">
             <h2>Añadir predicción</h2>
-
             <form action="/predicciones/{{ persona.id }}" method="POST">
-
                 <label>Partido</label>
                 <select id="partido" name="partido" required>
                     {% for p in partidos %}
@@ -124,103 +70,75 @@
                     {% endfor %}
                 </select>
 
-                <label>Goles Local</label>
-                <input type="number" name="goles_local" required>
-
-                <label>Goles Visitante</label>
-                <input type="number" name="goles_visitante" required>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div><label>Goles Local</label><input type="number" name="goles_local" required></div>
+                    <div><label>Goles Visitante</label><input type="number" name="goles_visitante" required></div>
+                </div>
 
                 <label>Goleador Local</label>
-                <select id="goleador_local" name="goleador_local" required>
-                </select>
+                <select id="goleador_local" name="goleador_local" required></select>
 
                 <label>Goleador Visitante</label>
-                <select id="goleador_visitante" name="goleador_visitante" required>
-                </select>
+                <select id="goleador_visitante" name="goleador_visitante" required></select>
 
-                <button type="submit">Guardar predicción</button>
+                <button type="submit" class="btn-main" style="margin-top: 25px;">Guardar predicción</button>
             </form>
         </div>
 
-        <!-- PREDICCIONES -->
-        <h2>Predicciones</h2>
-
-        {% if persona.predicciones %}
-        <table>
-            <tr>
-                <th>Partido</th>
-                <th>Resultado</th>
-                <th>Goleador Local</th>
-                <th>Goleador Visitante</th>
-            </tr>
-
-            {% for p in persona.predicciones %}
-            <tr>
-                <td>{{ p.partido.local.nombre }} vs {{ p.partido.visitante.nombre }}</td>
-                <td>{{ p.goles_local }} - {{ p.goles_visitante }}</td>
-                <td>{{ p.goleador_local.nombre }}</td>
-                <td>{{ p.goleador_visitante.nombre }}</td>
-                <td>
-                    <a href="/predicciones/borrar/{{ p.id }}">
-                        <button>Borrar</button>
-                    </a>
-                </td>
-            </tr>
-
-            {% endfor %}
-        </table>
-        {% else %}
-        <p class="empty">No hay predicciones registradas.</p>
-        {% endif %}
-
+        <h2>Predicciones registradas</h2>
+        <div class="card">
+            {% if persona.predicciones %}
+            <table>
+                <tr><th>Partido</th><th>Resultado</th><th>Goleadores</th><th></th></tr>
+                {% for p in persona.predicciones %}
+                <tr>
+                    <td>{{ p.partido.local.nombre }} vs {{ p.partido.visitante.nombre }}</td>
+                    <td>{{ p.goles_local }} - {{ p.goles_visitante }}</td>
+                    <td>{{ p.goleador_local.nombre }} / {{ p.goleador_visitante.nombre }}</td>
+                    <td>
+                        <a href="/predicciones/borrar/{{ p.id }}"><button class="btn-del">Borrar</button></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            <p class="empty">No hay predicciones registradas.</p>
+            {% endif %}
+        </div>
     </div>
 
+    <script>
+        const jugadores = [
+            {% for j in jugadores %}
+            {
+                id: {{j.id}},
+                nombre: "{{ j.nombre }}",
+                seleccion_id: {{j.seleccion_id}}
+            } {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        ];
+    </script>
+    <script>
+        function actualizarJugadores() {
+            const partido = document.getElementById("partido");
+            const opcion = partido.options[partido.selectedIndex];
+            const localId = parseInt(opcion.dataset.local);
+            const visitanteId = parseInt(opcion.dataset.visitante);
+            const selectLocal = document.getElementById("goleador_local");
+            const selectVisitante = document.getElementById("goleador_visitante");
+            selectLocal.innerHTML = "";
+            selectVisitante.innerHTML = "";
+            jugadores.forEach(j => {
+                if (j.seleccion_id === localId) {
+                    selectLocal.innerHTML += `<option value="${j.id}">${j.nombre}</option>`;
+                }
+                if (j.seleccion_id === visitanteId) {
+                    selectVisitante.innerHTML += `<option value="${j.id}">${j.nombre}</option>`;
+                }
+            });
+        }
+        document.getElementById("partido").addEventListener("change", actualizarJugadores);
+        actualizarJugadores();
+    </script>
 </body>
-<script>
-    const jugadores = [
-        {% for j in jugadores %}
-    {
-        id: {{j.id}},
-        nombre: "{{ j.nombre }}",
-            seleccion_id: {{j.seleccion_id}}
-    } {% if not loop.last %}, {% endif %}
-    {% endfor %}
-];
-</script>
-<script>
-
-    function actualizarJugadores() {
-
-        const partido = document.getElementById("partido");
-        const opcion = partido.options[partido.selectedIndex];
-
-        const localId = parseInt(opcion.dataset.local);
-        const visitanteId = parseInt(opcion.dataset.visitante);
-
-        const selectLocal = document.getElementById("goleador_local");
-        const selectVisitante = document.getElementById("goleador_visitante");
-
-        selectLocal.innerHTML = "";
-        selectVisitante.innerHTML = "";
-
-        jugadores.forEach(j => {
-
-            if (j.seleccion_id === localId) {
-                selectLocal.innerHTML +=
-                    `<option value="${j.id}">${j.nombre}</option>`;
-            }
-
-            if (j.seleccion_id === visitanteId) {
-                selectVisitante.innerHTML +=
-                    `<option value="${j.id}">${j.nombre}</option>`;
-            }
-        });
-    }
-
-    document.getElementById("partido")
-        .addEventListener("change", actualizarJugadores);
-
-    actualizarJugadores();
-</script>
-
 </html>

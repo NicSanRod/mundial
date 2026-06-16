@@ -4,99 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundial - Gestión</title>
-
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            margin: 0;
-            padding: 0;
-        }
+        :root { --primary: #2d6cdf; --bg: #f8fafc; --text: #1e293b; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: auto; }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
+        h1 { text-align: center; margin: 40px 0; color: #0f172a; }
+        
+        .hero { text-align: center; margin-bottom: 40px; }
+        .btn { 
+            display: inline-block; background: var(--primary); color: white; 
+            padding: 12px 24px; border-radius: 50px; font-weight: 600; 
+            transition: transform 0.2s, background 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+        .btn:hover { background: #1b4fb5; transform: translateY(-2px); }
 
-        h1 {
-            text-align: center;
-            margin-top: 30px;
-            color: #333;
+        .list-header { font-size: 1.2rem; font-weight: 700; margin-bottom: 15px; }
+        .card { 
+            background: white; padding: 18px 20px; margin-bottom: 12px; 
+            border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+            border: 1px solid #e2e8f0;
         }
-
-        .card {
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        a {
-            text-decoration: none;
-            color: #2d6cdf;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #1b4fb5;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #2d6cdf;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 6px;
-            text-align: center;
-            margin-bottom: 15px;
-        }
-
-        .btn:hover {
-            background: #1b4fb5;
-        }
-
-        .list {
-            margin-top: 20px;
-        }
-
-        .person {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .person span {
-            font-size: 16px;
+        .person-info { display: flex; justify-content: space-between; align-items: center; }
+        .person-name { font-weight: 700; font-size: 1.1rem; }
+        
+        .stats { display: flex; gap: 15px; font-size: 0.9rem; color: #64748b; margin-top: 8px; }
+        .stat-item { background: #f1f5f9; padding: 4px 10px; border-radius: 6px; }
+        
+        .view-link { 
+            font-size: 0.85rem; background: #eff6ff; color: var(--primary); 
+            padding: 6px 12px; border-radius: 20px; font-weight: 600; text-decoration: none;
         }
     </style>
 </head>
 
 <body>
+    <div class="container">
+        <h1>⚽ Porras Mundial</h1>
 
-<div class="container">
-
-    <h1>⚽ Porras Mundial</h1>
-
-    <!-- BOTÓN PRINCIPAL -->
-    <div style="text-align:center;">
-        <a class="btn" href="/partidos">Ver Partidos</a>
-    </div>
-
-    <!-- LISTA PERSONAS -->
-    <h1>Personas</h1>
-
-    <div class="list">
-        {% for p in personas %}
-        <div class="card person">
-            <span>{{ p.nombre }}</span>
-            <a href="/persona/{{ p.id }}">Ver perfil</a>
+        <div class="hero">
+            <a class="btn" href="/partidos">Ver Panel de Partidos</a>
         </div>
-        {% endfor %}
+
+        <div class="list-header">Participantes</div>
+
+        <div class="list">
+            {% for p in personas %}
+            <div class="card">
+                <div class="person-info">
+                    <span class="person-name">{{ p.nombre }}</span>
+                    <a class="view-link" href="/persona/{{ p.id }}">Perfil →</a>
+                </div>
+                <div class="stats">
+                    <span class="stat-item">🏆 Puntos: <strong>{{ p.puntuacion }}</strong></span>
+                    <span class="stat-item">🍺 Cervezas: <strong>{{ p.cervezas }}</strong></span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
-
-</div>
-
 </body>
 </html>
