@@ -196,7 +196,6 @@ def persona(id):
     persona = Persona.query.get_or_404(id)
     partidos = Partido.query.all()
     jugadores = Jugador.query.all()
-    contar(persona)
     return render_template('persona.html', 
                            persona=persona, 
                            partidos=partidos, 
@@ -229,7 +228,7 @@ def borrar_prediccion(id):
     aux=prediccion.persona_id
     db.session.delete(prediccion)
     db.session.commit()
-    #contar(Persona.query.get(aux))
+    contar(Persona.query.get(aux))
     return redirect(url_for('persona', id=aux))
 
 @app.route('/cerveza/sumar/<int:id>')
@@ -238,7 +237,7 @@ def sumar_cerveza(id):
     
     persona.cervezas+=1
     db.session.commit()
-    #contar(persona)
+    contar(persona)
     return redirect(url_for('persona', id=id))
     
 @app.route('/cerveza/restar/<int:id>')
@@ -247,7 +246,7 @@ def restar_cerveza(id):
     
     persona.cervezas-=1
     db.session.commit()
-    #contar(persona)
+    contar(persona)
     return redirect(url_for('persona', id=id))
 
 @app.route('/partidos',methods=['GET','POST'])
