@@ -52,7 +52,7 @@ class Jugador(db.Model):
     seleccion = db.relationship('Seleccion', backref=db.backref('jugadores', lazy=True))
     
     def __str__(self):
-        return self.nombre + " " + self.seleccion
+        return f'{self.nombre} {self.seleccion}'
 
 class Goleadores(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -100,10 +100,7 @@ class Prediccion(db.Model):
     persona = db.relationship('Persona', backref='predicciones')
     
     def __str__(self):
-        partido=Partido.query.get(self.partido)
-        local=Seleccion.query.get(partido.local)
-        visitante=Seleccion.query.get(partido.visitante)
-        return f'{local} {self.goles_local} {self.goleador_local} - {self.goles_visitante} {self.goleador_visitante} {visitante}'
+        return f'{self.partido.local} {self.goles_local} {self.goleador_local} - {self.goles_visitante} {self.goleador_visitante} {self.partido.visitante}'
     
     
 
@@ -157,32 +154,102 @@ def llenar_db():
 with app.app_context():
     db.create_all()
     if Seleccion.query.first() is None:
-        llenar_db()           
+        llenar_db()    
+
+def cuenta(partido,prediccion):
+    count=0
+    count+=cuenta_resultado(partido=partido,prediccion=prediccion)
+    count+=cuenta_goleador(partido=partido,prediccion=prediccion,goleador=prediccion.goleador_local)
+    count+=cuenta_goleador(partido=partido,prediccion=prediccion,goleador=prediccion.goleador_visitante)
+    return count
+
+def cuenta_resultado(partido,prediccion):
+    count=0
+    print(partido.goles_local)
+    if partido.goles_local !=999:
+        print("Porq si")
+        if partido.goles_local==prediccion.goles_local and partido.goles_visitante==prediccion.goles_visitante:
+            count+=4
+        elif (partido.goles_local-partido.goles_visitante)!=0 and ((prediccion.goles_local-prediccion.goles_visitante)/(partido.goles_local-partido.goles_visitante))>0:
+            count+=1
+        elif (prediccion.goles_local-prediccion.goles_visitante)==(partido.goles_local-partido.goles_visitante):
+            count+=1
+    
+    return count
+
+def cuenta_goleador(partido,prediccion,goleador):
+    count=0
+    local=Goleadores.query.filter_by(partido=partido, goleador=prediccion.goleador_local).first()
+    visitante=Goleadores.query.filter_by(partido=partido, goleador=prediccion.goleador_visitante).first()
+        
+    if local is not None and local.id==goleador.id:
+        print("Bien")
+        count+=2*local.cantidad
+    if visitante is not None and visitante.id==goleador.id:
+        print
+        count+=2*visitante.cantidad
+    return count
 def contar(persona):
     count=0
     
-    for p in persona.predicciones:
-        par=p.partido
-        if par.goles_local is not None:
-            
-            if p.goles_local==par.goles_local and p.goles_visitante==par.goles_visitante:
-                count+=4
-            
-            elif (par.goles_local-par.goles_visitante)!=0 and ((p.goles_local-p.goles_visitante)/(par.goles_local-par.goles_visitante))>0:
-                count+=1
-            elif (p.goles_local-p.goles_visitante)==(par.goles_local-par.goles_visitante):
-                count+=1
-            
-            local=Goleadores.query.filter_by(partido=par, goleador=p.goleador_local).first()
-            visitante=Goleadores.query.filter_by(partido=par, goleador=p.goleador_visitante).first()
-            
-            if local is not None:
-                count+=2*local.cantidad
-            if visitante is not None:
-                count+=2*visitante.cantidad
+    for prediccion in persona.predicciones:
+        partido=prediccion.partido
+        cont+=cuenta(partido=partido,prediccion=prediccion)
     count-=persona.cervezas*3
     persona.cambiar_puntuacion(count)
+    
+def contar_cerveza(persona):
+    persona.cervezas+=1
+    persona.puntuacion-=3
+    db.session.commit()
         
+
+def descontar_cerveza(persona):
+    persona.cervezas-=1
+    persona.puntuacion+=3
+    db.session.commit()
+    
+def contar_prediccion(persona,prediccion):
+    partido=prediccion.partido
+    print(partido)
+    persona.puntuacion+=cuenta(prediccion=prediccion,partido=partido)
+    print(persona.puntuacion)
+    db.session.commit()
+    
+def descontar_prediccion(persona,prediccion):
+    partido=prediccion.partido
+    persona.puntuacion-=cuenta(prediccion=prediccion,partido=partido)
+    db.session.commit()
+    
+def contar_partido(persona,partido):
+    for prediccion in persona.predicciones:
+        if prediccion.partido_id==partido.id:
+            persona.puntuacion+=cuenta_resultado(partido=partido,prediccion=prediccion)
+            break
+    db.session.commit()
+    
+def descontar_partido(persona,partido):
+    for prediccion in persona.predicciones:
+        if prediccion.partido_id==partido.id:
+            persona.puntuacion-=cuenta_resultado(partido=partido,prediccion=prediccion)
+            break
+    db.session.commit()
+    
+def contar_goleador(persona,goleador):
+    partido=goleador.partido
+    print(persona,partido,goleador)
+    for prediccion in persona.predicciones:
+        if prediccion.partido_id==partido.id:
+            print(persona,prediccion)
+            persona.puntuacion+=cuenta_goleador(partido=partido,prediccion=prediccion,goleador=goleador)
+    db.session.commit()
+    
+def descontar_goleador(persona,goleador):
+    partido=goleador.partido
+    for prediccion in persona.predicciones:
+        if prediccion.partido_id==partido.id:
+            persona.puntuacion-=cuenta_goleador(partido=partido,prediccion=prediccion,goleador=goleador)
+    db.session.commit()
 @app.route('/')
 def index():
     selecciones=Seleccion.query.all()
@@ -213,40 +280,38 @@ def predicciones(id):
     goleador_local=Jugador.query.get(goleador_local_id)
     goleador_visitante=Jugador.query.get(goleador_visitante_id)
     persona=Persona.query.get(id)
-    db.session.add(Prediccion(partido=partido,
+    prediccion=Prediccion(partido=partido,
                               goles_local=goles_local,
                               goles_visitante=goles_visitante,
                               goleador_local=goleador_local,
                               goleador_visitante=goleador_visitante,
-                              persona=persona))
+                              persona=persona)
+    db.session.add(prediccion)
     db.session.commit()
-    contar(persona)
+    contar_prediccion(persona=persona,prediccion=prediccion)
     return redirect(url_for('persona', id=id))
 @app.route('/predicciones/borrar/<int:id>')
 def borrar_prediccion(id):
     prediccion=Prediccion.query.get(id)
+    persona=prediccion.persona
     aux=prediccion.persona_id
+    descontar_prediccion(persona=persona,prediccion=prediccion)
     db.session.delete(prediccion)
     db.session.commit()
-    contar(Persona.query.get(aux))
     return redirect(url_for('persona', id=aux))
 
 @app.route('/cerveza/sumar/<int:id>')
 def sumar_cerveza(id):
     persona=Persona.query.get(id)
     
-    persona.cervezas+=1
-    db.session.commit()
-    contar(persona)
+    contar_cerveza(persona)
     return redirect(url_for('persona', id=id))
     
 @app.route('/cerveza/restar/<int:id>')
 def restar_cerveza(id):
     persona=Persona.query.get(id)
     
-    persona.cervezas-=1
-    db.session.commit()
-    contar(persona)
+    descontar_cerveza(persona)
     return redirect(url_for('persona', id=id))
 
 @app.route('/partidos',methods=['GET','POST'])
@@ -274,8 +339,14 @@ def partido_goles():
     goles_visitante=request.form["goles_visitante"]
     
     partido=Partido.query.get(id)
+    personas=Persona.query.all()
+    if partido.goles_local !=999:
+        for persona in personas:
+            descontar_partido(persona=persona,partido=partido)
     partido.goles(goles_local,goles_visitante)
     db.session.commit()
+    for persona in personas:
+        contar_partido(persona=persona,partido=partido)
     return redirect(url_for('partido'))
 @app.route('/goleadores',methods=['POST'])
 def goleadores():
@@ -284,8 +355,21 @@ def goleadores():
     goleador=request.form["goleador"]
     cantidad=request.form["cantidad"]
     
-    goleadores=Goleadores(partido_id=partido_id,goleador_id=goleador,cantidad=cantidad)
-    db.session.add(goleadores)
+    goleador=Goleadores(partido_id=partido_id,goleador_id=goleador,cantidad=cantidad)
+    db.session.add(goleador)
+    db.session.commit()
+    personas=Persona.query.all()
+    for persona in personas:
+        contar_goleador(persona=persona,goleador=goleador)
+    return redirect(url_for('partido'))
+
+@app.route('/goleadores/borrar/<int:id>')
+def borrar_goleador(id):
+    goleador=Goleadores.query.get(id)
+    personas=Persona.query.all()
+    for persona in personas:
+        descontar_goleador(persona=persona,goleador=goleador)
+    db.session.delete(goleador)
     db.session.commit()
     return redirect(url_for('partido'))
 

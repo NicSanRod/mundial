@@ -89,6 +89,9 @@
         <div class="list-card" style="border-left-color: #f59e0b;">
             <strong>{{ g.partido.local.nombre }} vs {{ g.partido.visitante.nombre }}</strong>
             <span>⚽ {{ g.goleador.nombre }} — <strong style="color: #f59e0b;">{{ g.cantidad }} goles</strong></span>
+            <td>
+                <a href="/goleadores/borrar/{{ g.id }}"><button class="btn-del">Borrar</button></a>
+            </td>
         </div>
         {% endfor %}
     </div>
