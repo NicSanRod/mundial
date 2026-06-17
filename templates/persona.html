@@ -65,7 +65,7 @@
                 <select id="partido" name="partido" required>
                     {% for p in partidos %}
                     {% if p.goles_local ==999 %}
-                    <option value="{{ p.id }}" data-local="{{ p.local.id }}" data-visitante="{{ p.visitante.id }}">
+                    <option value="{{ p.id }}" data-id="{{p.id}}" data-local="{{ p.local.id }}" data-visitante="{{ p.visitante.id }}">
                         {{ p.local.nombre }} vs {{ p.visitante.nombre }}
                     </option>
                     {% endif %}
@@ -85,6 +85,8 @@
 
                 <button type="submit" class="btn-main" style="margin-top: 25px;">Guardar predicción</button>
             </form>
+            <h2>{{oponente.nombre}}</h2>
+            <div id="oponente" name="oponente"></div>
         </div>
 
         <h2>Predicciones registradas</h2>
@@ -121,15 +123,34 @@
         ];
     </script>
     <script>
+        const predicciones = [
+            {% for p in oponente.predicciones %}
+            {
+                id: {{p.id}},
+                partido_id:{{p.partido_id}},
+                partido_local:"{{p.partido.local.nombre}}",
+                partido_visitante:"{{p.partido.visitante.nombre}}",
+                goles_local:{{p.goles_local}},
+                goles_visitante:{{p.goles_visitante}},
+                goleador_local:"{{p.goleador_local.nombre}}",
+                goleador_visitante:"{{p.goleador_visitante.nombre}}"
+            } {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        ];
+    </script>
+    <script>
         function actualizarJugadores() {
             const partido = document.getElementById("partido");
             const opcion = partido.options[partido.selectedIndex];
+            const partidoId=parseInt(opcion.dataset.id)
             const localId = parseInt(opcion.dataset.local);
             const visitanteId = parseInt(opcion.dataset.visitante);
             const selectLocal = document.getElementById("goleador_local");
             const selectVisitante = document.getElementById("goleador_visitante");
+            const divPrediccion = document.getElementById("oponente");
             selectLocal.innerHTML = "";
             selectVisitante.innerHTML = "";
+            divPrediccion.innerHTML ="";
             jugadores.forEach(j => {
                 if (j.seleccion_id === localId) {
                     selectLocal.innerHTML += `<option value="${j.id}">${j.nombre}</option>`;
@@ -138,6 +159,16 @@
                     selectVisitante.innerHTML += `<option value="${j.id}">${j.nombre}</option>`;
                 }
             });
+            predicciones.forEach(p=>{
+                if (p.partido_id===partidoId){
+                    divPrediccion.innerHTML+= `<div class="card">
+                                                    <strong>${p.partido_local} vs ${p.partido_visitante}</strong><br>
+                                                    Resultado: ${p.goles_local} - ${p.goles_visitante}<br>
+                                                    Goleador local: ${p.goleador_local}<br>
+                                                    Goleador visitante: ${p.goleador_visitante}
+                                                </div>`;
+                }
+            })
         }
         document.getElementById("partido").addEventListener("change", actualizarJugadores);
         actualizarJugadores();

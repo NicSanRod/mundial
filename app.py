@@ -245,9 +245,11 @@ def index():
 @app.route('/persona/<int:id>')
 def persona(id):
     persona = Persona.query.get_or_404(id)
+    oponente_id= 2 if id==1 else 1
+    oponente=Persona.query.get_or_404(oponente_id)
     partidos = Partido.query.all()
     jugadores = Jugador.query.all()
-
+    print(oponente)
     jugadores.sort(
         key=lambda j: (
             j.seleccion_id,
@@ -256,7 +258,8 @@ def persona(id):
         )
     )
     return render_template('persona.html', 
-                           persona=persona, 
+                           persona=persona,
+                           oponente=oponente, 
                            partidos=partidos, 
                            jugadores=jugadores)
     
