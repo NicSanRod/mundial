@@ -320,7 +320,7 @@ def partido():
         db.session.commit()
         return redirect(url_for('partido'))
     else:
-        partidos=Partido.query.all()
+        partidos=Partido.query.order_by(Partido.id).all()
         selecciones=Seleccion.query.all()
         jugadores = Jugador.query.all()
 
@@ -331,7 +331,14 @@ def partido():
                 j.nombre
             )
         )
-        goleadores=Goleadores.query.all()
+        goleadores = Goleadores.query.all()
+
+        goleadores.sort(
+            key=lambda g: (
+                g.partido_id,
+                g.goleador.seleccion_id
+            )
+        )
         return render_template('partidos.html',selecciones=selecciones,partidos=partidos,jugadores=jugadores,goleadores=goleadores)
     
 @app.route('/partidos/modificar',methods=['POST'])
