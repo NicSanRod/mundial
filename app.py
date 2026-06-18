@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import desc
 import pandas
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ruta_datos = os.path.join(BASE_DIR, "datos")
@@ -158,9 +159,12 @@ with app.app_context():
 
 def cuenta(partido,prediccion):
     count=0
+    local=Goleadores(partido_id=prediccion.partido_id,goleador_id=prediccion.goleador_local_id,cantidad=1)
+    
+    visitante=Goleadores(partido_id=prediccion.partido_id,goleador_id=prediccion.goleador_visitante_id,cantidad=1)
     count+=cuenta_resultado(partido=partido,prediccion=prediccion)
-    count+=cuenta_goleador(partido=partido,prediccion=prediccion,goleador=prediccion.goleador_local)
-    count+=cuenta_goleador(partido=partido,prediccion=prediccion,goleador=prediccion.goleador_visitante)
+    count+=cuenta_goleador(partido=partido,prediccion=prediccion,goleador=local)
+    count+=cuenta_goleador(partido=partido,prediccion=prediccion,goleador=visitante)
     return count
 
 def cuenta_resultado(partido,prediccion):
@@ -239,7 +243,7 @@ def index():
     selecciones=Seleccion.query.all()
     partidos=Partido.query.all()
     predicciones=Prediccion.query.all()
-    personas=Persona.query.all()
+    personas=Persona.query.order_by(Persona.cervezas.desc(),Persona.puntuacion.desc(),Persona.id.desc()).all()
     return render_template('index.html',selecciones=selecciones,partidos=partidos,personas=personas)
 
 @app.route('/persona/<int:id>')
