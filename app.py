@@ -101,7 +101,7 @@ class Prediccion(db.Model):
     persona = db.relationship('Persona', backref='predicciones')
     
     def __str__(self):
-        return f'{self.partido.local} {self.goles_local} {self.goleador_local} - {self.goles_visitante} {self.goleador_visitante} {self.partido.visitante}'
+        return f'{self.partido.local} {self.goles_local} {self.goleador_local.nombre} - {self.goles_visitante} {self.goleador_visitante.nombre} {self.partido.visitante} {self.persona.nombre}'
     
     
 
