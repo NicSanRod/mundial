@@ -253,7 +253,6 @@ def persona(id):
     oponente=Persona.query.get_or_404(oponente_id)
     partidos = Partido.query.all()
     jugadores = Jugador.query.all()
-    print(oponente)
     jugadores.sort(
         key=lambda j: (
             j.seleccion_id,
@@ -294,6 +293,7 @@ def borrar_prediccion(id):
     prediccion=Prediccion.query.get(id)
     persona=prediccion.persona
     aux=prediccion.persona_id
+    print(prediccion)
     descontar_prediccion(persona=persona,prediccion=prediccion)
     db.session.delete(prediccion)
     db.session.commit()
@@ -379,6 +379,7 @@ def goleadores():
 def borrar_goleador(id):
     goleador=Goleadores.query.get(id)
     personas=Persona.query.all()
+    print(goleador)
     for persona in personas:
         descontar_goleador(persona=persona,goleador=goleador)
     db.session.delete(goleador)
