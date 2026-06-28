@@ -270,9 +270,11 @@
                     </label>
                     <select name="id">
                         {% for p in partidos %}
+                        {% if p.goles_local==999 %}
                         <option value="{{ p.id }}">
                             {{ p.local.nombre }} vs {{ p.visitante.nombre }}
                         </option>
+                        {% endif %}
                         {% endfor %}
                     </select>
                     <button class="btn-main">
