@@ -314,7 +314,7 @@ def restar_cerveza(id):
     return redirect(url_for('persona', id=id))
 
 @app.route('/partidos',methods=['GET','POST'])
-def partido():
+def partidos():
     if request.method=="POST":
         local_id=request.form["local"]
         visitante_id=request.form["visitante"]
@@ -322,7 +322,7 @@ def partido():
         partido=Partido(local_id=local_id,visitante_id=visitante_id,goles_local=999,goles_visitante=999)
         db.session.add(partido)
         db.session.commit()
-        return redirect(url_for('partido'))
+        return redirect(url_for('partidos'))
     else:
         partidos=Partido.query.order_by(Partido.id).all()
         selecciones=Seleccion.query.all()
@@ -344,7 +344,27 @@ def partido():
             )
         )
         return render_template('partidos.html',selecciones=selecciones,partidos=partidos,jugadores=jugadores,goleadores=goleadores)
-    
+
+@app.route('/partido',methods=['GET'])
+def partido():
+    id=request.args.get('id')
+    partido=Partido.query.get(id)
+    seleccion_local=Jugador.query.where(Jugador.seleccion_id==partido.local_id).all()
+    seleccion_local.sort(
+            key=lambda j: (
+                prioridades.get(j.posicion, 999),
+                j.nombre
+            )
+        )
+    seleccion_visitante=Jugador.query.where(Jugador.seleccion_id==partido.visitante_id).all()
+    seleccion_visitante.sort(
+            key=lambda j: (
+                prioridades.get(j.posicion, 999),
+                j.nombre
+            )
+        )
+    goleadores=Goleadores.query.where(Goleadores.partido_id==partido.id).all()
+    return render_template('partido.html',partido=partido,seleccion_local=seleccion_local,seleccion_visitante=seleccion_visitante,goleadores=goleadores)
 @app.route('/partidos/modificar',methods=['POST'])
 def partido_goles():
     id=request.form["partido_id"]
@@ -360,7 +380,7 @@ def partido_goles():
     db.session.commit()
     for persona in personas:
         contar_partido(persona=persona,partido=partido)
-    return redirect(url_for('partido'))
+    return redirect(url_for('partido',id=partido.id))
 @app.route('/goleadores',methods=['POST'])
 def goleadores():
     partido_id=request.form["partido_id"]
@@ -373,7 +393,7 @@ def goleadores():
     personas=Persona.query.all()
     for persona in personas:
         contar_goleador(persona=persona,goleador=goleador)
-    return redirect(url_for('partido'))
+    return redirect(url_for('partido',id=partido_id))
 
 @app.route('/goleadores/borrar/<int:id>')
 def borrar_goleador(id):
@@ -384,7 +404,7 @@ def borrar_goleador(id):
         descontar_goleador(persona=persona,goleador=goleador)
     db.session.delete(goleador)
     db.session.commit()
-    return redirect(url_for('partido'))
+    return redirect(url_for('partido',id=goleador.partido_id))
 
 if __name__=='__main__':
     app.run(debug=True)

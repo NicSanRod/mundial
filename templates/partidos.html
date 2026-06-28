@@ -264,62 +264,19 @@
                 <h2>
                     🏆 Modificar Resultado
                 </h2>
-                <form action="/partidos/modificar" method="POST">
+                <form action="/partido" method="GET">
                     <label>
                         Partido
                     </label>
-                    <select name="partido_id">
+                    <select name="id">
                         {% for p in partidos %}
                         <option value="{{ p.id }}">
                             {{ p.local.nombre }} vs {{ p.visitante.nombre }}
                         </option>
                         {% endfor %}
                     </select>
-                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px">
-                        <div>
-                            <label>
-                                Goles Local
-                            </label>
-                            <input type="number" name="goles_local" required>
-                        </div>
-                        <div>
-                            <label>
-                                Goles Visitante
-                            </label>
-                            <input type="number" name="goles_visitante" required>
-                        </div>
-                    </div>
                     <button class="btn-main">
                         Actualizar
-                    </button>
-                </form>
-            </div>
-            <div class="card">
-                <h2>
-                    ⚽ Registrar Goleador
-                </h2>
-                <form action="/goleadores" method="POST">
-                    <label>
-                        Partido
-                    </label>
-                    <select id="partido_id" name="partido_id" required>
-                        {% for p in partidos %}
-                        <option value="{{ p.id }}" data-local="{{ p.local.id }}" data-visitante="{{ p.visitante.id }}">
-                            {{ p.local.nombre }} vs {{ p.visitante.nombre }}
-                        </option>
-                        {% endfor %}
-                    </select>
-                    <label>
-                        Goleador
-                    </label>
-                    <select id="goleador" name="goleador" required>
-                    </select>
-                    <label>
-                        Cantidad
-                    </label>
-                    <input type="number" name="cantidad" required>
-                    <button class="btn-main">
-                        Guardar
                     </button>
                 </form>
             </div>
