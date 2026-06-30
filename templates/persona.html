@@ -332,7 +332,7 @@
                         <th>
                         </th>
                     </tr>
-                    {% for p in persona.predicciones %}
+                    {% for p in persona.predicciones|sort(attribute='partido_id') %}
                     <tr>
                         <td>
                             {{ p.partido.local.nombre }} vs {{ p.partido.visitante.nombre }}
